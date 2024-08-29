@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="container">
+  <hgroup>
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </hgroup>  
+
+  <div class="grid grid-main">
+    <div>
+      {{- if (.Param "ShowToc") }}
+        <article class="toc">
+          {{- partial "toc.html" . }} 
+        </article>
+      {{- end }}
+      
+      {{if .Params.Logo }}<img
+        class="cover"
+        src="{{.Params.Logo | absURL}}"
+        width="600"
+        height="400"
+        align="left"
+        layout="responsive"
+      >
+      </img>
+      {{end}}
+    
+      <div class="post">
+        {{- if not (.Param "disableAnchoredHeadings") }}
+         {{- partial "anchored_headings.html"
+        .Content -}} {{- else }}{{ .Content }}{{ end }}
+      </div>
+    </div>
+    
+     
+    <aside>
+      {{- if .Params.Contact }}
+        {{- partial "contact.html" . -}}
+      {{- end  }}
+    </aside>
+    
+    
+  </div>
+    {{- if .Params.tags }} {{- range ($.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">
+    <kbd>{{ .LinkTitle }}</kbd>
+  </a>
+  {{- end }} {{- end }}
+</div>
+{{ end }}
