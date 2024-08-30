@@ -1,0 +1,16 @@
+<h2>Foundational Activities</h2>
+
+{{ $section := .Site.GetPage "section" "foundationalActivities" }} {{ if
+$section }}
+<div class="grid-f-activities">
+  {{ range sort $section.Pages "Weight" }}
+  <article>
+    <header>
+      {{ if .Params.Icon }}
+      <i data-feather="{{ .Params.Icon }}"></i>
+      {{ end }} {{ .Title }}
+    </header>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

@@ -52,6 +52,18 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
 </section>
 {{ end }}
 
+<section>
+  <div class="container">
+    {{- partial "foundational_activities.html" . -}}
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    {{- partial "foundational_activity_cards.html" . -}}
+  </div>
+</section>
+
 {{- if not (.Site.Params.homepage.disablePartnerSection) }}
 <section>
   <hgroup class="text-center">

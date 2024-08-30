@@ -1,0 +1,38 @@
+.grid-f-activities {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.grid-f-activities > div {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid-f-activities > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.grid-f-activities > div article header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.grid-f-activities > div article header i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+.grid-f-activities > div article header .Title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+.grid-f-activities > div article p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}/*# sourceMappingURL=main.css.map */
