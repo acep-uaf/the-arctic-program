@@ -7,9 +7,10 @@ $section }}
   <article>
     <header>
       {{ if .Params.Icon }}
-      <i data-feather="{{ .Params.Icon }}"></i>
-      {{ end }} {{ .Title }}
+      <b><i data-feather="{{ .Params.Icon }}"></i></b>
+      {{ end }} <b>{{ .Title }}</b>
     </header>
+    <p>{{ .Params.Summary }}</p>
   </article>
   {{ end }}
 </div>

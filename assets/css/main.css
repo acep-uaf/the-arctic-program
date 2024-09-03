@@ -1,0 +1,30 @@
+.grid-f-activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.grid-f-activities article{
+  margin: 10px !important;
+}
+
+.grid-f-activities header{
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.margin-50 {
+  margin: 50px 0px;
+}
+
+.margin-20 {
+  margin: 20px 0px;
+}
