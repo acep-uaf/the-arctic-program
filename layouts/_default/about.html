@@ -35,6 +35,11 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
       <div class="about">
         {{ .Content }}
       </div>
+
+      <div>
+        {{- partial "foundational_activities" . }}
+        {{- partial "foundational_activity_cards" . }}
+      </div>
     </div>
   </div>
   {{ end }}

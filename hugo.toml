@@ -159,12 +159,6 @@ pre = "search"
 url = "/search"
 weight = "50"
 
-[[menus.main]]
-name = "Github"
-pre = "github"
-url = "https://github.com/heksagonnet/piko"
-weight = "60"
-
 [[menus.search]]
 name = "Partners"
 title = "Partners"

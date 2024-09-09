@@ -27,6 +27,12 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
 </section>
 {{ end }}
 
+<section>
+  <div class="container">
+    {{- partial "partners_small.html" . -}}
+  </div>
+</section>
+
 {{- if not (.Site.Params.homepage.disableAboutSection) }}
 <section>
   <hgroup class="text-center">
@@ -92,5 +98,11 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
   </div>
 </section>
 {{ end }}
+
+<section>
+  <div class="container">
+    {{- partial "partners_large.html" . -}}
+  </div>
+</section>
 
 {{ end }}
