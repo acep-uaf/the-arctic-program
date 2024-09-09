@@ -166,16 +166,10 @@ url = "https://github.com/heksagonnet/piko"
 weight = "60"
 
 [[menus.search]]
-name = "Categories"
-title = "Categories"
-url = "/categories"
+name = "Partners"
+title = "Partners"
+url = "/partners"
 weight = "10"
-
-[[menus.search]]
-name = "Archives"
-title = "Archives"
-url = "/archives"
-weight = "20"
 
 [[menus.search]]
 name = "Tags"
