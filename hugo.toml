@@ -77,44 +77,11 @@ showTOC = true
   heroBackgroundImage = ""
   heroLogo = "/images/arctic-logo.png"
   seeMoreText = "More Posts"
-  disableAboutSection = false
+  disableAboutSection = true
   aboutTitle = "The ARCTIC Program"
   aboutDescription = "An Office of Naval Research initiative"
   aboutImgUrl = "/images/arctic-program.webp"
   aboutContent = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) is a collaboration designed to promote commerce and partnerships between Alaska and the Arctic and Pacific regions through advancements in energy through resiliency research, technology development/deployment and education."
-  disablePartnerSection = false
-  portfolioTitle = "Participating Partners"
-  portfolioDescription = ""
-
-    [[params.homepage.portfolio]]
-    imageUrl = "/images/acep-logo-sm.png"
-    alt = "ACEP Alaska Center for Energy and Power"
-    description = "Developing practical, cost-effective energy solutions for Alaska and beyond"
-    websiteUrl = "https://acep.uaf.edu"
-
-    [[params.homepage.portfolio]]
-    imageUrl = "/images/bei-logo-sm.png"
-    alt = "UAA Business Enterprise Institute"
-    description = "Supporting business and entrepreneurial capacities across Alaska by linking economic development programs"
-    websiteUrl = "https://www.uaa.alaska.edu/academics/business-enterprise-institute"
-
-    [[params.homepage.portfolio]]
-    imageUrl = "/images/centerice-logo-sm.png"
-    alt = "Alaska Center ICE"
-    description = "Supporting the commercialization & deployment of new technology"
-    websiteUrl = "https://www.uaf.edu/centerice"
-
-    [[params.homepage.portfolio]]
-    imageUrl = "/images/launchalaska-logo-sm.png"
-    alt = "Launch Alaska"
-    description = "Accelerating the Resource Revolution"
-    websiteUrl = "https://www.launchalaska.com"
-
-    [[params.homepage.portfolio]]
-    imageUrl = "/images/reap-logo-sm.png"
-    alt = "REAP Renewable Energy Alaska Project"
-    description = "Advancing Clean Energy in Alaska"
-    websiteUrl = "https://alaskarenewableenergy.org"
 
   [params.fuseOpts]
   isCaseSensitive = false
