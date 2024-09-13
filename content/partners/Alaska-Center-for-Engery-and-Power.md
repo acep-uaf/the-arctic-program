@@ -3,7 +3,7 @@ title = 'Alaska Center for Engery and Power'
 logo = "/images/acep-logo-sm.png"
 alt = "ACEP Alaska Center for Energy and Power"
 description = "University of Alaska Fairbanks’ Alaska Center for Energy and Power"
-role = "Developing practical, cost-effective energy solutions for Alaska and beyond"
+tagline = "Developing practical, cost-effective energy solutions for Alaska and beyond"
 websiteUrl = "https://acep.uaf.edu"
 +++
 ACEP is dedicated to applied energy research and testing focused on lowering the cost of energy throughout Alaska and developing economic opportunities for the State, its residents, and its industries.

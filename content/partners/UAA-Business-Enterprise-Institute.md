@@ -3,7 +3,7 @@ title = 'UAA Business Enterprise Institute'
 logo = "/images/bei-logo-sm.png"
 alt = "UAA Business Enterprise Institute"
 description = "University of Alaska Anchorage’s Business Enterprise Institute"
-role = "Supporting business and entrepreneurial capacities across Alaska by linking economic development programs"
+tagline = "Supporting business and entrepreneurial capacities across Alaska by linking economic development programs"
 websiteUrl = "https://www.uaa.alaska.edu/academics/business-enterprise-institute"
 draft = true
 +++

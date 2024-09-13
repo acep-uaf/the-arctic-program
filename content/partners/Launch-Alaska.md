@@ -3,7 +3,7 @@ title = 'Launch Alaska'
 logo = "/images/launchalaska-logo-sm.png"
 alt = "Launch Alaska"
 desription = "A business accelerator investing in scalable startups in food, water, transportation, and energy"
-role = "Accelerating the Resource Revolution"
+tagline = "Accelerating the Resource Revolution"
 websiteUrl = "https://www.launchalaska.com"
 +++
 Launch Alaska is harnessing Alaska’s distinct mix of resources, markets, and opportunities, and works side by side with some of the world’s brightest startups to help them scale solutions to the planet’s hardest problems.
