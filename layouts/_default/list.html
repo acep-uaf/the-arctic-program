@@ -14,11 +14,8 @@ url('{{.Params.Image}}');">
 <div class="container">
   <div class="grid grid-post">
     {{- $pages := union .RegularPages .Sections }}
-
-    {{- if .IsHome | eq .Section "blog"}}
-    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{- end }}
     {{- $paginator := .Paginate $pages }}    
+    
 {{ range $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
       <article class="text-center">
@@ -32,11 +29,16 @@ url('{{.Params.Image}}');">
           ></img>
         </figure>
         {{end}}
+
+        {{ if .Params.Icon }}
+        <i data-feather="{{ .Params.Icon }}"></i>
+        {{ end }}
+
         <hgroup>
           <h3>{{ .Title }}</h3>
-          <hr />
+          <hr/>
           <p>
-            {{- .Params.Role -}}
+            {{- .Params.Tagline -}}
           </p>
         </hgroup>
         <small> {{- partial "post_meta.html" . -}} </small>
