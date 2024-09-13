@@ -1,12 +1,21 @@
-<h2>Foundational Activities</h2>
-{{ $section := .Site.GetPage "section" "foundationalActivities" }} {{ if
-$section }} {{ range sort $section.Pages "Weight" }}
-<details class="margin-50">
-  <summary class="margin-20">
-    {{ if .Params.Icon }}
-    <b><i data-feather="{{ .Params.Icon }}"></i></b>
-    {{ end }} <b>{{ .Title }}</b>
-  </summary>
-  <p class="margin-20" >{{ .Params.Summary }}</p>
-</details>
-{{ end }} {{ end }}
+{{ $section := .Site.GetPage "section" "foundationalActivities" }} 
+{{ if $section }}
+<a href="{{ $section.Permalink }}">
+  <h2>Foundational Activities <b><i data-feather="arrow-right-circle"></i></b></h2>
+</a>
+
+<div class="grid-f-activities">
+  {{ range sort $section.Pages "Weight" }}
+    <a href="{{ .RelPermalink }}">
+      <article>
+      <header>
+        {{ if .Params.Icon }}
+        <b><i data-feather="{{ .Params.Icon }}"></i></b>
+        {{ end }} 
+        <b>{{ .Title }}</b>
+      </header>
+      </article>
+    </a>
+  {{ end }}
+</div>
+{{ end }}

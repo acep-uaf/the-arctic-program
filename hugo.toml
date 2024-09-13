@@ -51,8 +51,8 @@ showTOC = false
 [params.analytics.bing]
 
   [params.label]
-  title = "_Arctic Program_"
-  text = "Welcome to the Artic Program"
+  title = "_ARCTIC Program_"
+  text = "Welcome to the ARCTIC Program"
   lightNavIcon = "/images/favicon.png"
   darkNavIcon = "/images/favicon.png"
   iconHeight = "35"
