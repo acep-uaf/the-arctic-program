@@ -1,0 +1,12 @@
+<h2>Foundational Activities</h2>
+{{ $section := .Site.GetPage "section" "foundationalActivities" }} {{ if
+$section }} {{ range sort $section.Pages "Weight" }}
+<details class="margin-50">
+  <summary class="margin-20">
+    {{ if .Params.Icon }}
+    <b><i data-feather="{{ .Params.Icon }}"></i></b>
+    {{ end }} <b>{{ .Title }}</b>
+  </summary>
+  <p class="margin-20" >{{ .Params.Summary }}</p>
+</details>
+{{ end }} {{ end }}

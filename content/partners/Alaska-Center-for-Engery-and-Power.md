@@ -6,8 +6,11 @@ description = "University of Alaska Fairbanks’ Alaska Center for Energy and Po
 role = "Developing practical, cost-effective energy solutions for Alaska and beyond"
 websiteUrl = "https://acep.uaf.edu"
 +++
-ACEP is dedicated to applied energy research and testing focused on lowering the cost of energy throughout Alaska and developing economic opportunities for the State, its residents, and its industries.**Resiliency research** - research is focused on community and industry-scale power generation, transmission, heating, and transportation fuels.
-- Microgrids, energy storage, solar.
+ACEP is dedicated to applied energy research and testing focused on lowering the cost of energy throughout Alaska and developing economic opportunities for the State, its residents, and its industries.
+
+**Resiliency research** 
+- Research is focused on community and industry-scale power generation, transmission, heating, and transportation fuels.
+  - Microgrids, energy storage, solar.
 
 **Laboratory:**
 - Development & testing of power systems and tools.
@@ -20,4 +23,4 @@ ACEP is dedicated to applied energy research and testing focused on lowering the
 **Research to Operations**
 - Support transition and integration of new technology into industry through partnerships, consulting, and product development.
 
-For more information, visit the [ACEP website](https://www.acep.alaska.edu/).
+For more information, visit the [ACEP website](https://www.uaf.edu/acep/).

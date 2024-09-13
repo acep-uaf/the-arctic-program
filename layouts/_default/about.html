@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
+url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
+  <header class="container">
+    <hgroup>
+      <h1>{{.Params.heroUpperTitle}}</h1>
+      <h1>{{.Params.title}}</h1>
+      <h2>{{.Params.description}}</h2>
+    </hgroup>
+  </header>
+</section>
+
+<div class="container">
+  {{- if .Params.tags }} {{- range ($.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">
+    <kbd>{{ .LinkTitle }}</kbd>
+  </a>
+  {{- end }} {{- end }}
+
+  <div class="container">
+    <div>
+      {{- if (.Param "ShowToc") }}
+      <article class="toc">
+        {{- partial "toc.html" . }}
+      </article>
+      {{- end }}
+      
+      <div class="about">
+        {{ .Content }}
+      </div>
+
+      <div>
+        {{- partial "foundational_activities" . }}
+        {{- partial "foundational_activity_cards" . }}
+        {{- partial "partners_large" . }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
