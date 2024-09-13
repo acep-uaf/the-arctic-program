@@ -12,12 +12,6 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
 </section>
 
 <div class="container">
-  <hgroup>
-    <h1>{{ .Title }}</h1>
-    {{- partial "post_meta.html" . -}}
-    <p>{{ .Description }}</p>
-  </hgroup>
-
   {{- if .Params.tags }} {{- range ($.GetTerms "tags") }}
   <a href="{{ .Permalink }}">
     <kbd>{{ .LinkTitle }}</kbd>
@@ -39,6 +33,7 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
       <div>
         {{- partial "foundational_activities" . }}
         {{- partial "foundational_activity_cards" . }}
+        {{- partial "partners_large" . }}
       </div>
     </div>
   </div>

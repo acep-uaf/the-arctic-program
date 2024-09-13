@@ -23,4 +23,4 @@ ACEP is dedicated to applied energy research and testing focused on lowering the
 **Research to Operations**
 - Support transition and integration of new technology into industry through partnerships, consulting, and product development.
 
-For more information, visit the [ACEP website](https://www.acep.alaska.edu/).
+For more information, visit the [ACEP website](https://www.uaf.edu/acep/).

@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'The Arctic Program'
+title = 'The ARCTIC Program'
 theme = 'piko'
 paginate = "6"
 copyright = 'A template by [Heksagon](https://www.heksagon.net "Your most friendly developer")'
@@ -42,7 +42,7 @@ CookieButton = "Cookies Policy"
 disableAnchoredHeadings = false
 ShowReadingTime = false
 ShowBreadCrumbs = true
-showTOC = true
+showTOC = false
 
 [params.analytics.google]
 
@@ -53,28 +53,28 @@ showTOC = true
   [params.label]
   title = "_Arctic Program_"
   text = "Welcome to the Artic Program"
-  lightNavIcon = "/images/arctic-logo.png"
-  darkNavIcon = "/images/arctic-logo.png"
+  lightNavIcon = "/images/favicon.png"
+  darkNavIcon = "/images/favicon.png"
   iconHeight = "35"
   iconWIdth = "35"
 
   [params.assets]
   disableFingerprinting = false
-  favicon = "/images/arctic-logo.png"
-  favicon16x16 = "/images/arctic-logo.png"
-  favicon32x32 = "/images/arctic-logo.png"
-  apple_touch_icon = "/images/arctic-logo.png"
-  safari_pinned_tab = "/images/arctic-logo.png"
+  favicon = "/images/favicon.png"
+  favicon16x16 = "/images/favicon.png"
+  favicon32x32 = "/images/favicon-32x32.png"
+  apple_touch_icon = "/images/favicon.png"
+  safari_pinned_tab = "/images/favicon.png"
 
   [params.homepage]
   disableHeroSection = false
-  heroTitle = "ARCTIC Program"
-  heroDescription = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) is a collaboration designed to promote commerce and partnerships between Alaska and the Arctic and Pacific regions through advancements in energy through resiliency research, technology development/deployment and education."
+  heroTitle = "Alaska Regional Collaboration for Technology Innovation and Commercialization"
+  heroDescription = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program is an Office of Naval (ONR) program established in 2017 in support of Navy’s needs for public-private partnerships promoting commerce and collaboration between Alaska and the Arctic and Pacific regions, centered around energy and resiliency research. ARCTIC was highlighted in the Navy’s 2021 Blue Arctic strategy as an investment in building public-private partnerships and innovative solutions to help transform operating abilities and regional understanding for Naval forces."
   heroCTAPrimaryText = "Learn More"
   heroCTAPrimaryUrl = "/about/"
   heroCTASecondaryText = "Partners"
   heroCTASecondaryUrl = "/partners/"
-  heroBackgroundImage = ""
+  heroBackgroundImage = "/images/2019summit-bruno_a1s.jpeg"
   heroLogo = "/images/arctic-logo.png"
   seeMoreText = "More Posts"
   disableAboutSection = true

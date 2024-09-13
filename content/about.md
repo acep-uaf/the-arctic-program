@@ -3,25 +3,61 @@ title = "Alaska Regional Collaboration for Innovation and Commercialization Prog
 layout = "about"
 description = "AN OFFICE OF NAVAL RESEARCH INITIATIVE"
 heroUpperTitle = "ARCTIC"
+showTOC = true
 +++
 
-The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) is a collaboration designed to promote commerce and partnerships between Alaska and the Arctic and Pacific regions through advancements in energy through resiliency research, technology development/deployment and education.
+### Program Background
 
-The ARCTIC Program is an Office of Naval Research (ONR) Initiative and through their support the ARCTIC project partners are able to promote partnerships with Arctic and Pacific nations for the open exchange of technology advancements and educational activities. The current ONR ARCTIC funding is focused on Energy Resiliency.
+Established in 2017, the ARCTIC program is an Office of Naval Research initiative designed to help Alaskan organizations and communities develop a thriving innovation ecosystem through energy resiliency research, technology development/deployment, and education. ARCTIC leverages and augments existing capacity and accelerates the energy transition in Alaska and the North, while also building key partnerships between Alaska and the Arctic and Pacific regions.
 
-{{< blockquote >}}
-  The core mission of ARCTIC is to build capacity and support a thriving economy, centered on expertise in the energy sector, and related areas of emphasis (i.e. food, water).
-{{< /blockquote >}}
-The partners hope to build human resource capacity and industrial capabilities in energy and resiliency through promoting commerce and partnerships in the Arctic and Pacific regions and advancing resource technology (energy, food, water, waste management) education, research, development, demonstration, and deployment.
+Our vision for capacity building under the ARCTIC program centers on sustainable, cost-effective energy solutions implemented with the following principles:
+1. Research and technology development is community-led and addresses local, self-identified economic needs;
+2. Alaskans are leaders and key partners in U.S. research and innovation
+3. Alaskan communities and small businesses thrive through economic diversification and development
 
-This includes fostering relationships between world-leading U.S. research institutions; advancing U.S. economic base by providing technologies that meet Arctic and Pacific needs; and promoting Arctic and Pacific region talent development and education (certificate to advanced degrees) through these activities, ARCTIC promotes partnerships with Arctic and Pacific nations for the open exchange of technology advancements and educational opportunities.
+### Program Members and Partners
+{{< rawhtml >}}
+<div class="image-text-flexbox">
+    <div class="text-content">
+        <p>The number of ARCTIC program partners has grown substantially over the past five years and currently includes over 200 partners across various sectors (see Figure 1). However, the core leadership team is comprised of five organizations, three of which are within the University of Alaska (UA) system: the Alaska Center for Energy and Power (ACEP), the Center for Innovation, Commercialization, and Entrepreneurship (Center ICE), and the University of Alaska Anchorage Center for Economic Development (CED). The two external partner organizations are Renewable Energy Alaska Project (REAP) and Launch Alaska.</p>
+    </div>
+    <div class="image-content">
+        <img src="/images/partners-members.png" alt="ARCTIC Program Members and Partners">
+    </div>
+</div>
+{{< /rawhtml >}}
 
-## ARCTIC foundational pillars
+### Objectives
+ARCTIC program activities are funded across a number of ONR grants awarded to the partner organizations, which are augmented by complementary funding from the state and the private sector. The specific program objectives have evolved over time as progress towards the initial goals has been made and new partners have been identified. 
 
-The ARCTIC project was modeled off the successful ONR initiative: [Asia-Pacific Technology and Education Partnership (APTEP)](https://www.aptec.net/).
+The objectives for ARCTIC III are as follows: 
+- Demonstrate the economic and technical feasibility of innovative and site-appropriate energy solutions for the Arctic and beyond.
+- Enhance local sustainability by extending and leveraging local know-how and leadership for energy transition challenges. 
+- Support the diversification of Alaska’s innovation ecosystem through enhanced capacity and whole-of-community engagement. 
+- Demonstrate that high penetrations of variable renewable energy on microgrids is both technically and economically feasible as well as broadly replicable.
 
-{{< blockquote >}}
-  APTEP promotes commerce and partnerships in the Asia-Pacific region through advancements in alternative energy research, technology development and education.
-{{< /blockquote >}}
+### Capacity Building Success and Challenges
+{{< rawhtml >}}
+<div class="image-text-flexbox">
+<div class="image-content">
+        <img src="/images/renew-energy-capacity.png" alt="ARCTIC Program Members and Partners">
+    </div>
+    <div class="text-content">
+        <p>The ARCTIC program has been invaluable for building capacity and stimulating dynamic growth within the state of Alaska. During the past five years, we have seen the number of communities that can achieve high penetration, diesel off-operation expanded 
+from three to over a dozen. The total installed capacity across all renewable energy technologies has also steadily increased despite reductions in state funding. Much of this results from increased know-how and capacity at the state and local levels, meaning these projects are being developed, operated, and maintained successfully.</p>
+    </div>
+</div>
+{{< /rawhtml >}}
 
-ARCTIC is based on **six** foundational activities.
+
+{{< rawhtml >}}
+<div class="image-text-flexbox">
+    <div class="text-content">
+        <p>Increased capacity at ACEP has mirrored increased installed renewable capacity across the state. ACEP’s rising profile as a leading source of energy research expertise within the state, nation, and internationally has resulted in a 500% increase in base funding from the State of Alaska. This has allowed ACEP to expand faculty and research staffing and to be increasingly successful in securing competitive research funding from the Dept. of Energy and the National Science Foundation, along with supporting the success of our community partners with their community-led efforts. ACEP and ARCTIC program partners across the state are working to seed new ideas, expand early-stage initiatives, and sustain successful, proven capacity-building efforts with the end goal of moving our research from the lab to the real world. To achieve this, ARCTIC leadership is designing a program that intentionally and continually stimulates capacity development while pushing the envelope on what is technically and economically feasible.</p>
+    </div>
+    <div class="image-content">
+        <img src="/images/funds.png" alt="Funding">
+    </div>
+</div>
+{{< /rawhtml >}}
+
