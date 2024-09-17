@@ -54,6 +54,12 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
 
 <section>
   <div class="container">
+    {{- partial "map.html" . -}}
+  </div>
+</section>
+
+<section>
+  <div class="container">
     {{- partial "foundational_activities.html" . -}}
   </div>
 </section>

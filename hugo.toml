@@ -10,6 +10,9 @@ buildFuture = false
 buildExpired = false
 enableEmoji = true
 
+[security.funcs]
+getenv = ['^HUGO_', '^CI$']
+
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 
@@ -26,6 +29,7 @@ minifyOutput = true
 keepWhitespace = false
 
 [params]
+mapbox_access_token = ""
 env = "production"
 author = ""
 description = "Your website description"
