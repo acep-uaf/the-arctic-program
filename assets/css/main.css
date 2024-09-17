@@ -1,3 +1,14 @@
+:root {
+  --white: #fff;
+  --blue: #007bff;
+  --dark-blue: #004085;
+  --light-gray: #6c757d;
+  --dark-gray: #343a40;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.15);
+  --partner-text-color: rgb(75, 85, 92); /* You can change this to any color */
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Ensure two columns */
@@ -7,10 +18,10 @@
 .grid-f-activities a {
   text-decoration: none;
   color: inherit;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px var(--shadow-light);
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
@@ -21,7 +32,7 @@
 
 .grid-f-activities a:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px var(--shadow-dark);
 }
 
 .card-content {
@@ -34,28 +45,27 @@
 }
 
 .card-icon {
-
   margin-bottom: 10px;
-  color: #007BFF;
+  color: var(--blue);
 }
 
 .card-title {
   font-size: 1.2em;
   font-weight: bold;
-  color: #004085;
+  color: var(--dark-blue);
   margin-bottom: 10px;
 }
 
 .card-summary {
   font-size: 0.9em;
-  color: #6c757d;
+  color: var(--light-gray);
   margin: 0;
   padding: 0;
 }
 
 @media (hover: hover) {
   .grid-f-activities a:hover .card-summary {
-    color: #343a40;
+    color: var(--dark-gray);
   }
 }
 
@@ -72,10 +82,12 @@
   text-align: center;
   margin-bottom: 2rem;
   transition: 0.3s ease;
-  &:hover {
-    animation: hover 0.3s ease;
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
+}
+
+.partner-item-lg:hover,
+.partner-item-sm:hover {
+  animation: hover 0.3s ease;
+  transform: scale3d(1.05, 1.05, 1.05);
 }
 
 .partner-item-lg {
@@ -92,7 +104,7 @@
 }
 
 .partner-item-lg p {
-  color: rgb(75, 85, 92); /* Change this to another color */
+  color: var(--partner-text-color); /* Change this to another color */
 }
 
 .image-text-flexbox {
@@ -126,4 +138,13 @@
   .grid-layout {
     grid-template-columns: 1fr; 
   }
+}
+
+.h2-link {
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.h2-link:hover {
+  color: var(--blue);
 }

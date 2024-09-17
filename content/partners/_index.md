@@ -1,4 +1,4 @@
 +++
-title = "Partners"
+title = "Core Partners"
 description = "Description of partners page"
 +++

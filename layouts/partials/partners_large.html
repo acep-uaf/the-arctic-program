@@ -1,5 +1,12 @@
 <div class="container">
-  <h2>Participating Partners</h2>
+  {{ $section := .Site.GetPage "section" "partners" }}
+  {{ if $section }}
+    <a href="{{ $section.Permalink }}">
+      <h2 class="h2-link">
+        Core Partners <b><i data-feather="arrow-right-circle"></i></b>
+      </h2>
+    </a>
+  {{ end }}
   <div class="partner-grid">
     {{ range .Site.RegularPages }}
       {{ if eq .Section "partners" }}
