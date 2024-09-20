@@ -34,10 +34,18 @@
 {{ $navstyles := resources.Get "sass/nav.scss" | resources.ToCSS | minify  }}
 <link rel="stylesheet" href="{{ $navstyles.Permalink }}" />
 
+{{ "<!-- Bootstrap Stylesheet -->" | safeHTML }} 
+{{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
+<link rel="stylesheet" href="{{ $bootstrap.Permalink }}" />
+
 {{ "<!-- plugins CSS -->" | safeHTML }} 
 {{ range site.Params.plugins.css }}
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
+
+{{ "<!-- Bootstrap JS -->" | safeHTML }} 
+{{ $bootstrapJS := resources.Get "js/bootstrap.js" | minify }}
+<script defer src="{{ $bootstrapJS.RelPermalink }}" ></script>
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
