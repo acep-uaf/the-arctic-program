@@ -1,14 +1,8 @@
 <footer class="text-center">
-    {{- if .Site.Copyright }}
-    <span>{{ .Site.Copyright | markdownify }} &copy; {{ now.Format "2006"}} {{ .Site.Title }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Format "2006"}} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
-    {{- end }}
-    <div>
-        <a href="{{ "privacy" | absLangURL }}">Privacy Policy</a> 
-        <span>&</span>
-        <a href="sitemap.xml">Sitemap</a>
-    </div>
+  <span>
+    {{ .Site.Copyright | markdownify }} Copyright &copy; {{ now.Format "2006"}} {{.Site.Title }}
+  </span>
+  <div>
+    {{ .Site.Params.FooterAcknowledgement | markdownify }}
+  </div>
 </footer>
-
-
