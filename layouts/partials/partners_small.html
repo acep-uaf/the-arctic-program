@@ -3,7 +3,7 @@
     {{ if eq .Section "partners" }}
       <div class="partner-item-sm">
         <a href="{{ .Params.websiteUrl }}" target="_blank" title="{{ .Title }}">
-        <img src="{{ .Params.logo }}" alt="{{ .Params.alt }}">
+        <img src="{{ .Params.logo | relURL }}" alt="{{ .Params.alt }}">
       </a>
       </div>
     {{ end }}

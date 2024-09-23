@@ -1,11 +1,12 @@
 +++
 title = 'Alaska Center ICE'
-logo = "/images/centerice-logo-sm.png"
+logo = "images/centerice-logo-sm.png"
 alt = "Alaska Center ICE"
 description = "University of Alaska Fairbanks’ Center for Innovation, Commercialization, and Entrepreneurship"
 tagline = "Supporting the commercialization & deployment of new technology"
 websiteUrl = "https://www.uaf.edu/centerice"
 +++
+
 The Center for Innovation, Commercialization, and Entrepreneurship provides a pathway for university researchers to turn their ideas into business success. The mission of Center ICE is to help faculty and students commercialize their intellectual property, create spin-off companies, and get their products into the right hands, where they can change the world.
 
 Center ICE Alaska ARCTIC project efforts:

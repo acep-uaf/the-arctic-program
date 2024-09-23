@@ -1,6 +1,6 @@
 +++
 title = 'UAA Institute of Social and Economic Research'
-logo = "/images/ISER-GG.png"
+logo = "images/ISER-GG.png"
 alt = ""
 description = ""
 tagline = ""
