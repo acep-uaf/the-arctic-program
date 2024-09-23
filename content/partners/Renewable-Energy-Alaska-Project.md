@@ -1,11 +1,12 @@
 +++
 title = 'Renewable Energy Alaska Project'
-logo = "/images/reap-logo-sm.png"
+logo = "images/reap-logo-sm.png"
 alt = "REAP Renewable Energy Alaska Project"
 description = "Coalition of large and small Alaska utilities, businesses, conservation and consumer groups, Alaska Native organizations, and municipal, state and federal entities with an interest in developing Alaska’s vast renewable energy resources"
 tagline = "Advancing Clean Energy in Alaska"
 websiteUrl = "https://alaskarenewableenergy.org"
 +++
+
 REAP’s mission is to increase the development of renewable energy and promote energy efficiency in Alaska through collaboration, education, training and advocacy. REAP is supporting ARTIC program efforts involving:
 
 - Training & Workforce Development

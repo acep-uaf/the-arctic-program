@@ -48,7 +48,6 @@ ShowReadingTime = false
 ShowBreadCrumbs = true
 showTOC = false
 relativeURLs = true
-canonifyURLs = true
 
 [params.analytics.google]
 
@@ -59,18 +58,18 @@ canonifyURLs = true
   [params.label]
   title = "_ARCTIC Program_"
   text = "Welcome to the ARCTIC Program"
-  lightNavIcon = "/images/favicon.png"
-  darkNavIcon = "/images/favicon.png"
+  lightNavIcon = "images/favicon.png"
+  darkNavIcon = "images/favicon.png"
   iconHeight = "35"
   iconWIdth = "35"
 
   [params.assets]
   disableFingerprinting = false
-  favicon = "/images/favicon.png"
-  favicon16x16 = "/images/favicon.png"
-  favicon32x32 = "/images/favicon-32x32.png"
-  apple_touch_icon = "/images/favicon.png"
-  safari_pinned_tab = "/images/favicon.png"
+  favicon = "images/favicon.png"
+  favicon16x16 = "images/favicon.png"
+  favicon32x32 = "images/favicon-32x32.png"
+  apple_touch_icon = "images/favicon.png"
+  safari_pinned_tab = "images/favicon.png"
 
   [params.homepage]
   disableHeroSection = false
@@ -80,13 +79,13 @@ canonifyURLs = true
   heroCTAPrimaryUrl = "/about/"
   heroCTASecondaryText = "Partners"
   heroCTASecondaryUrl = "/partners/"
-  heroBackgroundImage = "/images/2019summit-bruno_a1s.jpeg"
-  heroLogo = "/images/arctic-logo.png"
+  heroBackgroundImage = "images/2019summit-bruno_a1s.jpeg"
+  heroLogo = "images/arctic-logo.png"
   seeMoreText = "More Posts"
   disableAboutSection = true
   aboutTitle = "The ARCTIC Program"
   aboutDescription = "An Office of Naval Research initiative"
-  aboutImgUrl = "/images/arctic-program.webp"
+  aboutImgUrl = "images/arctic-program.webp"
   aboutContent = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) is a collaboration designed to promote commerce and partnerships between Alaska and the Arctic and Pacific regions through advancements in energy through resiliency research, technology development/deployment and education."
 
   [params.fuseOpts]
