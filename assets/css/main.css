@@ -136,7 +136,7 @@
     text-align: center;
   }
   .grid-layout {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
 
@@ -149,6 +149,10 @@
   color: var(--blue);
 }
 
-hgroup>h2 {
-    color: var(--white);
+hgroup > h2 {
+  color: var(--white);
+}
+
+.partner-item-mini {
+  max-width: 150px;
 }
