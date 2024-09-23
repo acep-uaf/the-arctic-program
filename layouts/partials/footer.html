@@ -1,116 +1,144 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="container">
-    <div class="grid">
-        <!-- About this site -->
-        <div>
-            <h3>About This Site</h3>
-            <p>ARCTIC Program is an Office of Naval Research (ONR) initiative. Alaska develops economic capacity to ensure a sustainable future for Alaskans and shares Alaska-developed talent and technology with the global community. 
-            <a href="/about">More &rsaquo;</a>
-            </p>
-        </div>
-        <!-- Services -->
-        <div>
-            <h3>Services</h3>
-            <ul>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Partners -->
-        <div>
-            <h3>Partners</h3>
-            <ul>
-                {{ range where .Site.RegularPages "Section" "partners" }}
-                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
+  <hr />
+  <div class="grid">
+    <!-- ARCTIC Program Logo and Contact -->
+    <div class="footer-section">
+      <img
+        src="{{ .Site.Params.Homepage.heroLogo }}"
+        alt="ARCTIC Program Logo"
+      />
+      <div class="card">
+        <a
+          href="mailto:{{ .Site.Params.ContactEmail }}"
+          class="btn btn-light"
+        >
+          <small>{{ .Site.Params.ContactEmail }}</small>
+        </a>
+      </div>
     </div>
+
+    <!-- About -->
+    <div>
+      <h6>???</h6>
+      <ul>
+        <li><a href="/about">The ARCTIC Program</a></li>
+        <li><a href="/partners">Core Partners</a></li>
+        <li><a href="/foundationalActivities">Foundational Activities</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <!-- About this site -->
+    <div>
+      <h6>About this site</h6>
+      <p>
+        ARCTIC Program is an Office of Naval Research (ONR) initiative. Alaska
+        develops economic capacity to ensure a sustainable future for Alaskans
+        and shares Alaska-developed talent and technology with the global
+        community.
+        <a href="/about">More &rsaquo;</a>
+      </p>
+    </div>
+  </div>
+  {{- partial "partners_mini.html" . }}
+  <div class="text-center">
+    <span>
+      {{ .Site.Copyright | markdownify }} Copyright &copy; {{ now.Format
+      "2006"}} {{.Site.Title }}
+    </span>
+    <div>{{ .Site.Params.FooterAcknowledgement | markdownify }}</div>
+  </div>
 </footer>
-{{- partial "extendfooter.html" . }}
-{{- end }}
 
-{{- partial "cookie-disclaimer.html" . }}
+{{- end }} {{- partial "cookie-disclaimer.html" . }}
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
+  let menu = document.getElementById('menu');
+  if (menu) {
+    menu.scrollLeft = localStorage.getItem('menu-scroll-position');
+    menu.onscroll = function () {
+      localStorage.setItem('menu-scroll-position', menu.scrollLeft);
+    };
+  }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = this.getAttribute('href').substr(1);
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document
+          .querySelector(`[id='${decodeURIComponent(id)}']`)
+          .scrollIntoView({
+            behavior: 'smooth',
+          });
+      } else {
+        document
+          .querySelector(`[id='${decodeURIComponent(id)}']`)
+          .scrollIntoView();
+      }
+      if (id === 'top') {
+        history.replaceState(null, null, ' ');
+      } else {
+        history.pushState(null, null, `#${id}`);
+      }
     });
-
+  });
 </script>
 
-
-
-
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")
+(.Param "ShowCodeCopyButtons")) }}
 <script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
+  document.querySelectorAll('pre > code').forEach((codeblock) => {
+    const container = codeblock.parentNode.parentNode;
 
-        const copybutton = document.createElement('kbd');
-        copybutton.classList.add('copy-code');
+    const copybutton = document.createElement('kbd');
+    copybutton.classList.add('copy-code');
+    copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
+
+    function copyingDone() {
+      copybutton.innerText = '{{- i18n "code_copied" | default "copied!" }}';
+      setTimeout(() => {
         copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
+      }, 2000);
+    }
 
-        function copyingDone() {
-            copybutton.innerText = '{{- i18n "code_copied" | default "copied!" }}';
-            setTimeout(() => {
-                copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
-            }, 2000);
-        }
+    copybutton.addEventListener('click', (cb) => {
+      if ('clipboard' in navigator) {
+        navigator.clipboard.writeText(codeblock.textContent);
+        copyingDone();
+        return;
+      }
 
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            // td containing LineNos
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            // table containing LineNos and code
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            // code blocks not having highlight as parent class
-            codeblock.parentNode.appendChild(copybutton);
-        }
+      const range = document.createRange();
+      range.selectNodeContents(codeblock);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      try {
+        document.execCommand('copy');
+        copyingDone();
+      } catch (e) {}
+      selection.removeRange(range);
     });
+
+    if (container.classList.contains('highlight')) {
+      container.appendChild(copybutton);
+    } else if (container.parentNode.firstChild == container) {
+      // td containing LineNos
+    } else if (
+      codeblock.parentNode.parentNode.parentNode.parentNode.parentNode
+        .nodeName == 'TABLE'
+    ) {
+      // table containing LineNos and code
+      codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(
+        copybutton
+      );
+    } else {
+      // code blocks not having highlight as parent class
+      codeblock.parentNode.appendChild(copybutton);
+    }
+  });
 </script>
 
 {{- end }}

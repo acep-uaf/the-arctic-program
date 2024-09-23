@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'The ARCTIC Program'
 theme = 'piko'
 paginate = "6"
-copyright = 'A template by [Heksagon](https://www.heksagon.net "Your most friendly developer")'
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -47,7 +46,10 @@ disableAnchoredHeadings = false
 ShowReadingTime = false
 ShowBreadCrumbs = true
 showTOC = false
+contactEmail = "UA-arctic-program-contact@alaska.edu"
+footerAcknowledgement = "Website Management by [UAF ACEP](https://www.uaf.edu/acep/). Website template by [Heksagon](https://github.com/heksagonnet/piko)"
 relativeURLs = true
+
 
 [params.analytics.google]
 

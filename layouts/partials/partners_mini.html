@@ -1,0 +1,12 @@
+<div class="grid">
+  {{ range .Site.RegularPages }}
+      {{ if eq .Section "partners" }}
+        <div class="partner-item-mini">
+          <a href="{{ .Params.websiteUrl }}" target="_blank" title="{{ .Title }}">
+            <img src="{{ .Params.logo | relURL }}" alt="{{ .Params.alt }}">
+            <p>{{ .Params.role }}</p>
+          </a>
+        </div>
+      {{ end }}
+    {{ end }}
+</div>
