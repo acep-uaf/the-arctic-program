@@ -51,13 +51,13 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: development
+          HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
           hugo \
             --gc \
             --minify \
-            --baseURL "https://acep-uaf.github.io/the-arctic-program/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -67,7 +67,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://acep-uaf.github.io/the-arctic-program/"
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
