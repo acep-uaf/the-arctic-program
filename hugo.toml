@@ -48,7 +48,6 @@ ShowReadingTime = false
 ShowBreadCrumbs = true
 showTOC = false
 relativeURLs = true
-canonifyURLs = true
 
 [params.analytics.google]
 
