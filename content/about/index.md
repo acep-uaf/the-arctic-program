@@ -4,6 +4,7 @@ layout = "about"
 description = "AN OFFICE OF NAVAL RESEARCH INITIATIVE"
 heroUpperTitle = "ARCTIC"
 showTOC = true
+backgroundImage = "images/2019summit-bruno_a1s.jpeg"
 +++
 
 ### Program Background
@@ -25,7 +26,7 @@ Our vision for capacity building under the ARCTIC program centers on sustainable
         <p>The number of ARCTIC program partners has grown substantially over the past five years and currently includes over 200 partners across various sectors (see Figure 1). However, the core leadership team is comprised of five organizations, three of which are within the University of Alaska (UA) system: the Alaska Center for Energy and Power (ACEP), the Center for Innovation, Commercialization, and Entrepreneurship (Center ICE), and the University of Alaska Anchorage Center for Economic Development (CED). The two external partner organizations are Renewable Energy Alaska Project (REAP) and Launch Alaska.</p>
     </div>
     <div class="image-content">
-        <img src="/images/partners-members.png" alt="ARCTIC Program Members and Partners">
+        <img src="partners-members.png" alt="ARCTIC Program Members and Partners">
     </div>
 </div>
 {{< /rawhtml >}}
@@ -47,7 +48,7 @@ The objectives for ARCTIC III are as follows:
 
 <div class="image-text-flexbox">
 <div class="image-content">
-        <img src="images/renew-energy-capacity.png" alt="ARCTIC Program Members and Partners">
+        <img src="renew-energy-capacity.png" alt="ARCTIC Program Members and Partners">
     </div>
     <div class="text-content">
         <p>The ARCTIC program has been invaluable for building capacity and stimulating dynamic growth within the state of Alaska. During the past five years, we have seen the number of communities that can achieve high penetration, diesel off-operation expanded 
@@ -63,7 +64,7 @@ from three to over a dozen. The total installed capacity across all renewable en
         <p>Increased capacity at ACEP has mirrored increased installed renewable capacity across the state. ACEP’s rising profile as a leading source of energy research expertise within the state, nation, and internationally has resulted in a 500% increase in base funding from the State of Alaska. This has allowed ACEP to expand faculty and research staffing and to be increasingly successful in securing competitive research funding from the Dept. of Energy and the National Science Foundation, along with supporting the success of our community partners with their community-led efforts. ACEP and ARCTIC program partners across the state are working to seed new ideas, expand early-stage initiatives, and sustain successful, proven capacity-building efforts with the end goal of moving our research from the lab to the real world. To achieve this, ARCTIC leadership is designing a program that intentionally and continually stimulates capacity development while pushing the envelope on what is technically and economically feasible.</p>
     </div>
     <div class="image-content">
-        <img src="images/funds.png" alt="Historical Funding">
+        <img src="funds.png" alt="Historical Funding">
     </div>
 </div>
 {{< /rawhtml >}}
