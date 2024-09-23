@@ -4,6 +4,7 @@ layout = "about"
 description = "AN OFFICE OF NAVAL RESEARCH INITIATIVE"
 heroUpperTitle = "ARCTIC"
 showTOC = true
+backgroundImage = "images/2019summit-bruno_a1s.jpeg"
 +++
 
 ### Program Background
