@@ -54,7 +54,20 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
 
 <section>
   <div class="container">
-    {{- partial "map.html" . -}}
+    <a href="#">
+      <h2 class="h2-link">
+        Map Section <b><i data-feather="arrow-right-circle"></i></b>
+      </h2>
+    </a>
+    <div class="grid">
+      <div class="container">
+        <p>{{.Site.Params.homepage.aboutContent}}</p>
+        <p>{{.Site.Params.homepage.aboutContent}}</p>
+      </div>
+      <div class="container" style="text-align: right;">
+        {{- partial "map.html" . -}}
+      </div>
+    </div>
   </div>
 </section>
 
