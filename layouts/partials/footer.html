@@ -19,12 +19,15 @@
     </div>
 
     <!-- About -->
+    {{ $about := .Site.GetPage "section" "about" }}
+    {{ $partners := .Site.GetPage "section" "partners" }}
+    {{ $foundationalActivities := .Site.GetPage "section" "foundationalActivities" }}
     <div>
       <h6>???</h6>
       <ul>
-        <li><a href="{{ "about" | relURL }}">The ARCTIC Program</a></li>
-        <li><a href="{{ "partners" | relURL}}">Core Partners</a></li>
-        <li><a href="{{ "foundationalActivities" | relURL }}">Foundational Activities</a></li>
+        <li><a href="{{ $about.Permalink }}">The ARCTIC Program</a></li>
+        <li><a href="{{ $partners.Permalink }}">Core Partners</a></li>
+        <li><a href="{{ $foundationalActivities.Permalink }}">Foundational Activities</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Sitemap</a></li>
       </ul>
