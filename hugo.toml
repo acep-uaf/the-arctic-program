@@ -61,7 +61,6 @@ relativeURLs = true
   title = "_ARCTIC Program_"
   text = "Welcome to the ARCTIC Program"
   lightNavIcon = "images/favicon.png"
-  darkNavIcon = "images/favicon.png"
   iconHeight = "35"
   iconWIdth = "35"
 
