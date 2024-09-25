@@ -1,56 +1,29 @@
 {{ define "main" }}
-{{- if not (.Site.Params.homepage.disableHeroSection) }}
 <section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
-url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
+url('{{.Params.heroBackgroundImage}}'); ">
   <header class="container">
     <hgroup>
-      <img src="{{.Site.Params.homepage.heroLogo}}"></img>
-      <h1>{{.Site.Params.homepage.heroUpperTitle}}</h1>
-      <h1>{{.Site.Params.homepage.heroTitle}}</h1>
-      <h2>{{.Site.Params.homepage.heroDescription}}</h2>
+      <img src="{{.Params.heroLogo}}"></img>
+      <h1>{{.Params.heroUpperTitle}}</h1>
+      <h1>{{.Params.heroTitle}}</h1>
+      <h2>{{.Params.heroDescription}}</h2>
     </hgroup>
     <div>
       <a
         class="hero-buttons"
-        href="{{ .Site.Params.homepage.heroCTAPrimaryUrl | relURL  }}"
+        href="{{ .Params.heroCTAPrimaryUrl | relURL  }}"
         role="button"
-        >{{.Site.Params.homepage.heroCTAPrimaryText}}</a
+        >{{.Params.heroCTAPrimaryText}}</a
       >
       <a
-        href="{{ .Site.Params.homepage.heroCTASecondaryUrl | relURL  }}"
+        href="{{ .Params.heroCTASecondaryUrl | relURL  }}"
         role="button"
         class="contrast outline"
-        >{{.Site.Params.homepage.heroCTASecondaryText}}</a
+        >{{.Params.heroCTASecondaryText}}</a
       >
     </div>
   </header>
 </section>
-{{ end }}
-
-{{- if not (.Site.Params.homepage.disableAboutSection) }}
-<section>
-  <hgroup class="text-center">
-    <h2>{{.Site.Params.homepage.aboutTitle}}</h2>
-    <h3>{{.Site.Params.homepage.aboutDescription}}</h3>
-  </hgroup>
-  <div class="container">
-    <div class="grid">
-      <div class="container" style="text-align: right;">
-        <img
-          src="{{.Site.Params.homepage.aboutImgUrl}}"
-          alt="{{.Site.Params.author}}"
-          width="300"
-          height="450"
-          layout="intrinsic"
-        ></img>
-      </div>
-      <div class="container">
-        {{.Site.Params.homepage.aboutContent}}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
 
 <section>
   <div class="container">
@@ -61,8 +34,8 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
     </a>
     <div class="grid">
       <div class="container">
-        <p>{{.Site.Params.homepage.aboutContent}}</p>
-        <p>{{.Site.Params.homepage.aboutContent}}</p>
+        <p>{{ .Params.aboutContent}}</p>
+        <p>{{ .Params.aboutContent}}</p>
       </div>
       <div class="container" style="text-align: right;">
         {{- partial "map.html" . -}}
