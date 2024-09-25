@@ -28,11 +28,6 @@ url('{{ .Params.backgroundImage | relURL }}'); ">
       <div class="about">
         {{ .Content }}
       </div>
-
-      <div>
-        {{- partial "foundational_activities" . }}
-        {{- partial "partners_large" . }}
-      </div>
     </div>
   </div>
   {{ end }}

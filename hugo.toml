@@ -119,11 +119,18 @@ url = "/about"
 weight = "20"
 
 [[menus.main]]
+name = "Activities"
+title = "Activities"
+pre = "activity"
+url = "/foundationalActivities"
+weight = "30"
+
+[[menus.main]]
 name = "Partners"
 title = "Partners"
 pre = "users"
 url = "/partners"
-weight = "30"
+weight = "40"
 
 [[menus.main]]
 name = "Search"
