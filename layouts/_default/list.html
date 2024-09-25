@@ -1,11 +1,12 @@
 {{ define "main" }}
 
 <section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
-url('{{.Params.Image}}');">
+url('{{.Params.HeroBackgroundImage | relURL }}');">
   <header class="container">
     <hgroup class="light-text">
       <h1>{{ .Title }}</h1>
-      <h2>{{ .Description }}</h2>
+      <br>
+      <p>{{ .Description }}</p>
     </hgroup>
   </header>
 </section>
@@ -26,7 +27,7 @@ url('{{.Params.Image}}');">
             width="600"
             height="400"
             layout="responsive"
-          ></img>
+          >
         </figure>
         {{end}}
 
@@ -46,6 +47,10 @@ url('{{.Params.Image}}');">
     </a>
     {{ end }}
   </div>
+  {{ if eq .File.Section "foundationalActivities" }}
+      {{- partial "extend_activities.html" . -}}
+  {{ end }}
+
   <!-- pagination -->
   <div>
     <div>
