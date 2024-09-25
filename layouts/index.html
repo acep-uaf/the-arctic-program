@@ -2,11 +2,11 @@
 <section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
 url('{{.Params.heroBackgroundImage}}'); ">
   <header class="container">
-    <hgroup>
+    <hgroup class="light-text">
       <img src="{{.Params.heroLogo}}"></img>
       <h1>{{.Params.heroUpperTitle}}</h1>
       <h1>{{.Params.heroTitle}}</h1>
-      <h2>{{.Params.heroDescription}}</h2>
+      <p>{{ .Content }}</p>
     </hgroup>
     <div>
       <a

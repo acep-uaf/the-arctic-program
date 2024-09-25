@@ -42,6 +42,9 @@ The objectives for ARCTIC III are as follows:
 - Support the diversification of Alaska’s innovation ecosystem through enhanced capacity and whole-of-community engagement.
 - Demonstrate that high penetrations of variable renewable energy on microgrids is both technically and economically feasible as well as broadly replicable.
 
+### DOD Relevance (?)
+ARCTIC was highlighted in the Navy’s 2021 Blue Arctic strategy as an investment in building public-private partnerships and innovative solutions to help transform operating abilities and regional understanding for Naval forces.
+
 ### Capacity Building Success and Challenges
 
 {{< rawhtml >}}
