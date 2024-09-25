@@ -1,4 +1,6 @@
 {{ define "main" }}
+
+<!-- Hero Section -->
 <section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
 url('{{.Params.heroBackgroundImage}}'); ">
   <header class="container">
@@ -25,20 +27,23 @@ url('{{.Params.heroBackgroundImage}}'); ">
   </header>
 </section>
 
+<!-- Map Section -->
 <section>
   <div class="container">
     <a href="#">
       <h2 class="h2-link">
-        Map Section <b><i data-feather="arrow-right-circle"></i></b>
+        Need Title (?) <b><i data-feather="arrow-right-circle"></i></b>
       </h2>
     </a>
     <div class="grid">
-      <div class="container">
-        <p>{{ .Params.aboutContent}}</p>
-        <p>{{ .Params.aboutContent}}</p>
+      <!--Col 1-->
+      <div>
+        <p>{{ .Params.MapContentP1}}</p>
+        <p>{{ .Params.MapContentP2}}</p>
       </div>
-      <div class="container" style="text-align: right;">
-        {{- partial "map.html" . -}}
+      <!--Col 2-->
+      <div>
+        <img src="{{ .Params.StaticMapImage | relURL }}" alt="Static Map Placeholder Image">
       </div>
     </div>
   </div>
