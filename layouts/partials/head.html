@@ -47,6 +47,19 @@
 {{ $bootstrapJS := resources.Get "js/bootstrap.js" | minify }}
 <script defer src="{{ $bootstrapJS.RelPermalink }}" ></script>
 
+{{ "<!-- PhotoSwipe -->" | safeHTML }} 
+{{ $photoSwipeCSS := resources.Get "css/photoswipe.css" | minify }}
+<link rel="stylesheet" href="{{ $photoSwipeCSS.RelPermalink }}">
+
+{{ $photoSwipeLightbox := resources.Get "js/photoswipe-lightbox.esm.js" | js.Build }}
+<script type="module" src="{{ $photoSwipeLightbox.RelPermalink }}"></script>
+
+{{ $photoSwipe := resources.Get "js/photoswipe.esm.js" | js.Build }}
+<script type="module" src="{{ $photoSwipe.RelPermalink }}"></script>
+
+{{ $lightBox := resources.Get "js/lightbox.js" | js.Build }}
+<script type="module" src="{{ $lightBox.RelPermalink }}"></script>
+
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
 <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
