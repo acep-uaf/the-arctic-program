@@ -2,10 +2,18 @@
 import PhotoSwipeLightbox from './photoswipe-lightbox.esm.js';
 import PhotoSwipe from './photoswipe.esm.js';
 
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '.grid', // The parent container for your lightbox links
-  children: 'a', // The anchor tags within the grid
+const homeLightbox = new PhotoSwipeLightbox({
+  gallery: '.lightbox-image-wrapper',
+  children: 'a',
   pswpModule: PhotoSwipe,
 });
 
-lightbox.init();
+homeLightbox.init();
+
+const aboutLightbox = new PhotoSwipeLightbox({
+  gallery: '.lightbox-gallery',
+  children: 'a',
+  pswpModule: PhotoSwipe,
+});
+
+aboutLightbox.init();
