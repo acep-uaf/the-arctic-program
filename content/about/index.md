@@ -74,8 +74,7 @@ from three to over a dozen. The total installed capacity across all renewable en
     </div>
     <div class="image-content">
         <a class="pswp-gallery__item"
-           href="funds.png" 
-           target="_blank">
+           href="funds.png">
           <img src="funds.png" alt="Historical Funding">
         </a>
     </div>
