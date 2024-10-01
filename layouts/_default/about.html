@@ -3,7 +3,7 @@
 <section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
 url('{{ .Params.backgroundImage | relURL }}'); ">
   <header class="container">
-    <hgroup>
+    <hgroup class="light-text">
       <h1>{{.Params.title}}</h1>
       <h2>{{.Params.description}}</h2>
     </hgroup>
@@ -27,11 +27,6 @@ url('{{ .Params.backgroundImage | relURL }}'); ">
       
       <div class="about">
         {{ .Content }}
-      </div>
-
-      <div>
-        {{- partial "foundational_activities" . }}
-        {{- partial "partners_large" . }}
       </div>
     </div>
   </div>

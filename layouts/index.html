@@ -1,85 +1,51 @@
 {{ define "main" }}
-{{- if not (.Site.Params.homepage.disableHeroSection) }}
+
+<!-- Hero Section -->
 <section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
-url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
+url('{{.Params.heroBackgroundImage}}'); ">
   <header class="container">
-    <hgroup>
-      <img src="{{.Site.Params.homepage.heroLogo}}"></img>
-      <h1>{{.Site.Params.homepage.heroUpperTitle}}</h1>
-      <h1>{{.Site.Params.homepage.heroTitle}}</h1>
-      <h2>{{.Site.Params.homepage.heroDescription}}</h2>
+    <hgroup class="light-text">
+      <img src="{{.Params.heroLogo}}"></img>
+      <h1>{{.Params.heroUpperTitle}}</h1>
+      <h1>{{.Params.heroTitle}}</h1>
+      <p>{{ .Content }}</p>
     </hgroup>
     <div>
       <a
         class="hero-buttons"
-        href="{{ .Site.Params.homepage.heroCTAPrimaryUrl | relURL  }}"
+        href="{{ .Params.heroCTAPrimaryUrl | relURL  }}"
         role="button"
-        >{{.Site.Params.homepage.heroCTAPrimaryText}}</a
+        >{{.Params.heroCTAPrimaryText}}</a
       >
       <a
-        href="{{ .Site.Params.homepage.heroCTASecondaryUrl | relURL  }}"
+        href="{{ .Params.heroCTASecondaryUrl | relURL  }}"
         role="button"
         class="contrast outline"
-        >{{.Site.Params.homepage.heroCTASecondaryText}}</a
+        >{{.Params.heroCTASecondaryText}}</a
       >
     </div>
   </header>
 </section>
-{{ end }}
 
-{{- if not (.Site.Params.homepage.disableAboutSection) }}
-<section>
-  <hgroup class="text-center">
-    <h2>{{.Site.Params.homepage.aboutTitle}}</h2>
-    <h3>{{.Site.Params.homepage.aboutDescription}}</h3>
-  </hgroup>
-  <div class="container">
-    <div class="grid">
-      <div class="container" style="text-align: right;">
-        <img
-          src="{{.Site.Params.homepage.aboutImgUrl}}"
-          alt="{{.Site.Params.author}}"
-          width="300"
-          height="450"
-          layout="intrinsic"
-        ></img>
-      </div>
-      <div class="container">
-        {{.Site.Params.homepage.aboutContent}}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-
+<!-- Map Section -->
 <section>
   <div class="container">
     <a href="#">
       <h2 class="h2-link">
-        Map Section <b><i data-feather="arrow-right-circle"></i></b>
+        Need Title (?) <b><i data-feather="arrow-right-circle"></i></b>
       </h2>
     </a>
     <div class="grid">
-      <div class="container">
-        <p>{{.Site.Params.homepage.aboutContent}}</p>
-        <p>{{.Site.Params.homepage.aboutContent}}</p>
+      <!--Col 1-->
+      <div>
+        <p>{{ .Params.MapContentP1}}</p>
+        <p>{{ .Params.MapContentP2}}</p>
       </div>
-      <div class="container" style="text-align: right;">
-        {{- partial "map.html" . -}}
+      <!--Col 2-->
+      <div>
+        <img src="{{ .Params.StaticMapImage | relURL }}" alt="Static Map Placeholder Image">
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    {{- partial "foundational_activities.html" . -}}
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    {{- partial "partners_large.html" . -}}
   </div>
 </section>
 
