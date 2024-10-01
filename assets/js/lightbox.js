@@ -3,16 +3,16 @@ import PhotoSwipeLightbox from './photoswipe-lightbox.esm.js';
 import PhotoSwipe from './photoswipe.esm.js';
 
 const homeLightbox = new PhotoSwipeLightbox({
-  gallery: '.lightbox-image-wrapper',
-  children: 'a',
+  gallery: '#gallery__home',
+  children: '.pswp-gallery__item',
   pswpModule: PhotoSwipe,
 });
 
 homeLightbox.init();
 
 const aboutLightbox = new PhotoSwipeLightbox({
-  gallery: '.lightbox-gallery',
-  children: 'a',
+  gallery: '#gallery__about',
+  children: '.pswp-gallery__item',
   pswpModule: PhotoSwipe,
 });
 
