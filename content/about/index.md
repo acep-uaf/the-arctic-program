@@ -27,10 +27,7 @@ Our vision for capacity building under the ARCTIC program centers on sustainable
     </div>
     <div class="image-content">
         <a class="pswp-gallery__item"
-           href="partners-members.png" 
-           data-pswp-width="800" 
-           data-pswp-height="450" 
-           target="_blank">
+           href="partners-members.png">
           <img src="partners-members.png" alt="ARCTIC Program Members and Partners">
         </a>
     </div>
@@ -58,10 +55,7 @@ ARCTIC was highlighted in the Navy’s 2021 Blue Arctic strategy as an investmen
 <div class="image-text-flexbox">
     <div class="image-content">
         <a class="pswp-gallery__item"
-           href="renew-energy-capacity.png" 
-           data-pswp-width="800" 
-           data-pswp-height="450" 
-           target="_blank">
+           href="renew-energy-capacity.png">
           <img src="renew-energy-capacity.png" alt="ARCTIC Program Members and Partners">
         </a>
     </div>
@@ -81,8 +75,6 @@ from three to over a dozen. The total installed capacity across all renewable en
     <div class="image-content">
         <a class="pswp-gallery__item"
            href="funds.png" 
-           data-pswp-width="800" 
-           data-pswp-height="450" 
            target="_blank">
           <img src="funds.png" alt="Historical Funding">
         </a>

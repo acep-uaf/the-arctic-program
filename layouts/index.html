@@ -45,10 +45,7 @@ url('{{.Params.heroBackgroundImage}}'); ">
       <div id="gallery__home">
         <!-- Lightbox trigger for PhotoSwipe -->
         <a class="pswp-gallery__item"
-           href="{{ .Params.StaticMapImage | relURL }}" 
-           data-pswp-width="800" 
-           data-pswp-height="450" 
-           target="_blank">
+           href="{{ .Params.StaticMapImage | relURL }}">
           <img src="{{ .Params.StaticMapImage | relURL }}" alt="Static Map Placeholder Image">
         </a>
       </div>
