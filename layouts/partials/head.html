@@ -22,33 +22,26 @@
 <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
 
-{{ "<!-- Main SCSS Stylesheet -->" | safeHTML }} 
+{{ "<!-- Main SCSS -->" | safeHTML }} 
 {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" />
 
-{{ "<!-- Photoswipe CSS Stylesheet -->" | safeHTML }} 
+{{ "<!-- Photoswipe CSS -->" | safeHTML }} 
 {{ $photoSwipeStyles := resources.Get "css/photoswipe/photoswipe.css" | resources.ToCSS | minify }}
 <link rel="stylesheet" href="{{ $photoSwipeStyles.Permalink }}" />
-
-{{ "<!-- Nav Stylesheet -->" | safeHTML }}
-{{ $navstyles := resources.Get "scss/nav.scss" | resources.ToCSS | minify  }}
-<link rel="stylesheet" href="{{ $navstyles.Permalink }}" />
-
-{{ "<!-- Custom CSS -->" | safeHTML }} 
-{{ $customStyles := resources.Get "scss/styles.scss" | resources.ToCSS | minify  }}
-<link rel="stylesheet" href="{{ $customStyles.Permalink }}" />
 
 {{ "<!-- plugins CSS -->" | safeHTML }} 
 {{ range site.Params.plugins.css }}
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
 
+{{ "<!-- Bootstrap JS -->" | safeHTML }} 
 {{ $bootstrapJs := resources.Get "/js/bootstrap.min.js" }}
 <script defer src="{{ $bootstrapJs.Permalink | relURL }}"></script>
 
-{{ "<!-- Lightbox JS -->" | safeHTML }} 
-{{ $lightBox := resources.Get "js/lightbox.js" | js.Build | minify }}
-<script type="module" src="{{ $lightBox.RelPermalink }}"></script>
+{{ "<!-- Main JS -->" | safeHTML }} 
+{{ $mainJS := resources.Get "js/main.js" | js.Build | minify }}
+<script type="module" src="{{ $mainJS.RelPermalink }}"></script>
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
