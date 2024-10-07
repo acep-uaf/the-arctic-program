@@ -1,5 +1,5 @@
-import PhotoSwipeLightbox from './photoswipe-lightbox.esm.js';
-import PhotoSwipe from './photoswipe.esm.js';
+import PhotoSwipeLightbox from './node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
+import PhotoSwipe from './node_modules/photoswipe/dist/photoswipe.esm.js';
 
 // Function to dynamically set image dimensions for PhotoSwipe
 function setDynamicImageDimensions(selector) {
