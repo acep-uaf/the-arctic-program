@@ -1,5 +1,5 @@
-import PhotoSwipeLightbox from './node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
-import PhotoSwipe from './node_modules/photoswipe/dist/photoswipe.esm.js';
+import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+import PhotoSwipe from './photoswipe/photoswipe.esm.js';
 
 // Function to dynamically set image dimensions for PhotoSwipe
 function setDynamicImageDimensions(selector) {
@@ -32,7 +32,7 @@ const homeLightbox = new PhotoSwipeLightbox({
 const aboutLightbox = new PhotoSwipeLightbox({
   gallery: '#gallery__about',
   children: '.pswp-gallery__item',
-  pswpModule: PhotoSwipe
+  pswpModule: PhotoSwipe,
 });
 
 // Initialize Lightboxes
