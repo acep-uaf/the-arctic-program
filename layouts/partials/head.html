@@ -36,8 +36,12 @@
 {{ end }} 
 
 {{ "<!-- Main JS -->" | safeHTML }} 
-{{ $mainJS := resources.Get "js/main.js" | js.Build | minify }}
-<script type="module" src="{{ $mainJS.RelPermalink }}"></script>
+{{ $mainJS := resources.Get "js/main.js" | js.Build  }}
+<script src="{{ $mainJS.RelPermalink }}"></script>
+
+{{ "<!-- Lightbox JS -->" | safeHTML }} 
+{{ $lightboxJs := resources.Get "js/lightbox.js" | js.Build }}
+<script type="module" src="{{ $lightboxJs.RelPermalink }}"></script>
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
