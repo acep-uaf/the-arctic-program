@@ -149,12 +149,6 @@ target = "assets/js/photoswipe/photoswipe.esm.js"
 source = "node_modules/photoswipe/dist/photoswipe.css"
 target = "assets/css/photoswipe/photoswipe.css"
 [[module.mounts]]
-source = "node_modules/bootstrap/scss"
-target = "assets/scss/bootstrap"
-[[module.mounts]]
-source = "node_modules/bootstrap/dist/js/bootstrap.min.js"
-target = "assets/js/bootstrap.min.js"
-[[module.mounts]]
 source = 'content'
 target = 'content'
 [[module.mounts]]

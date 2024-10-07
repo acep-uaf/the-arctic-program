@@ -35,10 +35,6 @@
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
 
-{{ "<!-- Bootstrap JS -->" | safeHTML }} 
-{{ $bootstrapJs := resources.Get "/js/bootstrap.min.js" }}
-<script defer src="{{ $bootstrapJs.Permalink | relURL }}"></script>
-
 {{ "<!-- Main JS -->" | safeHTML }} 
 {{ $mainJS := resources.Get "js/main.js" | js.Build | minify }}
 <script type="module" src="{{ $mainJS.RelPermalink }}"></script>
