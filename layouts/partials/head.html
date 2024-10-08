@@ -22,43 +22,26 @@
 <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
 
-{{ "<!-- Main SCSS Stylesheet -->" | safeHTML }} 
-{{ $styles := resources.Get "sass/main.scss" | resources.ToCSS | minify }}
+{{ "<!-- Main SCSS -->" | safeHTML }} 
+{{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" />
 
-{{ "<!-- Main CSS Stylesheet -->" | safeHTML }} 
-{{ $cssStyles := resources.Get "css/main.css" | minify }}
-<link rel="stylesheet" href="{{ $cssStyles.Permalink }}" />
-
-{{ "<!-- Nav Stylesheet -->" | safeHTML }}
-{{ $navstyles := resources.Get "sass/nav.scss" | resources.ToCSS | minify  }}
-<link rel="stylesheet" href="{{ $navstyles.Permalink }}" />
-
-{{ "<!-- Bootstrap Stylesheet -->" | safeHTML }} 
-{{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
-<link rel="stylesheet" href="{{ $bootstrap.Permalink }}" />
+{{ "<!-- Photoswipe CSS -->" | safeHTML }} 
+{{ $photoSwipeStyles := resources.Get "photoswipe/dist/photoswipe.css" | minify }}
+<link rel="stylesheet" href="{{ $photoSwipeStyles.Permalink }}" />
 
 {{ "<!-- plugins CSS -->" | safeHTML }} 
 {{ range site.Params.plugins.css }}
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
 
-{{ "<!-- Bootstrap JS -->" | safeHTML }} 
-{{ $bootstrapJS := resources.Get "js/bootstrap.js" | minify }}
-<script defer src="{{ $bootstrapJS.RelPermalink }}" ></script>
+{{ "<!-- Main JS -->" | safeHTML }} 
+{{ $mainJS := resources.Get "js/main.js" | js.Build  }}
+<script src="{{ $mainJS.RelPermalink }}"></script>
 
-{{ "<!-- PhotoSwipe -->" | safeHTML }} 
-{{ $photoSwipeCSS := resources.Get "css/photoswipe.css" | minify }}
-<link rel="stylesheet" href="{{ $photoSwipeCSS.RelPermalink }}">
-
-{{ $photoSwipeLightbox := resources.Get "js/photoswipe-lightbox.esm.js" | js.Build }}
-<script type="module" src="{{ $photoSwipeLightbox.RelPermalink }}"></script>
-
-{{ $photoSwipe := resources.Get "js/photoswipe.esm.js" | js.Build }}
-<script type="module" src="{{ $photoSwipe.RelPermalink }}"></script>
-
-{{ $lightBox := resources.Get "js/lightbox.js" | js.Build }}
-<script type="module" src="{{ $lightBox.RelPermalink }}"></script>
+{{ "<!-- Lightbox JS -->" | safeHTML }} 
+{{ $lightboxJs := resources.Get "js/lightbox.js" | js.Build }}
+<script type="module" src="{{ $lightboxJs.RelPermalink }}"></script>
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
