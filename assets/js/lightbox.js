@@ -35,6 +35,13 @@ const aboutLightbox = new PhotoSwipeLightbox({
   pswpModule: PhotoSwipe,
 });
 
+const activitiesLightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery__activities',
+  children: '.pswp-gallery__item',
+  pswpModule: PhotoSwipe,
+});
+
 // Initialize Lightboxes
 homeLightbox.init();
 aboutLightbox.init();
+activitiesLightbox.init();
