@@ -9,9 +9,6 @@ buildFuture = false
 buildExpired = false
 enableEmoji = true
 
-[security.funcs]
-getenv = ['^HUGO_', '^CI$']
-
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
@@ -28,10 +25,9 @@ minifyOutput = true
 keepWhitespace = false
 
 [params]
-mapbox_access_token = ""
-env = "production"
+env = "development"
 author = ""
-description = "Your website description"
+description = "Website for the ARCTIC Program"
 math = false
 images = ["/uploads/og.webp"]
 comments = true
@@ -50,25 +46,20 @@ contactEmail = "UA-arctic-program-contact@alaska.edu"
 footerAcknowledgement = "Website Management by [UAF ACEP](https://www.uaf.edu/acep/). Website template by [Heksagon](https://github.com/heksagonnet/piko)"
 relativeURLs = true
 
-
-[params.analytics.google]
-[params.analytics.yandex]
-[params.analytics.bing]
-
 [params.label]
 title = "_ARCTIC Program_"
 text = "Welcome to the ARCTIC Program"
-lightNavIcon = "images/favicon.png"
+navIcon = "images/arctic-favicon.png"
 iconHeight = "35"
 iconWIdth = "35"
 
 [params.assets]
 disableFingerprinting = false
-favicon = "images/favicon.png"
-favicon16x16 = "images/favicon.png"
+favicon = "images/arctic-favicon.png"
+favicon16x16 = "images/arctic-favicon.png"
 favicon32x32 = "images/favicon-32x32.png"
-apple_touch_icon = "images/favicon.png"
-safari_pinned_tab = "images/favicon.png"
+apple_touch_icon = "images/arctic-favicon.png"
+safari_pinned_tab = "images/arctic-favicon.png"
 footerLogo = "images/arctic-logo.png"
 
 # Search
@@ -81,6 +72,7 @@ threshold = "0.4"
 minMatchCharLength = "0"
 keys = ["title", "permalink", "summary", "content"]
 
+[params.plugins]
 [[params.plugins.css]]
 link = "plugins/css/pico.min.css"
 
@@ -136,7 +128,6 @@ weight = "30"
 
 [taxonomies]
 tag = "tags"
-
 
 [module]
 [[module.mounts]]
