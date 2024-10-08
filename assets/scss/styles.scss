@@ -10,6 +10,19 @@
   --partner-text-color: rgb(75, 85, 92); /* You can change this to any color */
 }
 
+.partner-item-sm {
+  max-width: 150px;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  align-self: center;
+
+  &:hover{
+    animation: hover 0.3s ease;
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Ensure two columns */
@@ -29,11 +42,11 @@
   justify-content: space-between; /* Ensure content spreads evenly */
   align-items: center;
   height: 100%; /* Ensure each card takes full height */
-}
 
-.grid-f-activities a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px var(--shadow-dark);
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--shadow-dark);
+  }
 }
 
 .card-content {
@@ -68,44 +81,6 @@
   .grid-f-activities a:hover .card-summary {
     color: var(--dark-gray);
   }
-}
-
-.partner-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.partner-item-lg,
-.partner-item-sm {
-  text-align: center;
-  margin-bottom: 2rem;
-  transition: 0.3s ease;
-}
-
-.partner-item-lg:hover,
-.partner-item-sm:hover {
-  animation: hover 0.3s ease;
-  transform: scale3d(1.05, 1.05, 1.05);
-}
-
-.partner-item-lg {
-  max-width: 300px;
-}
-
-.partner-item-sm {
-  max-width: 200px;
-}
-
-.partner-logo-lg {
-  height: auto;
-  padding-bottom: 1.5rem;
-}
-
-.partner-item-lg p {
-  color: var(--partner-text-color); /* Change this to another color */
 }
 
 .image-text-flexbox {
@@ -144,16 +119,12 @@
 .h2-link {
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
-}
 
-.h2-link:hover {
-  color: var(--blue);
+  &:hover {
+    color: var(--blue);
+  }
 }
 
 .light-text * {
   color: var(--white);
-}
-
-.partner-item-mini {
-  max-width: 150px;
 }
