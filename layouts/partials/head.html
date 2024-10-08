@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="{{ $styles.Permalink }}" />
 
 {{ "<!-- Photoswipe CSS -->" | safeHTML }} 
-{{ $photoSwipeStyles := resources.Get "css/photoswipe/photoswipe.css" | resources.ToCSS | minify }}
+{{ $photoSwipeStyles := resources.Get "photoswipe/dist/photoswipe.css" | minify }}
 <link rel="stylesheet" href="{{ $photoSwipeStyles.Permalink }}" />
 
 {{ "<!-- plugins CSS -->" | safeHTML }} 
