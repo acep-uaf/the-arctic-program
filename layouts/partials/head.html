@@ -12,15 +12,6 @@
     {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
-{{- if .Site.Params.analytics.google.SiteVerificationTag }}
-<meta name="google-site-verification" content="{{ .Site.Params.analytics.google.SiteVerificationTag }}" />
-{{- end }}
-{{- if .Site.Params.analytics.yandex.SiteVerificationTag }}
-<meta name="yandex-verification" content="{{ .Site.Params.analytics.yandex.SiteVerificationTag }}" />
-{{- end }}
-{{- if .Site.Params.analytics.bing.SiteVerificationTag }}
-<meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
-{{- end }}
 
 {{ "<!-- Main SCSS -->" | safeHTML }} 
 {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify }}
@@ -34,14 +25,6 @@
 {{ range site.Params.plugins.css }}
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
-
-{{ "<!-- Main JS -->" | safeHTML }} 
-{{ $mainJS := resources.Get "js/main.js" | js.Build  }}
-<script src="{{ $mainJS.RelPermalink }}"></script>
-
-{{ "<!-- Lightbox JS -->" | safeHTML }} 
-{{ $lightboxJs := resources.Get "js/lightbox.js" | js.Build }}
-<script type="module" src="{{ $lightboxJs.RelPermalink }}"></script>
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
@@ -76,7 +59,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.assets.favicon32x32 | default "favicon-32x32.png" | absURL }}">
 <link rel="apple-touch-icon" href="{{ .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.png" | absURL }}">
 <link rel="mask-icon" href="{{ .Site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.svg" | absURL }}">
-<meta name="theme-color" content="{{ .Site.Params.assets.theme_color | default "#2e2e33" }}">
 <meta name="msapplication-TileColor" content="{{ .Site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
 
 {{- /* Generator */}}

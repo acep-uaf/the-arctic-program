@@ -10,7 +10,7 @@ buildExpired = false
 enableEmoji = true
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS"]
 
 [minify]
 disableCSS = false
@@ -30,8 +30,6 @@ author = ""
 description = "Website for the ARCTIC Program"
 math = false
 images = ["/uploads/og.webp"]
-comments = true
-mainSections = ["blog"]
 ShowShareButtons = true
 ShowCodeCopyButtons = true
 ShowRelated = true
