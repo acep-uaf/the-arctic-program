@@ -10,6 +10,19 @@
   --partner-text-color: rgb(75, 85, 92); /* You can change this to any color */
 }
 
+.light-text * {
+  color: var(--white);
+}
+
+.h2-link {
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    color: var(--blue);
+  }
+}
+
 .partner-item-sm {
   max-width: 150px;
   text-align: center;
@@ -23,108 +36,25 @@
   }
 }
 
-.grid-layout {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Ensure two columns */
-  gap: 20px;
-}
-
-.grid-f-activities a {
-  text-decoration: none;
-  color: inherit;
-  background-color: var(--white);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px var(--shadow-light);
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensure content spreads evenly */
-  align-items: center;
-  height: 100%; /* Ensure each card takes full height */
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px var(--shadow-dark);
-  }
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-}
-
-.card-icon {
-  margin-bottom: 10px;
-  color: var(--blue);
-}
-
-.card-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: var(--dark-blue);
-  margin-bottom: 10px;
-}
-
-.card-summary {
-  font-size: 0.9em;
-  color: var(--light-gray);
-  margin: 0;
-  padding: 0;
-}
-
-@media (hover: hover) {
-  .grid-f-activities a:hover .card-summary {
-    color: var(--dark-gray);
-  }
-}
-
 .image-text-flexbox {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   margin: 20px 0;
-}
 
-.image-text-flexbox .text-content {
-  flex: 1;
-}
+  .text-content,
+  .image-content {
+    flex: 1;
+  }
 
-.image-text-flexbox .image-content {
-  flex: 1;
-  text-align: right;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-.image-text-flexbox img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive Small Screen layout */
-@media (max-width: 768px) {
-  .image-text-flexbox {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     text-align: center;
   }
-  .grid-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-.h2-link {
-  text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease;
-
-  &:hover {
-    color: var(--blue);
-  }
-}
-
-.light-text * {
-  color: var(--white);
 }
