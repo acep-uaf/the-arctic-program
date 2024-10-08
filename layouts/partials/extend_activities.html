@@ -1,4 +1,6 @@
-<div class="container">
+<div class="container" id="gallery__activities">
   <p>{{ .Content }}</p>
-  <img style="width: 100%;" src="{{ .Params.FAdiagram | relURL }}" alt="ARCTIC Foundational Activities Diagram"/>
+  <a class="pswp-gallery__item" href="{{ .Params.FAdiagram | relURL }}">
+    <img src="{{ .Params.FAdiagram | relURL }}" alt="ARCTIC Foundational Activities Diagram"/>
+  </a>
 </div>
