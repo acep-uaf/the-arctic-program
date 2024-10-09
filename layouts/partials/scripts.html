@@ -1,0 +1,12 @@
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}" layout="container"></script>
+{{ end }}
+
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/main.js" | minify}}
+<script src="{{ $script.Permalink }}" layout="container"></script>
+
+{{ "<!-- Lightbox JS -->" | safeHTML }} 
+{{ $lightboxJs := resources.Get "js/lightbox.js" | js.Build }}
+<script type="module" src="{{ $lightboxJs.RelPermalink }}"></script>
