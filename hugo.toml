@@ -41,7 +41,7 @@ ShowReadingTime = false
 ShowBreadCrumbs = true
 showTOC = false
 contactEmail = "UA-arctic-program-contact@alaska.edu"
-footerAcknowledgement = "Website Management by [UAF ACEP](https://www.uaf.edu/acep/). Website template by [Heksagon](https://github.com/heksagonnet/piko)"
+footerAcknowledgement = "Website Management by [UAF ACEP](https://www.uaf.edu/acep/) | Website template by [Heksagon](https://github.com/heksagonnet/piko)"
 relativeURLs = true
 
 [params.label]
