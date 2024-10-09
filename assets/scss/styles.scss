@@ -1,17 +1,8 @@
-
-:root {
-  --white: #fff;
-  --blue: #007bff;
-  --dark-blue: #004085;
-  --light-gray: #6c757d;
-  --dark-gray: #343a40;
-  --shadow-light: rgba(0, 0, 0, 0.1);
-  --shadow-dark: rgba(0, 0, 0, 0.15);
-  --partner-text-color: rgb(75, 85, 92); /* You can change this to any color */
-}
+$white: #fff;
+$blue: #007bff;
 
 .light-text * {
-  color: var(--white);
+  color: $white;
 }
 
 .h2-link {
@@ -19,7 +10,7 @@
   transition: color 0.3s ease, background-color 0.3s ease;
 
   &:hover {
-    color: var(--blue);
+    color: $blue;
   }
 }
 
