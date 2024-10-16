@@ -10,7 +10,7 @@ buildExpired = false
 enableEmoji = true
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "JSON"]
 
 [minify]
 disableCSS = false
