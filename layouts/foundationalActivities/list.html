@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <section
   class="hero"
   style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
@@ -21,34 +20,18 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     $pages }} {{ range $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
       <article class="text-center h-100">
-        {{if .Params.Logo}}
-        <figure>
-          <img
-            src="{{.Params.Logo | absURL}}"
-            width="600"
-            height="400"
-            layout="responsive"
-          />
-        </figure>
-        {{end}}
-
         <hgroup>
           <div>
-            {{ if .Params.Icon }}
-            <i data-feather="{{ .Params.Icon }}"></i>
-            {{ end }}
             <h5>{{ .Title }}</h5>
           </div>
           <hr />
         </hgroup>
         <p>{{- .Params.Tagline -}}</p>
-        <small> {{- partial "post_meta.html" . -}} </small>
       </article>
     </a>
     {{ end }}
   </div>
-  {{ if eq .File.Section "foundationalActivities" }} {{- partial
-  "extend_activities.html" . -}} {{ end }}
+  {{- partial "extend_activities.html" . -}}
 
   <!-- pagination -->
   <div>

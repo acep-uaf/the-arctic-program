@@ -27,13 +27,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
           <hr />
         </hgroup>
         <p>{{- .Params.Tagline -}}</p>
-        <small> {{- partial "post_meta.html" . -}} </small>
       </article>
     </a>
     {{ end }}
   </div>
-  {{ if eq .File.Section "foundationalActivities" }} {{- partial
-  "extend_activities.html" . -}} {{ end }}
 
   <!-- pagination -->
   <div>
