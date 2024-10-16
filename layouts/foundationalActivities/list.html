@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section
+  class="hero"
+  style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
+url('{{.Params.HeroBackgroundImage | relURL }}');"
+>
+  <header class="container">
+    <hgroup class="light-text">
+      <h1>{{ .Title }}</h1>
+      <br />
+      <p>{{ .Description }}</p>
+    </hgroup>
+  </header>
+</section>
+
+{{- $currentPage := . }}
+<div class="container">
+  <div class="grid grid-post">
+    {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
+    $pages }} {{ range $paginator.Pages }}
+    <a href="{{ .RelPermalink }}">
+      <article class="grid-card" style="background-color: {{ .Params.CardColor }}">
+        <hgroup>
+          <span>
+            <i data-feather="{{ .Params.Icon }}"></i>
+            <h5>{{ .Title }}</h5>
+          </span>
+          <hr />
+        </hgroup>
+        <p>{{- .Params.Tagline -}}</p>
+      </article>
+    </a>
+    {{ end }}
+  </div>
+  {{- partial "extend_activities.html" . -}}
+</div>
+{{ end }}
