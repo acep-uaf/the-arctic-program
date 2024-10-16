@@ -1,11 +1,14 @@
 {{ define "main" }}
 
-<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
-url('{{.Params.HeroBackgroundImage | relURL }}');">
+<section
+  class="hero"
+  style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
+url('{{.Params.HeroBackgroundImage | relURL }}');"
+>
   <header class="container">
     <hgroup class="light-text">
       <h1>{{ .Title }}</h1>
-      <br>
+      <br />
       <p>{{ .Description }}</p>
     </hgroup>
   </header>
@@ -14,12 +17,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');">
 {{- $currentPage := . }}
 <div class="container">
   <div class="grid grid-post">
-    {{- $pages := union .RegularPages .Sections }}
-    {{- $paginator := .Paginate $pages }}    
-    
-{{ range $paginator.Pages }}
+    {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
+    $pages }} {{ range $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
-      <article class="text-center">
+      <article class="text-center h-100">
         {{if .Params.Logo}}
         <figure>
           <img
@@ -27,29 +28,27 @@ url('{{.Params.HeroBackgroundImage | relURL }}');">
             width="600"
             height="400"
             layout="responsive"
-          >
+          />
         </figure>
         {{end}}
 
-        {{ if .Params.Icon }}
-        <i data-feather="{{ .Params.Icon }}"></i>
-        {{ end }}
-
         <hgroup>
-          <h3>{{ .Title }}</h3>
-          <hr/>
-          <p>
-            {{- .Params.Tagline -}}
-          </p>
+          <div>
+            {{ if .Params.Icon }}
+            <i data-feather="{{ .Params.Icon }}"></i>
+            {{ end }}
+            <h5>{{ .Title }}</h5>
+          </div>
+          <hr />
         </hgroup>
+        <p>{{- .Params.Tagline -}}</p>
         <small> {{- partial "post_meta.html" . -}} </small>
       </article>
     </a>
     {{ end }}
   </div>
-  {{ if eq .File.Section "foundationalActivities" }}
-      {{- partial "extend_activities.html" . -}}
-  {{ end }}
+  {{ if eq .File.Section "foundationalActivities" }} {{- partial
+  "extend_activities.html" . -}} {{ end }}
 
   <!-- pagination -->
   <div>
@@ -65,7 +64,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');">
       {{ $upper_limit := (sub $paginator.TotalPages $adjacent_links) }}
       <!-- If there's more than one page. -->
       {{ if gt $paginator.TotalPages 1 }}
-      <nav class="container" aria-label="Page navigation">
+      <nav
+        class="container"
+        aria-label="Page navigation"
+      >
         <ul>
           <!-- Previous page. -->
           {{ if $paginator.HasPrev }}
