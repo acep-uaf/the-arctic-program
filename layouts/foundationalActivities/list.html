@@ -19,11 +19,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
     $pages }} {{ range $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
-      <article class="text-center h-100">
+      <article class="grid-card">
         <hgroup>
-          <div>
-            <h5>{{ .Title }}</h5>
-          </div>
+          <i data-feather="{{ .Params.Icon }}"></i>
+          <h5>{{ .Title }}</h5>
           <hr />
         </hgroup>
         <p>{{- .Params.Tagline -}}</p>
@@ -32,6 +31,5 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     {{ end }}
   </div>
   {{- partial "extend_activities.html" . -}}
-
 </div>
 {{ end }}

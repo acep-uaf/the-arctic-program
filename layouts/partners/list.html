@@ -20,10 +20,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
     $pages }} {{ range $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
-      <article class="partner-card h-100">
+      <article class="grid-card">
         <hgroup>
-          <img class="partner-logo" src="{{.Params.Logo | absURL}}"/>
-          <h5 class="text-center">{{ .Title }}</h5>
+          <img src="{{.Params.Logo | absURL}}"/>
+          <h5>{{ .Title }}</h5>
           <hr />
         </hgroup>
         <p>{{- .Params.Tagline -}}</p>
