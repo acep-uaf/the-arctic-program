@@ -55,21 +55,6 @@ $grid-vertical-gap: 1rem;
   }
 }
 
-hgroup {
-  div {
-    display: flex; 
-    align-items: center;
-
-    h5 {
-      margin: 0;
-    }
-  }
-}
-
-.h-100 {
-  height: 100%;
-}
-
 .grid {
   gap: $grid-vertical-gap !important;
 }
@@ -87,6 +72,17 @@ hgroup {
 
   p {
     color: $dark-text;
+  }
+
+  span {
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem;
+
+    h5 {
+      margin: 0;
+    }
+
   }
 
 }

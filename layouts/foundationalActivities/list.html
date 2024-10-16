@@ -21,8 +21,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     <a href="{{ .RelPermalink }}">
       <article class="grid-card" style="background-color: {{ .Params.CardColor }}">
         <hgroup>
-          <i data-feather="{{ .Params.Icon }}"></i>
-          <h5>{{ .Title }}</h5>
+          <span>
+            <i data-feather="{{ .Params.Icon }}"></i>
+            <h5>{{ .Title }}</h5>
+          </span>
           <hr />
         </hgroup>
         <p>{{- .Params.Tagline -}}</p>
