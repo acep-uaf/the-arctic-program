@@ -57,6 +57,7 @@ $grid-vertical-gap: 1rem;
 
 .grid {
   gap: $grid-vertical-gap !important;
+  margin-bottom: 3rem !important;
 }
 
 .grid-card{
@@ -85,4 +86,11 @@ $grid-vertical-gap: 1rem;
 
   }
 
+}
+
+#gallery__activities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

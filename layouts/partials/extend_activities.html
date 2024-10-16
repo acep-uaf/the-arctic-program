@@ -1,7 +1,6 @@
-<section class="container" id="gallery__activities">
-  <p>{{ .Content }}</p>
+<div id="gallery__activities">
+  {{ .Content }}
   <a class="pswp-gallery__item" href="{{ .Params.FAdiagram | relURL }}">
     <img src="{{ .Params.FAdiagram | relURL }}" alt="ARCTIC Foundational Activities Diagram"/>
   </a>
-  <p><caption>The figure above illustrates how ARCTIC foundational activities are achieved through collaborations within the dynamic ecosystem.</caption></p>
-</section>
+</div>
