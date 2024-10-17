@@ -13,10 +13,6 @@
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" />
 
-{{ "<!-- Main SCSS -->" | safeHTML }} 
-{{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify }}
-<link rel="stylesheet" href="{{ $styles.Permalink }}" />
-
 {{ "<!-- Photoswipe CSS -->" | safeHTML }} 
 {{ $photoSwipeStyles := resources.Get "photoswipe/dist/photoswipe.css" | minify }}
 <link rel="stylesheet" href="{{ $photoSwipeStyles.Permalink }}" />
@@ -25,6 +21,10 @@
 {{ range site.Params.plugins.css }}
 <link rel="stylesheet" href="{{ .link | absURL }} " />
 {{ end }} 
+
+{{ "<!-- Main SCSS -->" | safeHTML }} 
+{{ $styles := resources.Get "scss/main.scss" | resources.ToCSS | minify }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" />
 
 {{- /* Search */}}
 {{- if (eq .Layout `search`) -}}
