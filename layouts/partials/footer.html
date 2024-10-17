@@ -8,14 +8,13 @@
         src="{{ .Site.Params.Assets.footerLogo | absURL }}"
         alt="ARCTIC Program Logo"
       />
-      <div class="card">
-        <a
-          href="mailto:{{ .Site.Params.ContactEmail }}"
-          class="btn btn-light"
-        >
-          <small>{{ .Site.Params.ContactEmail }}</small>
-        </a>
-      </div>
+     
+      <button 
+        type="button" 
+        class="secondary"
+        onclick="window.location.href='mailto:{{ .Site.Params.ContactEmail }}';">
+        <small>{{ .Site.Params.ContactEmail }}</small>
+      </button>
     </div>
 
     <!-- About -->
