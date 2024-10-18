@@ -19,7 +19,7 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
     $pages }} {{ range $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
-      <article class="grid-card" style="background-color: {{ .Params.CardColor }}">
+      <article class="grid-card">
         <hgroup>
           <span>
             <i data-feather="{{ .Params.Icon }}"></i>
