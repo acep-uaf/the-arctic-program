@@ -4,4 +4,6 @@ weight = '30'
 icon = 'book-open'
 tagline = 'The ARCTIC program connects energy education, research, and industry, offering diverse training programs for students and professionals to build Alaska’s future workforce.'
 +++
-The ARCTIC program enhances and grows the next-generation workforce in Alaska and the Arctic by linking energy education, energy research, and industry. All of the ARCTIC program partners support various E&WFD efforts across various learning audiences and stakeholders. Center ICE, CED, ACEP, and REAP each lead different initiatives that serve the many types of learners entering Alaska’s workforce. REAP’s STEM energy education program serves primary and secondary school-aged learners while the People in Power program provides professional development for utility operators. ACEP’s E&WFD programs include the Alaska Undergraduate Summer Intern program which provides opportunities for undergraduates to conduct research on applied energy topics as well as contribute to curricula development for continuing and post-secondary education. Center ICE and CED work with post-secondary students, researchers, and professionals through entrepreneurial education and support programs. 
+- ACEP Undergraduate Summer Internship (AUSI) Program
+- [Teaching Through Technology (T3)](https://t3.alaska.edu/)
+- Energy Champion Networks & [ARENA](https://arena.alaska.edu/)
