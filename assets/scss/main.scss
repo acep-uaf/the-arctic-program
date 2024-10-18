@@ -1,13 +1,10 @@
-@import './nav';
-@import './pikoTheme';
+@import 'pikoTheme';
+@import 'nav';
+@import 'variables';
 
-$light-color: #fff;
-$link-color: #007bff;
-$dark-text:  var(--muted-color);
-$grid-vertical-gap: 1rem;
 
 .light-text * {
-  color: $light-color;
+  color: var(--light-text);
 }
 
 .h2-link {
@@ -15,7 +12,7 @@ $grid-vertical-gap: 1rem;
   transition: color 0.3s ease, background-color 0.3s ease;
 
   &:hover {
-    color: $link-color;
+    color: var(--link-color);
   }
 }
 
@@ -56,7 +53,6 @@ $grid-vertical-gap: 1rem;
 }
 
 .grid {
-  gap: $grid-vertical-gap !important;
   margin-bottom: 3rem !important;
 }
 
@@ -72,7 +68,7 @@ $grid-vertical-gap: 1rem;
   }
 
   p {
-    color: $dark-text;
+    color: var(--muted-color);
   }
 
   span {
@@ -93,4 +89,16 @@ $grid-vertical-gap: 1rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-post {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
