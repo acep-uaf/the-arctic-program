@@ -7,6 +7,14 @@
   color: var(--light-text);
 }
 
+.text-muted {
+  color: var(--muted-color) !important;
+}
+
+.text-small {
+  font-size: 0.8rem !important;
+}
+
 .h2-link {
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -103,10 +111,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: space-between;
-  gap: 3rem;
-}
+  gap: 5rem;
 
-.logo-container {
   img {
     width: 100%; /* Default size for small screens */
     max-width: 300px; /* Prevents image from becoming too large */
@@ -114,7 +120,7 @@
   }
 
   p {
-    margin-bottom: -2rem;
+    margin-bottom: -4rem;
   }
 }
 
