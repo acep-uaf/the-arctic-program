@@ -27,9 +27,7 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
           <hr />
         </hgroup>
         <p>{{- .Params.Tagline }}</p>
-        <div>
-          <p>{{- .Content }}</p>
-        </div>
+        {{- .Content }}
       </article>
     {{ end }}
   </div>

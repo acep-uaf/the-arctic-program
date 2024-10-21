@@ -67,8 +67,16 @@
     height: auto;
   }
 
-  p {
-    color: var(--muted-color);
+  p, li {
+    color: var(--muted-color) !important;
+  }
+
+  ul {
+    text-align: start;
+    li {
+      color: var(--muted-color) !important;
+      list-style: disc;
+    }
   }
 
   span {
