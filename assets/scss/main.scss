@@ -138,3 +138,9 @@
 
 }
 
+// Override to remove hover effect
+.no-hover-effect {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
