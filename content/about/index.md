@@ -3,11 +3,8 @@ title = "Alaska Regional Collaboration for Innovation and Commercialization Prog
 layout = "about"
 description = "AN OFFICE OF NAVAL RESEARCH INITIATIVE"
 heroUpperTitle = "ARCTIC"
-showTOC = true
 backgroundImage = "images/2019summit-bruno_a1s.jpeg"
 +++
-
-### Program Background
 
 Established in 2017, the ARCTIC program is an Office of Naval Research initiative designed to help Alaskan organizations and communities develop a thriving innovation ecosystem through energy resiliency research, technology development/deployment, and education. ARCTIC leverages and augments existing capacity and accelerates the energy transition in Alaska and the North, while also building key partnerships between Alaska and the Arctic and Pacific regions.
 
@@ -45,8 +42,14 @@ The objectives for ARCTIC III are as follows:
 - Support the diversification of Alaska’s innovation ecosystem through enhanced capacity and whole-of-community engagement.
 - Demonstrate that high penetrations of variable renewable energy on microgrids is both technically and economically feasible as well as broadly replicable.
 
-### Department of Defense Relevance/Impact (?)
-ARCTIC was highlighted in the Navy’s 2021 Blue Arctic strategy as an investment in building public-private partnerships and innovative solutions to help transform operating abilities and regional understanding for Naval forces.
+### National & Department of Defense (DoD) Relevance
+The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program is an Office of Naval Research (ONR) funded capacity-building program established in 2017, designed to support the Navy’s needs for public-private partnerships that promote commerce and collaboration between Alaska and the Arctic and Pacific regions, centered on energy systems and resiliency research.
+
+The program is designed to help Alaskan organizations and communities develop a thriving innovation ecosystem through energy resiliency research, technology development and deployment, and education. It leverages partnerships and builds capacity across networks to accelerate the energy transition in Alaska and the North, while also fostering key collaborations between Alaska and the Arctic and Pacific regions. 
+
+It is intended to directly support the U.S., Department of Defense (DoD), and Navy’s strategic goals for Alaska and the Arctic. Specifically, it aims to build local capacity in Alaska to improve and boost the state's ability to support increased domain awareness and enhance operational abilities for **military(?)** forces within Alaska and the Arctic region. This is accomplished by enhancing the capacity and resilience of local infrastructure and connected workforce. 
+
+The **ARCTIC** program is highlighted in the Navy’s 2021 *Blue Arctic* strategy as an example of their investment in building public-private partnerships and innovative solutions. These efforts aim to transform operating abilities and regional understanding for Naval forces.
 
 ### Capacity Building Success and Challenges
 
