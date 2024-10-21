@@ -7,6 +7,10 @@ url('{{ .Params.backgroundImage | relURL }}'); ">
       <h1>{{.Params.title}}</h1>
       <h2>{{.Params.description}}</h2>
     </hgroup>
+    <span class="logo-container">
+      <img src="{{.Params.onrLogo | relURL }}" alt="{{.Params.onrLogoAlt}}" />
+      <p>{{.Params.disclaimer}}</p>
+    </span>
   </header>
 </section>
 
@@ -18,13 +22,7 @@ url('{{ .Params.backgroundImage | relURL }}'); ">
   {{- end }} {{- end }}
 
   <div class="container">
-    <div>
-      {{- if (.Param "ShowToc") }}
-      <article class="toc">
-        {{- partial "toc.html" . }}
-      </article>
-      {{- end }}
-      
+    <div>      
       <div class="about" id="gallery__about">
         {{ .Content }}
       </div>
