@@ -120,13 +120,10 @@ url = "/partners"
 weight = "10"
 
 [[menus.search]]
-name = "Tags"
-title = "Tags"
-url = "/tags"
-weight = "30"
-
-[taxonomies]
-tag = "tags"
+name = "Foundational Activities"
+title = "Foundational Activities"
+url = "/foundationalActivities"
+weight = "20"
 
 [module]
 [[module.mounts]]

@@ -7,6 +7,14 @@
   color: var(--light-text);
 }
 
+.text-muted {
+  color: var(--muted-color) !important;
+}
+
+.text-small {
+  font-size: 0.8rem !important;
+}
+
 .h2-link {
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -67,8 +75,16 @@
     height: auto;
   }
 
-  p {
-    color: var(--muted-color);
+  p, li {
+    color: var(--muted-color) !important;
+  }
+
+  ul {
+    text-align: start;
+    li {
+      color: var(--muted-color) !important;
+      list-style: disc;
+    }
   }
 
   span {
@@ -90,15 +106,47 @@
   justify-content: center;
   flex-direction: column;
 }
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: space-between;
+  gap: 5rem;
 
-@media (min-width: 1200px) {
-  :root {
-    --font-size: 1.125rem;
+  img {
+    width: 100%; /* Default size for small screens */
+    max-width: 300px; /* Prevents image from becoming too large */
+    height: auto;
+  }
+
+  p {
+    margin-bottom: -4rem;
   }
 }
 
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 992px) {
   .grid-post {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
+  .logo-container img {
+    max-width: 30%;
+  }
+
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  :root {
+    --font-size: 1.125rem;
+  }
+
+}
+
+// Override to remove hover effect
+.no-hover-effect {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
 }

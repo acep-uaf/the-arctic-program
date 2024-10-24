@@ -1,0 +1,9 @@
+{{- define "main" }}
+<div class="container min-h-80 text-center" style="display:flex;justify-content:center;align-items:center">
+    <div>
+        <h1>404 | Oops! Page not found...</h1>
+        <p>Sorry, the page you are looking for doesn't exist or has been moved.</p>
+        <a role="button" href="{{ .Site.Home.RelPermalink }}">Return home</a>
+    </div>    
+</div>
+{{ end }}

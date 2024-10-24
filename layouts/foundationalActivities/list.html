@@ -18,8 +18,7 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
   <div class="grid grid-post">
     {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
     $pages }} {{ range $paginator.Pages }}
-    <a href="{{ .RelPermalink }}">
-      <article class="grid-card">
+      <article class="grid-card no-hover-effect">
         <hgroup>
           <span>
             <i data-feather="{{ .Params.Icon }}"></i>
@@ -27,9 +26,9 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
           </span>
           <hr />
         </hgroup>
-        <p>{{- .Params.Tagline -}}</p>
+        <p>{{- .Params.Tagline }}</p>
+        {{- .Content }}
       </article>
-    </a>
     {{ end }}
   </div>
   {{- partial "extend_activities.html" . -}}
