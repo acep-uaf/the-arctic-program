@@ -107,11 +107,18 @@ url = "/partners"
 weight = "40"
 
 [[menus.main]]
+name = "Contact"
+title = "Contact"
+pre = "mail"
+url = "mailto:UA-arctic-program-contact@alaska.edu"
+weight = "50"
+
+[[menus.main]]
 name = "Search"
 title = "Search"
 pre = "search"
 url = "/search"
-weight = "50"
+weight = "60"
 
 [[menus.search]]
 name = "Partners"
