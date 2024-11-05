@@ -46,7 +46,7 @@ footerAcknowledgement = "Website Management by [UAF ACEP](https://www.uaf.edu/ac
 relativeURLs = true
 
 [params.label]
-title = "_ARCTIC Program_"
+title = "ARCTIC Program"
 text = "Welcome to the ARCTIC Program"
 navIcon = "images/logos/arctic-favicon.png"
 iconHeight = "35"
