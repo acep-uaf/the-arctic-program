@@ -3,19 +3,9 @@
   <hr />
   <div class="grid">
     <!-- ARCTIC Program Logo and Contact -->
-    <div class="footer-section">
-      <img
-        src="{{ .Site.Params.Assets.footerLogo | absURL }}"
-        alt="ARCTIC Program Logo"
-      />
-     
-      <button 
-        type="button" 
-        class="secondary"
-        onclick="window.location.href='mailto:{{ .Site.Params.ContactEmail }}';">
-        <small>{{ .Site.Params.ContactEmail }}</small>
-      </button>
-    </div>
+    <img
+      src="{{ .Site.Params.Assets.footerLogo | absURL }}"
+      alt="ARCTIC Program Logo"/>
 
     <!-- About -->
     {{ $about := .Site.GetPage "section" "about" }}
@@ -23,10 +13,11 @@
     {{ $foundationalActivities := .Site.GetPage "section" "foundationalActivities" }}
     <div>
       <h6>Quick Links</h6>
-      <ul>
+      <ul class="footer-list">
         <li><a href="{{ $about.Permalink }}">The ARCTIC Program</a></li>
         <li><a href="{{ $partners.Permalink }}">Core Partners</a></li>
         <li><a href="{{ $foundationalActivities.Permalink }}">Foundational Activities</a></li>
+        <li><a href="mailto:{{ .Site.Params.ContactEmail }}">Contact Us</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="{{ "sitemap.xml" | relURL }}">Sitemap</a></li>
       </ul>

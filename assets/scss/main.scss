@@ -63,6 +63,7 @@
 
 .grid {
   margin-bottom: 3rem !important;
+  justify-items: center;
 }
 
 .grid-card{
@@ -150,4 +151,11 @@
   transition: none !important;
   animation: none !important;
   transform: none !important;
+}
+
+.footer-list {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
 }
