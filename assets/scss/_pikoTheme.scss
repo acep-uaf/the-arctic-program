@@ -1,5 +1,25 @@
 // This file was written by the Piko theme developer: Heksagon
-// and modified to remove the dark theme, theme-data is set to light in baseof.html
+
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --muted-color: #4b555c !important;
+  --link-color: #27455a !important;
+}
+
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --muted-color: #8fa3b1 !important;
+    --link-color: #4c82a8 !important;
+  }
+}
+
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --muted-color: #8fa3b1 !important;
+  --link-color: #4c82a8 !important;
+}
 
 :root {
   --spacing-hero: 5rem;
