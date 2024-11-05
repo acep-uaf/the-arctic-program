@@ -1,10 +1,37 @@
+/* Shared variables */
 :root {
   --font-size: 16px !important;
   --spacing-hero: 5rem !important;
   --border-radius: 0.3rem !important;
-  --muted-color: #4b555c !important;
+  --grid-spacing-vertical: 1rem !important;
+}
+
+/* Light theme variables */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --muted-color: #a5a5a5 !important;
   --link-color: #1694c2 !important;
   --light-text: #fff !important;
-  --grid-spacing-vertical: 1rem !important;
-  --card-bg-color: #bfd2e3 !important;
+  --card-background-color: #fefefe !important;
+  --body-link-color: #2e3b47 !important;
+}
+
+/* Dark theme variables - automatic based on system preference */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --muted-color: #8fa3b1 !important;
+    --link-color: #71b6e7 !important;
+    --light-text: #ccc !important;
+    --card-background-color: #2e3b47 !important;
+    --body-link-color: #ccc !important;
+  }
+}
+
+/* Dark theme variables - forced with data attribute */
+[data-theme="dark"] {
+  --muted-color: #8fa3b1 !important;
+  --link-color: #71b6e7 !important;
+  --light-text: #ccc !important;
+  --card-background-color: #2e3b47 !important;
+  --body-link-color: #ccc !important;
 }
