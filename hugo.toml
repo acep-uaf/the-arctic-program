@@ -46,20 +46,20 @@ footerAcknowledgement = "Website Management by [UAF ACEP](https://www.uaf.edu/ac
 relativeURLs = true
 
 [params.label]
-title = "_ARCTIC Program_"
+title = "ARCTIC Program"
 text = "Welcome to the ARCTIC Program"
-navIcon = "images/arctic-favicon.png"
+navIcon = "images/logos/arctic-favicon.png"
 iconHeight = "35"
 iconWIdth = "35"
 
 [params.assets]
 disableFingerprinting = false
-favicon = "images/arctic-favicon.png"
-favicon16x16 = "images/arctic-favicon.png"
-favicon32x32 = "images/favicon-32x32.png"
-apple_touch_icon = "images/arctic-favicon.png"
-safari_pinned_tab = "images/arctic-favicon.png"
-footerLogo = "images/arctic-logo.png"
+favicon = "images/logos/arctic-favicon.png"
+favicon16x16 = "images/logos/arctic-favicon.png"
+favicon32x32 = "images/logos/favicon-32x32.png"
+apple_touch_icon = "images/logos/arctic-favicon.png"
+safari_pinned_tab = "images/logos/arctic-favicon.png"
+footerLogo = "images/logos/arctic-logo.png"
 
 # Search
 [params.fuseOpts]
