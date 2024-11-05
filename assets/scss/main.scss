@@ -76,15 +76,13 @@
     max-width: 100%;
     height: auto;
   }
-
-  p, li {
-    color: var(--muted-color) !important;
+  p {
+    color: var(--body-link-color);
   }
 
   ul {
     text-align: start;
     li {
-      color: var(--muted-color) !important;
       list-style: disc;
     }
   }
