@@ -1,6 +1,6 @@
 +++
 title = 'Launch Alaska'
-logo = "images/launchalaska-logo-sm.png"
+logo = "images/logos/LA.png"
 alt = "Launch Alaska"
 desription = "A business accelerator investing in scalable startups in food, water, transportation, and energy"
 tagline = "Accelerating the Resource Revolution"

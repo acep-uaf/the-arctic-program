@@ -1,6 +1,6 @@
 +++
 title = 'Office of Naval Research'
-logo = "images/onr-logo-250x.png"
+logo = "images/ONR.png"
 alt = ""
 description = ""
 role = ""
