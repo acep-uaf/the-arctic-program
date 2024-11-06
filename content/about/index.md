@@ -9,14 +9,6 @@ onrLogoAlt = "Office of Naval Research Logo"
 disclaimer = "The project or effort undertaken was or is sponsored by the Department of the Navy, Office of Naval Research under ONR award number(s) N00014-19-1-2235, N00014-22-1-2049, N00014-24-1-2675. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Office of Naval Research."
 +++
 
-Established in 2017, the ARCTIC program is an Office of Naval Research initiative designed to help Alaskan organizations and communities develop a thriving innovation ecosystem through energy resiliency research, technology development/deployment, and education. ARCTIC leverages and augments existing capacity and accelerates the energy transition in Alaska and the North, while also building key partnerships between Alaska and the Arctic and Pacific regions.
-
-Our vision for capacity building under the ARCTIC program centers on sustainable, cost-effective energy solutions implemented with the following principles:
-
-1. Research and technology development is community-led and addresses local, self-identified economic needs;
-2. Alaskans are leaders and key partners in U.S. research and innovation
-3. Alaskan communities and small businesses thrive through economic diversification and development
-
 ### Research Objectives
 Funded by ONR and augmented by other federal and state funding sources, the ARCTIC program is constantly evolving to meet Alaska’s energy research needs and advance sustainable & community-approved solutions.
 
