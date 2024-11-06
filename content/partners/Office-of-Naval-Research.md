@@ -6,4 +6,5 @@ description = ""
 role = ""
 websiteUrl = "https://www.onr.navy.mil/"
 showLogoFooter = true
+includePartnersPage = false
 +++
