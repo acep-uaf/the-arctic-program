@@ -6,7 +6,7 @@ heroCTAPrimaryUrl = "about/"
 heroCTASecondaryText = "Partners"
 heroCTASecondaryUrl = "partners/"
 heroBackgroundImage = "images/backgroundImages/20230118_solar_test_site-8.jpg"
-heroLogo = "images/logos/arctic-logo.png"
+heroLogo = "images/logos/arctic-program.png"
 mapContentP1 = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) is a collaboration designed to promote commerce and partnerships between Alaska and the Arctic and Pacific regions through advancements in energy through resiliency research, technology development/deployment and education."
 staticMapImage = "images/static_map_placeholder.png"
 +++
