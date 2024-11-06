@@ -79,11 +79,7 @@ from three to over a dozen. The total installed capacity across all renewable en
 </div>
 {{< /rawhtml >}}
 
-### National & Department of Defense (DoD) Relevance
-The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program is an Office of Naval Research (ONR) funded capacity-building program established in 2017, designed to support the Navy’s needs for public-private partnerships that promote commerce and collaboration between Alaska and the Arctic and Pacific regions, centered on energy systems and resiliency research.
+### National Security & Department of Defense (DoD) Relevance
+Aligned with the Arctic strategic goals of the U.S. Department of Defense (DoD) and Navy, ARCTIC builds regional capacity for resilient energy infrastructure and enhance energy security. This includes developing sustainable energy and technology solutions while protecting the environment across the Arctic and Pacific regions ensuring that remote and islanded communities are prepared to meet the complex challenges of the future.
 
-The program is designed to help Alaskan organizations and communities develop a thriving innovation ecosystem through energy resiliency research, technology development and deployment, and education. It leverages partnerships and builds capacity across networks to accelerate the energy transition in Alaska and the North, while also fostering key collaborations between Alaska and the Arctic and Pacific regions. 
-
-It is intended to directly support the U.S., Department of Defense (DoD), and Navy’s strategic goals for Alaska and the Arctic. Specifically, it aims to build local capacity in Alaska to improve and boost the state's ability to support increased domain awareness and enhance operational abilities for **military(?)** forces within Alaska and the Arctic region. This is accomplished by enhancing the capacity and resilience of local infrastructure and connected workforce. 
-
-The **ARCTIC** program is highlighted in the Navy’s 2021 *Blue Arctic* strategy as an example of their investment in building public-private partnerships and innovative solutions. These efforts aim to transform operating abilities and regional understanding for Naval forces.
+The Navy’s 2021 [A Blue Arctic: a Strategic Blueprint for the Arctic](https://media.defense.gov/2021/Jan/05/2002560338/-1/-1/0/ARCTIC%20BLUEPRINT%202021-%20FINAL.PDF/ARCTIC%20BLUEPRINT%202021%20FINAL.PDF) highlights the ARCTIC program as a key example of how investing in public-private partnerships and innovative solutions can advance operational capabilities in the North as well as the overall well-being and resilience of Alaskan communities.
