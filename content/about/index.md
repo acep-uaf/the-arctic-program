@@ -52,13 +52,13 @@ from three to over a dozen. The total installed capacity across all renewable en
 </div>
 {{< /rawhtml >}}
 
-### Program Members and Partners
+### Partnering for Energy Innovation
 
 {{< rawhtml >}}
 
 <div class="image-text-flexbox">
     <div class="text-content">
-        <p>The number of ARCTIC program partners has grown substantially over the past five years and currently includes over 200 partners across various sectors (see Figure 1). However, the core leadership team is comprised of five organizations, three of which are within the University of Alaska (UA) system: the Alaska Center for Energy and Power (ACEP), the Center for Innovation, Commercialization, and Entrepreneurship (Center ICE), and the University of Alaska Anchorage Center for Economic Development (CED). The two external partner organizations are Renewable Energy Alaska Project (REAP) and Launch Alaska.</p>
+        <p>Since 2017 the ARCTIC program has partnered with over 200 organizations across diverse sectors, to advance resilient energy solutions for Alaska and the Arctic. Our core leadership includes three University of Alaska entities—ACEP, Center ICE, and CED—alongside key partners REAP and Launch Alaska, forming a strong partnership for sustainable energy innovation.</p>
     </div>
     <div class="image-content">
         <a class="pswp-gallery__item"
