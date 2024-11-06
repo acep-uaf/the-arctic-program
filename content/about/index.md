@@ -17,16 +17,14 @@ Our vision for capacity building under the ARCTIC program centers on sustainable
 2. Alaskans are leaders and key partners in U.S. research and innovation
 3. Alaskan communities and small businesses thrive through economic diversification and development
 
-### Objectives
+### Research Objectives
+Funded by ONR and augmented by other federal and state funding sources, the ARCTIC program is constantly evolving to meet Alaska’s energy research needs and advance sustainable & community-approved solutions.
 
-ARCTIC program activities are funded across a number of ONR grants awarded to the partner organizations, which are augmented by complementary funding from the state and the private sector. The specific program objectives have evolved over time as progress towards the initial goals has been made and new partners have been identified.
-
-The objectives for ARCTIC III are as follows:
-
-- Demonstrate the economic and technical feasibility of innovative and site-appropriate energy solutions for the Arctic and beyond.
-- Enhance local sustainability by extending and leveraging local know-how and leadership for energy transition challenges.
-- Support the diversification of Alaska’s innovation ecosystem through enhanced capacity and whole-of-community engagement.
-- Demonstrate that high penetrations of variable renewable energy on microgrids is both technically and economically feasible as well as broadly replicable.
+Currently, ARCTIC objectives focus on:
+- Proving the feasibility of innovative, Arctic-ready energy solutions
+- Building local expertise to address energy transition challenges
+- Expanding Alaska’s innovation ecosystem with inclusive, community-based engagement.
+- Demonstrating the viability and replicability of high levels of renewable energy in microgrids
 
 
 ### Capacity Building Success and Challenges
