@@ -59,7 +59,7 @@ favicon16x16 = "images/logos/arctic-favicon.png"
 favicon32x32 = "images/logos/favicon-32x32.png"
 apple_touch_icon = "images/logos/arctic-favicon.png"
 safari_pinned_tab = "images/logos/arctic-favicon.png"
-footerLogo = "images/logos/arctic-logo.png"
+footerLogo = "images/logos/arctic-program.png"
 
 # Search
 [params.fuseOpts]
