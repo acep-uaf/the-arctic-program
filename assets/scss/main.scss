@@ -24,19 +24,6 @@
   }
 }
 
-.partner-item-sm {
-  max-width: 150px;
-  text-align: center;
-  margin-bottom: 2rem;
-  transition: 0.3s ease;
-  align-self: center;
-
-  &:hover{
-    animation: hover 0.3s ease;
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-}
-
 .image-text-flexbox {
   display: flex;
   align-items: center;
@@ -155,5 +142,24 @@
   padding-left: 0;
   li {
     list-style: none;
+  }
+}
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap; 
+  margin: 2rem auto; /* Centers the container */
+}
+
+.partner-item-sm {
+  max-width: 150px;
+  text-align: center;
+  transition: 0.3s ease;
+  align-self: center;
+  
+  &:hover{
+    animation: hover 0.3s ease;
+    transform: scale3d(1.05, 1.05, 1.05);
   }
 }
