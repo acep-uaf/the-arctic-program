@@ -1,6 +1,6 @@
 +++
 title = "Alaska Regional Collaboration for Innovation and Commercialization Program"
-layout = "about"
+type = "about"
 description = "AN OFFICE OF NAVAL RESEARCH INITIATIVE"
 heroUpperTitle = "ARCTIC"
 heroBackgroundImage = "images/CRREL_site_tour-1.jpg"
