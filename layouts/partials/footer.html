@@ -2,12 +2,12 @@
 <footer class="container">
   <hr />
   <div class="grid">
-    <!-- ARCTIC Program Logo and Contact -->
+    <!-- ARCTIC Program Logo -->
     <img
       src="{{ .Site.Params.Assets.footerLogo | absURL }}"
       alt="ARCTIC Program Logo"/>
 
-    <!-- About -->
+    <!-- Quick Links -->
     {{ $about := .Site.GetPage "section" "about" }}
     {{ $partners := .Site.GetPage "section" "partners" }}
     {{ $foundationalActivities := .Site.GetPage "section" "foundationalActivities" }}
@@ -28,20 +28,22 @@
     <div>
       <h6>About this site</h6>
       <p>
-        ARCTIC Program is an Office of Naval Research (ONR) initiative. Alaska
-        develops economic capacity to ensure a sustainable future for Alaskans
-        and shares Alaska-developed talent and technology with the global
-        community.
+        {{ .Site.Params.Footer.AboutThisSite | markdownify }}
         <a href={{ "about" | relURL }}>More &rsaquo;</a>
       </p>
     </div>
   </div>
+  {{- partial "footer_logos.html" . }}
   <div class="text-center">
-    <span>
+    <small class="">{{ .Site.Params.Footer.OnrAcknowledgement }}</small>
+    <br>
+    <br>
+    <small>
       {{ .Site.Copyright | markdownify }} Copyright &copy; {{ now.Format
       "2006"}} {{.Site.Title }}
-    </span>
-    <div>{{ .Site.Params.FooterAcknowledgement | markdownify }}</div>
+    </small>
+    <br>
+    <small>{{ .Site.Params.Footer.GeneralAcknowledgement | markdownify }}</small>
   </div>
 </footer>
 

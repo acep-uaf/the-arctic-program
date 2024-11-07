@@ -1,0 +1,11 @@
+<div class="flexbox-container">
+  {{ range where .Site.RegularPages ".Params.showLogoFooter" true }}
+    {{ if eq .Section "partners" }}
+      <div class="partner-item-sm">
+        <a href="{{ .Params.websiteUrl }}" target="_blank" title="{{ .Title }}">
+          <img src="{{ .Params.logo | relURL }}" alt="{{ .Params.alt }}">
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
