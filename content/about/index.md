@@ -1,5 +1,5 @@
 +++
-title = "Alaska Regional Collaboration for Innovation and Commercialization Program"
+title = "Alaska Regional Collaboration for Technology Innovation and Commercialization"
 type = "about"
 description = "AN OFFICE OF NAVAL RESEARCH INITIATIVE"
 heroUpperTitle = "ARCTIC"
