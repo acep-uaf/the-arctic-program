@@ -14,6 +14,7 @@
   --light-text: #fff !important;
   --card-background-color: #fefefe !important;
   --body-link-color: #2e3b47 !important;
+  --card-cta-color: #fff !important;
 }
 
 /* Dark theme variables - automatic based on system preference */
@@ -24,6 +25,7 @@
     --light-text: #ccc !important;
     --card-background-color: #2e3b47 !important;
     --body-link-color: #ccc !important;
+    --card-cta-color: #fff !important;
   }
 }
 
@@ -34,4 +36,5 @@
   --light-text: #ccc !important;
   --card-background-color: #2e3b47 !important;
   --body-link-color: #ccc !important;
+  --card-cta-color: #fff !important;
 }

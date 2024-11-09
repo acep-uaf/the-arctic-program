@@ -6,9 +6,9 @@ url('{{.Params.heroBackgroundImage}}'); ">
   <header class="container">
     <hgroup class="light-text">
       <img src="{{.Params.heroLogo}}"></img>
-      <h1>{{.Params.heroUpperTitle}}</h1>
       <h1>{{.Params.heroTitle}}</h1>
-      <p>{{ .Content }}</p>
+      <p>{{ .Params.heroPara1 }}</p>
+      <p>{{ .Params.heroPara2 }}</p>
     </hgroup>
     <div>
       <a
@@ -27,22 +27,50 @@ url('{{.Params.heroBackgroundImage}}'); ">
   </header>
 </section>
 
-<section>
-  <div class="container">
-    <h2>Building Capacity for Innovation</h2>
-    <div class="grid">
-      <!--Col 1-->
-      <p>{{ .Params.MapContentP1}}</p>
-      <!--Col 2-->
-      <div id="gallery__home">
-        <!-- Lightbox trigger for PhotoSwipe -->
-        <a class="pswp-gallery__item"
-           href="{{ .Params.StaticMapImage | relURL }}">
-          <img src="{{ .Params.StaticMapImage | relURL }}" alt="Static Map Placeholder Image">
-        </a>
-      </div>
+<div class="container">
+  <!-- Main Sections with Parent Title and Image -->
+  <div class="grid">
+    <div>
+      {{ range .Params.sections }}
+      <section>
+        <h2>{{ .title }}</h2>
+        {{ if .paragraph }}
+          <p>{{ .paragraph }}</p>
+        {{ end }}
+      </section>
+    {{ end }}
+    </div>
+    <!--Image Column-->
+
+    <div id="gallery__home">
+      <!-- Lightbox trigger for PhotoSwipe -->
+      <a class="pswp-gallery__item"
+          href="{{ .Params.mainSectionImg | relURL }}">
+        <img src="{{ .Params.mainSectionImg | relURL }}" alt="{{ .Params.mainSectionImgAlt }}">
+      </a>
     </div>
   </div>
-</section>
+
+  <!-- Cards Section with Parent Title -->
+
+  <h2>{{ .Params.cards_section.title }}</h2>
+  <div class="grid">
+    {{ range .Params.cards_section.cards }}
+      <article class="grid-card">
+        <h6>{{ .title }}</h6>
+        <p>{{ .body }}</p>
+      </article>
+    {{ end }}
+  </div>
+
+  <!-- Call to Action Section -->
+  {{ range .Params.call_to_action }}
+    <section>
+      <h2>{{ .title }}</h2>
+      <p>{{ .paragraph | markdownify }}</p>
+    </section>
+  {{ end }}
+</div>
 
 {{ end }}
+
