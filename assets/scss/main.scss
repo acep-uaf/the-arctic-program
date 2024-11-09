@@ -2,6 +2,10 @@
 @import 'nav';
 @import 'variables';
 
+h1 {
+  font-size: 1.9rem !important; /* Force ARCTIC title on one line */
+}
+
 
 .light-text * {
   color: var(--light-text);
