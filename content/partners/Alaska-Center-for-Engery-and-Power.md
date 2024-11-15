@@ -7,3 +7,8 @@ tagline = "Developing practical, cost-effective energy solutions for Alaska and 
 websiteUrl = "https://acep.uaf.edu"
 showLogoFooter = true
 +++
+* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
+
+* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
+
+* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
