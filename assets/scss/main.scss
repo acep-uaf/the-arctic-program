@@ -57,16 +57,43 @@ h1 {
   justify-items: center;
 }
 
+.grid-card.partner {
+  padding: 0 !important;
+}
+
 .grid-card{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   height: 100%;
-  img {
-    max-width: 100%;
-    height: auto;
+
+  .partner-h-group{
+    width: 100%;
+    background-color: var(--card-header-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 35%;
+    padding: calc(var(--spacing)* 1.2) var(--block-spacing-horizontal);
+    
+    img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .tagline {
+      font-weight: 700;
+      color: var(--tagline-text-color);
+    }
   }
+
+  .partner-content{
+    padding: calc(var(--spacing)* 1.2) var(--block-spacing-horizontal);
+  }
+
   p {
     color: var(--body-link-color);
   }
@@ -102,16 +129,14 @@ h1 {
   flex-direction: column;
   justify-content: start;
   align-items: space-between;
-  gap: 5rem;
+  gap: 1rem;
+  margin-bottom: -4rem;
 
   img {
-    width: 100%; /* Default size for small screens */
-    max-width: 300px; /* Prevents image from becoming too large */
+    width: 100%; 
+    max-width: 200px;
+    min-width: 100px;
     height: auto;
-  }
-
-  p {
-    margin-bottom: -4rem;
   }
 }
 
@@ -119,10 +144,6 @@ h1 {
 @media (min-width: 992px) {
   .grid-post {
     grid-template-columns: repeat(2, 1fr) !important;
-  }
-
-  .logo-container img {
-    max-width: 30%;
   }
 
 }

@@ -1,9 +1,9 @@
 +++
 title = 'UAA Institute of Social and Economic Research'
 logo = "images/logos/ISER.png"
-alt = ""
+alt = "UAA Institute of Social and Economic Research"
 description = ""
-tagline = ""
+tagline = "Need Tagline"
 websiteUrl = "https://iseralaska.org/"
 +++
 * **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
