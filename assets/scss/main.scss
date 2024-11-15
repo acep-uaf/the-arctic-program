@@ -56,9 +56,30 @@ h1 {
   justify-items: center;
 }
 
+.grid.home {
+  gap: 2rem;
+}
+
 .grid-card.partner,
 .grid-card.fa {
   padding: 0 !important;
+}
+
+.grid-card.home{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+
+  .title{
+    margin-bottom: 0;
+  }
+
+  p {
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .grid-card {

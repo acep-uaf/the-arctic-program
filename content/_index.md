@@ -27,14 +27,17 @@ title = "Capacity Building for Alaska and Beyond"
 
   [[cards_section.cards]]
   title = "Community-Centered Solutions"
+  icon = "users"
   body = "We prioritize Indigenous and community-led initiatives to address self-identified energy needs."
 
   [[cards_section.cards]]
   title = "Local and Global Leadership"
+  icon = "globe"
   body = "Alaskans are at the forefront of U.S. energy research and community-led innovation."
 
   [[cards_section.cards]]
   title = "Energy Transitions for All"
+  icon = "battery-charging"
   body = "We support a thriving & secure Alaska through community-led energy transitions."
 
 # Call to Action Section (e.g., Join Us)

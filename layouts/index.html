@@ -54,10 +54,11 @@ url('{{.Params.heroBackgroundImage}}'); ">
   <!-- Cards Section with Parent Title -->
 
   <h2>{{ .Params.cards_section.title }}</h2>
-  <div class="grid">
+  <div class="grid home">
     {{ range .Params.cards_section.cards }}
-      <article class="grid-card">
-        <h6>{{ .title }}</h6>
+      <article class="grid-card home">
+        <i data-feather="{{ .icon }}"></i>
+        <h5 class="title">{{ .title }}</h5>
         <p>{{ .body }}</p>
       </article>
     {{ end }}
