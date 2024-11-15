@@ -147,6 +147,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
 }
+
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -184,12 +185,21 @@ h1 {
   transform: none !important;
 }
 
+.footer-logo{
+  max-width: 300px;
+}
+
 .footer-list {
   padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+
   li {
     list-style: none;
   }
 }
+
 .flexbox-container {
   display: flex;
   justify-content: center;
