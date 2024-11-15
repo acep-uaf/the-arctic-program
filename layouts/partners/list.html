@@ -3,7 +3,8 @@
 <section
   class="hero"
   style="background-image:linear-gradient(rgba(20,30,38, 0.8), rgba(24,44,54, 0.7)),
-url('{{.Params.HeroBackgroundImage | relURL }}');">
+url('{{.Params.HeroBackgroundImage | relURL }}');"
+>
   <header class="container">
     <hgroup class="light-text">
       <h1>{{ .Title }}</h1>
@@ -16,19 +17,26 @@ url('{{.Params.HeroBackgroundImage | relURL }}');">
 {{- $currentPage := . }}
 <div class="container">
   <div class="grid grid-post">
-    {{- $pages := where (union .RegularPages .Sections) ".Params.includePartnersPage" "ne" false }}
-    {{- $paginator := .Paginate
+    {{- $pages := where (union .RegularPages .Sections)
+    ".Params.includePartnersPage" "ne" false }} {{- $paginator := .Paginate
     $pages }} {{ range $paginator.Pages }}
-    <a href="{{ .Params.websiteUrl }}" target="_blank" title="{{ .Title }}">
-      <article class="grid-card">
-        <hgroup>
-          <img src="{{.Params.Logo | absURL}}"/>
-          <h5>{{ .Title }}</h5>
-          <hr />
+    <a
+      href="{{ .Params.websiteUrl }}"
+      target="_blank"
+      title="{{ .Title }}"
+    >
+      <article class="grid-card partner">
+        <hgroup class="partner-hgroup">
+          <img
+            class="partner-logos"
+            src="{{.Params.Logo | absURL}}"
+          />
+          <h5 hidden>{{ .Title }}</h5>
+          <i class="tagline">{{- .Params.Tagline -}}</i>
         </hgroup>
-        <i>{{- .Params.Tagline -}}</i>
-        <br>
-        {{- .Content }}
+        <div class="partner-content">
+          {{- .Content }}
+        </div>
       </article>
     </a>
     {{ end }}
