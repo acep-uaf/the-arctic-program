@@ -2,7 +2,7 @@
 title = 'Resiliency Research'
 weight = '10'
 icon = 'shield'
-tagline = 'The ARCTIC program, led by ACEP, focuses on sustainable energy systems for isolated grids and collaborates with stakeholders to design research and projects, fostering partnerships beyond Alaska.'
+description = 'The ARCTIC program, led by ACEP, focuses on sustainable energy systems for isolated grids and collaborates with stakeholders to design research and projects, fostering partnerships beyond Alaska.'
 +++
 - [Power Systems Integration](https://www.uaf.edu/acep/research/power-systems-integration.php)
 - [Energy Transition Initiative (ETI)](https://alaskarenewableenergy.org/initiatives/etipp/)
