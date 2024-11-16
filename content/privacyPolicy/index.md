@@ -10,11 +10,12 @@ This privacy policy applies to the ARCTIC program website. Websites of individua
 ## Information Automatically Collected
 If you visit our website to browse, read, or download information:
 
-- Your web browser automatically sends us
-  - Basic Internet domain provider information (Your ISP or gateway to the Internet);
-  - Browser information you are using on your client (what web browser you are using) which includes the operating system you are using;
-  - Date and time you access our site; and
-the Internet address of the site from which you linked directly to our site.
+- Your web browser automatically sends us:
+  - Basic Internet domain provider information (Your ISP or gateway to the Internet)
+  - Browser information you are using on your client (what web browser you are using) which includes the operating system you are using
+  - The system's theme preference (e.g., light or dark mode) for optimizing the website's appearance
+  - Date and time you access our site
+the Internet address of the site from which you linked directly to our site
 - We will use this information as aggregate data to help us maintain this site, e.g., to determine the number of visitors to different sections of our site, to ensure the site is working properly, and to help us make our website more accessible and useful.
 - We will not use this information to identify individuals, except for site security or law enforcement purposes.
 - We will not obtain personally-identifying information about you when you visit our site, unless you choose to provide such information.
@@ -32,9 +33,6 @@ We may keep information that will collect for an unlimited period of time.
 Please note that electronic communication, particularly email, is not necessarily secure against interception. Please do not send sensitive data by email.
 
 Where possible we try to ensure data communicated between you and us uses secure/encrypted channels.
-
-## Cookies
-We may use cookies in order to customize this site for return visitors. These cookies are not required for site functionality. Additionally, third-party widgets such as YouTube or Flickr may install cookies depending on their configuration. You are not required to accept any cookies to use this site.
 
 ## Contact us
 If you have any questions about this Privacy Policy, the website, or your dealings with our services, please contact us. 

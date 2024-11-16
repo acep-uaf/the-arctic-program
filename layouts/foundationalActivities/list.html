@@ -20,7 +20,7 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     $pages }} {{ range $paginator.Pages }}
       <article class="grid-card no-hover-effect fa">
         <hgroup class="fa-hgroup">
-          <i class="feather-36" data-feather="{{ .Params.Icon }}"></i>
+          <i data-feather="{{ .Params.Icon }}"></i>
           <h4 class="fa-card-title">{{ .Title }}</h4>
           <p class="fa-description">{{- .Params.Description }}</p>
         </hgroup>
