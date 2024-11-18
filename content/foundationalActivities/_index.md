@@ -4,5 +4,12 @@ description = "The ARCTIC program was modeled on the Asia-Pacific Technology and
 FAdiagram = "images/fa-diagram.png"
 heroBackgroundImage = "images/backgroundImages/2022_ARENA_GROUP_KOtz-108.jpg"
 type = "foundationalActivities"
+[build]
+  render = 'always'
+[[cascade]]
+  [cascade.build]
+    list = 'local'
+    publishResources = false
+    render = 'never'
 +++
 ARCTIC’s five foundational activities are deeply integrated with partners at the local and state levels. Guided by a cross-cutting Program Management and Support task, these activities exemplify the collaborative efforts driving Alaska’s resilience and innovation economy. The figure above illustrates how these foundational activities are achieved through partnerships across a dynamic ecosystem.
