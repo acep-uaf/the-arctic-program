@@ -6,6 +6,7 @@
   --grid-spacing-vertical: 1rem !important;
   --card-header-color: #fff !important;
   --hgroup-text-color: #4d657b !important;
+  --partner-card-header-color: #ffffff !important;
 }
 
 /* Light theme variables */
@@ -17,6 +18,7 @@
   --card-background-color: #fefefe !important;
   --body-link-color: #2e3b47 !important;
   --card-cta-color: #fff !important;
+  --card-header-color: #e6e9ef !important;
 }
 
 /* Dark theme variables - automatic based on system preference */
@@ -28,6 +30,7 @@
     --card-background-color: #2e3b47 !important;
     --body-link-color: #ccc !important;
     --card-cta-color: #fff !important;
+    --card-header-color: #ffffff !important;
   }
 }
 
@@ -39,4 +42,5 @@
   --card-background-color: #2e3b47 !important;
   --body-link-color: #ccc !important;
   --card-cta-color: #fff !important;
+  --card-header-color: #ffffff !important;
 }
