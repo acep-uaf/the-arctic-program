@@ -22,10 +22,9 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
         <hgroup class="fa-hgroup">
           <i data-feather="{{ .Params.Icon }}"></i>
           <h4 class="fa-card-title">{{ .Title }}</h4>
-          <p class="fa-description">{{- .Params.Description }}</p>
         </hgroup>
-        <hr>
         <div class="fa-content">
+          <p>{{- .Params.Description }}</p>
           {{- .Content }}
         </div>
       </article>

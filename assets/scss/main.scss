@@ -89,10 +89,9 @@ h1 {
   text-align: center;
   height: 100%;
 
-  .partner-hgroup,
-  .fa-hgroup {
+  .partner-hgroup {
     width: 100%;
-    background-color: var(--card-header-color);
+    background-color: var(--partner-card-header-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +100,7 @@ h1 {
     min-height: 35%;
     padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
     color: var(--hgroup-text-color);
+    margin-bottom: 0.5rem;
 
     img {
       max-width: 250px;
@@ -111,9 +111,25 @@ h1 {
       font-weight: 700;
       color: var(--hgroup-text-color);
     }
+    
+  }
+
+  .fa-hgroup {
+    width: 100%;
+    background-color: var(--card-header-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 20%;
+    padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
+    color: var(--hgroup-text-color);
+    margin-bottom: 0.5rem;
 
     .fa-card-title {
       font-size: 1.35rem;
+      font-weight: 700;
       color: var(--hgroup-text-color);
     }
 

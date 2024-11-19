@@ -17,9 +17,9 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
 {{- $currentPage := . }}
 <div class="container">
   <div class="grid grid-post">
-    {{- $pages := where (union .RegularPages .Sections)
-    ".Params.includePartnersPage" "ne" false }} {{- $paginator := .Paginate
-    $pages }} {{ range $paginator.Pages }}
+    {{- $pages := union .RegularPages .Sections}} 
+    {{- $paginator := .Paginate $pages }}
+    {{ range $paginator.Pages }}
     <a
       href="{{ .Params.websiteUrl }}"
       target="_blank"
