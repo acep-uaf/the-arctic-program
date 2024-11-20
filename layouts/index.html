@@ -5,10 +5,9 @@
 url('{{.Params.heroBackgroundImage}}'); ">
   <header class="container">
     <hgroup class="light-text">
-      <img src="{{.Params.heroLogo}}"></img>
+      <img src="{{.Params.heroLogo}}"/>
       <h1>{{.Params.heroTitle}}</h1>
-      <p>{{ .Params.heroPara1 }}</p>
-      <p>{{ .Params.heroPara2 }}</p>
+      <p>{{ .Params.heroParagraph }}</p>
     </hgroup>
     <div>
       <a
@@ -54,6 +53,7 @@ url('{{.Params.heroBackgroundImage}}'); ">
   <!-- Cards Section with Parent Title -->
 
   <h2>{{ .Params.cards_section.title }}</h2>
+  <p>{{ .Params.cards_section.body }}</p>
   <div class="grid home">
     {{ range .Params.cards_section.cards }}
       <article class="grid-card home">
