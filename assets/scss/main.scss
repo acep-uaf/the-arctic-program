@@ -200,10 +200,13 @@ h1 {
   background-color: var(--partner-card-header-color);
   padding: 1rem;
   justify-content: flex-end;
+  align-items: center;
+  color: var(--hgroup-text-color);
+  min-height: 100px;
 
   .fa-partner-logo{
-    max-width: 100px;
-    height: auto;
+    max-width: 125px;
+
   }
 }
 

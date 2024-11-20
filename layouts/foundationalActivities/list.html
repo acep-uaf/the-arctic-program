@@ -33,6 +33,7 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
         {{ $partners := .Params.partners }}
           <div class="flexbox-container">
             <div class="partner-flexbox">
+              <i>Led by:</i>
               {{ with .Site.GetPage "section" "partners" }}
               {{ range .Pages }}
                 {{ if in $partners .File.BaseFileName }}
