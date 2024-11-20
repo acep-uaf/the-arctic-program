@@ -16,17 +16,36 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
 {{- $currentPage := . }}
 <div class="container">
   <div class="grid grid-post">
-    {{- $pages := union .RegularPages .Sections }} {{- $paginator := .Paginate
-    $pages }} {{ range $paginator.Pages }}
+    {{- $pages := union .RegularPages .Sections }} 
+    {{- $paginator := .Paginate $pages }} 
+    {{ range $paginator.Pages }}
       <article class="grid-card no-hover-effect fa">
         <hgroup class="fa-hgroup">
           <i data-feather="{{ .Params.Icon }}"></i>
           <h4 class="fa-card-title">{{ .Title }}</h4>
         </hgroup>
         <div class="fa-content">
-          <p>{{- .Params.Description }}</p>
-          {{- .Content }}
+          <span>
+            <p class="fa-description">{{- .Params.Description }}</p>
+            {{- .Content }}
+          </span>
         </div>
+        {{ $partners := .Params.partners }}
+          <div class="flexbox-container">
+            <div class="partner-flexbox">
+              {{ with .Site.GetPage "section" "partners" }}
+              {{ range .Pages }}
+                {{ if in $partners .File.BaseFileName }}
+                  <span class="partner-item-sm">
+                    <a href="{{ .Params.websiteURL }}" target="_blank" rel="noopener noreferrer">
+                      <img src="{{ .Params.logo | relURL }}" alt="{{ .Title }}" class="fa-partner-logo" />
+                    </a>
+                  </span>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            </div>
+          </div>
       </article>
     {{ end }}
   </div>

@@ -99,7 +99,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    min-height: 20%;
+    min-height: 150px;
     padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
     color: var(--hgroup-text-color);
     margin-bottom: 0.5rem;
@@ -107,11 +107,6 @@ h1 {
     .fa-card-title {
       font-size: 1.35rem;
       font-weight: 700;
-      color: var(--hgroup-text-color);
-    }
-
-    .fa-description {
-      text-align: justify;
       color: var(--hgroup-text-color);
     }
     
@@ -132,6 +127,17 @@ h1 {
       list-style: disc;
     }
   }
+
+  .fa-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    text-align: start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
 }
 
 #gallery__activities {
@@ -182,7 +188,23 @@ h1 {
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  margin: 2rem auto; /* Centers the container */
+  width: 100%;
+}
+/* Additional customization for partner-specific flexbox */
+.partner-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--partner-card-header-color);
+  padding: 1rem;
+  justify-content: flex-end;
+
+  .fa-partner-logo{
+    max-width: 100px;
+    height: auto;
+  }
 }
 
 .partner-item-sm {

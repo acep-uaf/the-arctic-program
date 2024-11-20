@@ -9,7 +9,7 @@ type = "foundationalActivities"
   [cascade.build]
     list = 'local'
     publishResources = false
-    render = 'never'
+    render = 'list'
 
 [[sections]]
 title = "Evolution of Foundational Activities"
