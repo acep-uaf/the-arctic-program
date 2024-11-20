@@ -7,10 +7,6 @@ url('{{ .Params.HeroBackgroundImage | relURL }}'); ">
       <h1>{{.Params.title}}</h1>
       <h2>{{.Params.description}}</h2>
     </hgroup>
-    <span class="logo-container">
-      <img src="{{.Params.onrLogo | relURL }}" alt="{{.Params.onrLogoAlt}}" />
-      <p class="text-muted text-small">{{.Params.disclaimer}}</p>
-    </span>
   </header>
 </section>
 
@@ -24,7 +20,37 @@ url('{{ .Params.HeroBackgroundImage | relURL }}'); ">
   <div class="container">
     <div>      
       <div class="about" id="gallery__about">
-        {{ .Content }}
+        {{ range .Params.sections }}
+        <section>
+          <h3>{{ .title }}</h3>
+          {{ if .paragraph }}
+            <p>{{ .paragraph | markdownify }}</p>
+          {{ end }}
+
+          {{ if .paragraphs }}
+            {{ range .paragraphs }}
+              <p>{{ . | markdownify }}</p>
+            {{ end }}
+          {{ end }}
+
+          {{ if .list }}
+            <ul>
+              {{ range .list }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
+          {{ if .image }}
+            <a class="pswp-gallery__item" href="{{ .image | relURL }}">
+              <img src="{{ .image | relURL }}" alt="{{ .imageAlt }}">
+            </a>
+          {{ end }}
+        </section>
+        {{ end }}
+        <section>
+          {{ .Content }}
+        </section>
       </div>
     </div>
   </div>

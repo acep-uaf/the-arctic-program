@@ -164,22 +164,6 @@ h1 {
   flex-direction: column;
 }
 
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: space-between;
-  gap: 1rem;
-  margin-bottom: -4rem;
-
-  img {
-    width: 100%;
-    max-width: 200px;
-    min-width: 100px;
-    height: auto;
-  }
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 992px) {
   .grid-post {
