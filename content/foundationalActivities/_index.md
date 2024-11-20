@@ -1,7 +1,6 @@
 +++
 title = "Foundational Activities"
-description = "The ARCTIC program was modeled on the Asia-Pacific Technology and Education Partnership (APTEP) funded through ONR. ARCTIC’s original three fundamental pillars of 'Education and Workforce, Research and Technology, and Business and Marketplace' were derived from APTEP. After several iterations, these pillars have been adapted into five thematic foundational activities: Resiliency Research, Modeling Observations and Data, Technology Testing and Implementation, Education and Workforce Development, and Innovation Economy Development."
-FAdiagram = "images/fa-diagram.png"
+description = "ARCTIC’s five foundational activities are designed to drive Alaska’s resilience and innovation economy through strong collaboration with local and state partners. Guided by a cross-cutting Program Management and Support task, these foundational activities demonstrate the program’s commitment to addressing challenges and fostering opportunities through a dynamic and interconnected approach."
 heroBackgroundImage = "images/backgroundImages/2022_ARENA_GROUP_KOtz-108.jpg"
 type = "foundationalActivities"
 [build]
@@ -11,5 +10,10 @@ type = "foundationalActivities"
     list = 'local'
     publishResources = false
     render = 'never'
+
+[[sections]]
+title = "Evolution of Foundational Activities"
+image = "./images/fa-diagram.png"
+imageAlt = "ARCTIC Foundational Activities Diagram"
+paragraph = "The ARCTIC program, originally modeled on the Asia-Pacific Technology and Education Partnership (APTEP) funded by ONR, evolved its three foundational pillars—‘Education and Workforce, Research and Technology, and Business and Marketplace’—into five thematic activities: Resiliency Research, Modeling Observations and Data, Technology Testing and Implementation, Education and Workforce Development, and Innovation Economy Development. These activities, deeply integrated with local and state partners, are guided by a cross-cutting Program Management and Support task, exemplifying collaboration to advance Alaska’s resilience and innovation economy. The accompanying figure demonstrates how these foundational activities are achieved through partnerships across the dynamic ecosystem."
 +++
-ARCTIC’s five foundational activities are deeply integrated with partners at the local and state levels. Guided by a cross-cutting Program Management and Support task, these activities exemplify the collaborative efforts driving Alaska’s resilience and innovation economy. The figure above illustrates how these foundational activities are achieved through partnerships across a dynamic ecosystem.
