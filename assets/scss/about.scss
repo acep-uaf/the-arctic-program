@@ -1,0 +1,53 @@
+/* Styles for the about page */
+
+/* Default layout: image first, content second */
+.section-flexbox {
+  display: flex;
+  flex-wrap: wrap; /* Wraps on smaller screens */
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.section-content {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+
+  p {
+    text-align: justify;
+  }
+}
+
+.section-btn {
+  margin-top: auto; /* Push the button to the bottom */
+  align-self: flex-start; /* Align the button to the left */
+}
+
+.section-image {
+  flex: 3;
+  text-align: center;
+  max-width: 500px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Reversed layout: content first, image second */
+.section-flexbox.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-flexbox,
+  .section-flexbox.reverse {
+    flex-direction: column; /* Stack content and image vertically */
+  }
+
+  .section-image {
+    max-width: 100%;
+  }
+}

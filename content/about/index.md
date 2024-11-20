@@ -23,6 +23,8 @@ paragraph = "The ARCTIC program has been invaluable for building capacity and st
 title = "Partnering for Energy Innovation"
 image = "./images/murkowski-partner-ak-map.png"
 imageAlt = "Murkowski Quote Alaska Partners Map"
+linkTo = "partners"
+buttonText = "See Partners"
 paragraph = "Since 2017 the ARCTIC program has partnered with over 200 organizations across diverse sectors, to advance resilient energy solutions for Alaska and the Arctic. Our core leadership includes three University of Alaska entities—ACEP, Center ICE, and CED—alongside key partners REAP and Launch Alaska, forming a strong partnership for sustainable energy innovation."
 
 [[sections]]

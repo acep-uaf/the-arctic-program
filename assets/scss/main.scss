@@ -1,6 +1,7 @@
 @import 'pikoTheme';
 @import 'nav';
 @import 'variables';
+@import 'about';
 
 h1 {
   font-size: 1.9rem !important; /* Force ARCTIC title on one line */
@@ -24,30 +25,6 @@ h1 {
 
   &:hover {
     color: var(--link-color);
-  }
-}
-
-.image-text-flexbox {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
-
-  .text-content,
-  .image-content {
-    flex: 1;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    text-align: start;
   }
 }
 
