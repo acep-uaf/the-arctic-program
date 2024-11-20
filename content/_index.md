@@ -9,8 +9,8 @@ heroBackgroundImage = "images/backgroundImages/20230118_solar_test_site-8.jpg"
 heroLogo = "images/logos/arctic-program.png"
 heroParagraph = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program is an Office of Naval Research (ONR) program established in 2017 in support of Navy’s needs for public-private partnerships promoting commerce and collaboration between Alaska and the Arctic and Pacific regions. Centered on energy and resiliency research, the program helps Alaskan organizations and communities build a thriving innovation ecosystem through its five foundational activities. Learn more about these key activities and their impact below."
 
-mainSectionImg = "images/static_map_placeholder.png"
-mainSectionImgAlt = ""
+mainSectionImg = "images/2022_ARENA_GROUP_KOtz-100.jpg"
+mainSectionImgAlt = "Group Truck in Kotzebue Windfarm"
 
 [[sections]]
 title = "ARCTIC on a mission"

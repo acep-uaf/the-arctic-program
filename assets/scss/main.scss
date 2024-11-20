@@ -147,6 +147,20 @@ h1 {
   flex-direction: column;
 }
 
+#gallery__home {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure the container takes up the full height */
+  text-align: center; /* Ensure inline elements like text are also centered */
+}
+
+#gallery__home img {
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits nicely within the container */
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 992px) {
   .grid-post {
