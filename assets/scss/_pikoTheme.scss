@@ -44,14 +44,24 @@ html {
   background-color: #394046;
   background-position: center;
   background-size: cover;
-  h1,
-  a[role='button'].outline.contrast {
+  
+  h1 {
     color: #edf0f3;
     border-color: #edf0f3;
   }
+
+  a[role='button'].outline.contrast {
+    color: (var(--link-color));
+    border-color: (var(--link-color));
+    border-width: 2px;
+    font-weight: 500;
+    background-color: #edf0f3;
+  }
+
   .hero-buttons {
     margin: 10px 10px 10px 0;
-    color: var(--mark-color);
+    color: var(--light-text);
+    font-weight: 500;
   }
 }
 header {
