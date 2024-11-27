@@ -29,7 +29,7 @@ env = "development"
 author = ""
 description = "Website for the ARCTIC Program"
 math = false
-images = ["/uploads/og.webp"]
+images = [""]
 ShowShareButtons = true
 ShowCodeCopyButtons = true
 ShowRelated = true
@@ -81,16 +81,6 @@ apple_touch_icon = "images/logos/arctic-favicon.png"
 safari_pinned_tab = "images/logos/arctic-favicon.png"
 footerLogo = "images/logos/arctic-program.png"
 
-# Search
-[params.fuseOpts]
-isCaseSensitive = false
-shouldSort = true
-location = "0"
-distance = "1000"
-threshold = "0.4"
-minMatchCharLength = "0"
-keys = ["title", "permalink", "summary", "content"]
-
 [params.plugins]
 [[params.plugins.css]]
 link = "plugins/css/pico.min.css"
@@ -132,25 +122,6 @@ title = "Contact"
 pre = "mail"
 url = "mailto:UA-arctic-program-contact@alaska.edu"
 weight = "50"
-
-[[menus.main]]
-name = "Search"
-title = "Search"
-pre = "search"
-url = "/search"
-weight = "60"
-
-[[menus.search]]
-name = "Partners"
-title = "Partners"
-url = "/partners"
-weight = "10"
-
-[[menus.search]]
-name = "Foundational Activities"
-title = "Foundational Activities"
-url = "/foundationalActivities"
-weight = "20"
 
 [module]
 [[module.mounts]]
