@@ -235,3 +235,11 @@ h1 {
     transform: scale3d(1.05, 1.05, 1.05);
   }
 }
+
+.underlay {
+  background-color: rgba(0, 0, 0, 0.45); 
+  padding: 1rem; 
+  border-radius: 8px; 
+  margin-top: 1rem;
+  color: white;
+}
