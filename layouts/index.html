@@ -63,15 +63,6 @@ url('{{.Params.heroBackgroundImage}}'); ">
       </article>
     {{ end }}
   </div>
-
-  <!-- Call to Action Section -->
-  {{ range .Params.call_to_action }}
-    <section>
-      <h2>{{ .title }}</h2>
-      <p>{{ .paragraph | markdownify }}</p>
-    </section>
-  {{ end }}
 </div>
-
 {{ end }}
 

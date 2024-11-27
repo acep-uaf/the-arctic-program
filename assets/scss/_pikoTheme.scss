@@ -51,8 +51,8 @@ html {
   }
 
   a[role='button'].outline.contrast {
-    color: (var(--link-color));
-    border-color: (var(--link-color));
+    color: (var(--primary));
+    border-color: (var(--primary));
     border-width: 2px;
     font-weight: 500;
     background-color: #edf0f3;
@@ -60,7 +60,7 @@ html {
 
   .hero-buttons {
     margin: 10px 10px 10px 0;
-    color: var(--light-text);
+    color: #edf0f3;
     font-weight: 500;
   }
 }
