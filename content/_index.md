@@ -23,7 +23,7 @@ paragraph = "The Alaska Regional Collaboration for Technology Innovation and Com
 # Cards Section with Parent Title
 [cards_section]
 title = "Capacity Building for Alaska and Beyond"
-body = "ARCTIC leverages and augments existing capacity and accelerates the energy transition in Alaska and the North, while also building key partnerships between Alaska and the Arctic and Pacific regions. Our vision for capacity building under the ARCTIC program centers on sustainable, cost-effective energy solutions implemented with the following principles: Research and technology development is community-led and addresses local, self-identified economic needs; Alaskans are leaders and key partners in U.S. research and innovation Alaskan communities and small businesses thrive through economic diversification and development."
+body = "ARCTIC drives energy innovation in Alaska and the North, forging global partnerships to support self-determination of local communities. Our approach: community-led research, economic growth, and cost-effective energy solutions that put Alaskan communities at the forefront of their energy transitions."
 
   [[cards_section.cards]]
   title = "Community-Centered Solutions"
