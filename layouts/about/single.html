@@ -1,67 +1,79 @@
 {{ define "main" }}
 
-<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.8), rgba(24,44,54, 0.7)),
-url('{{ .Params.HeroBackgroundImage | relURL }}'); ">
+<section
+  class="hero"
+  style="background-image:linear-gradient(rgba(20,30,38, 0.8), rgba(24,44,54, 0.7)),
+url('{{ .Params.HeroBackgroundImage | relURL }}'); "
+>
   <header class="container">
     <hgroup class="light-text">
       <h1>{{.Params.title}}</h1>
+      <br />
       <h2>{{.Params.description}}</h2>
     </hgroup>
   </header>
 </section>
 
 <div class="container">
-  {{- if .Params.tags }} {{- range ($.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">
-    <kbd>{{ .LinkTitle }}</kbd>
-  </a>
-  {{- end }} {{- end }}
-
-  <div class="container">  
-    <div class="about" id="gallery__about">
-      {{ range $index, $section := .Params.sections }}
-        <section>
-          <h3>{{ .title }}</h3>
-          <div class="section-flexbox {{ if modBool $index 2 }}reverse{{ end }}">
-            {{ if .image }}
-              <div class="section-image">
-                <a class="pswp-gallery__item" href="{{ .image | relURL }}">
-                  <img src="{{ .image | relURL }}" alt="{{ .imageAlt }}">
-                </a>
-              </div>
-            {{ end }}
-
-            <div class="section-content">
-              {{ if .paragraph }}
-                <p>{{ .paragraph | markdownify }}</p>
-              {{ end }}
-
-              {{ if .paragraphs }}
-                {{ range .paragraphs }}
-                  <p>{{ . | markdownify }}</p>
-                {{ end }}
-              {{ end }}
-
-              {{ if .list }}
-                <ul>
-                  {{ range .list }}
-                    <li>{{ . }}</li>
-                  {{ end }}
-                </ul>
-              {{ end }}
-
-              {{ if and .linkTo .buttonText }}
-                <div class="section-btn">
-                  <a class="btn btn-primary" href="{{ .linkTo | relURL }}" role="button">{{ .buttonText }}</a>
-                </div>
-              {{ end }}
-            </div>
-          </div>
-        </section>
+  <!-- Cards Section with Parent Title -->
+  <div class="grid-wrapper about">
+    <h2>{{ .Params.cards_section.title }}</h2>
+    <p>{{ .Params.cards_section.body }}</p>
+    <div class="grid about">
+      {{ range .Params.cards_section.cards }}
+        <article class="grid-card about">
+          <i data-feather="{{ .icon }}"></i>
+          <p class="title">{{ .title }}</p>
+        </article>
       {{ end }}
-      <section>
-        {{ .Content }}
-      </section>
     </div>
   </div>
+
+  <div class="about" id="gallery__about">
+      {{ range $index, $section := .Params.sections }}
+      <section>
+        <h3>{{ .title }}</h3>
+        <div class="section-flexbox {{ if modBool $index 2 }}reverse{{ end }}">
+          {{ if .image }}
+          <div class="section-image">
+            <a
+              class="pswp-gallery__item"
+              href="{{ .image | relURL }}"
+            >
+              <img
+                src="{{ .image | relURL }}"
+                alt="{{ .imageAlt }}"
+              />
+            </a>
+          </div>
+          {{ end }}
+
+          <div class="section-content">
+            {{ if .paragraph }}
+            <p>{{ .paragraph | markdownify }}</p>
+            {{ end }} {{ if .paragraphs }} {{ range .paragraphs }}
+            <p>{{ . | markdownify }}</p>
+            {{ end }} {{ end }} {{ if .list }}
+            <div class="card-container">
+              {{ range .list }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </div>
+            {{ end }} {{ if and .linkTo .buttonText }}
+            <div class="section-btn">
+              <a
+                class="btn btn-primary"
+                href="{{ .linkTo | relURL }}"
+                role="button"
+                >{{ .buttonText }}</a
+              >
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+      {{ end }}
+      <section>{{ .Content }}</section>
+    </div>
+</div>
 {{ end }}
