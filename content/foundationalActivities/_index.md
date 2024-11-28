@@ -1,6 +1,6 @@
 +++
 title = "Foundational Activities"
-description = "ARCTIC’s five foundational activities are designed to drive Alaska’s resilience and innovation economy through strong collaboration with local and state partners. Guided by a cross-cutting Program Management and Support task, these foundational activities demonstrate the program’s commitment to addressing challenges and fostering opportunities through a dynamic and interconnected approach."
+description = "Driving Alaska's resilience and innovation economy through collaboration"
 heroBackgroundImage = "images/backgroundImages/2022_ARENA_GROUP_KOtz-108.jpg"
 type = "foundationalActivities"
 [build]

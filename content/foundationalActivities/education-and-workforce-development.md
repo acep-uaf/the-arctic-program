@@ -2,7 +2,7 @@
 title = 'Education and Workforce Development'
 weight = '30'
 icon = 'book-open'
-description = 'The ARCTIC program connects energy education, research, and industry, offering diverse training programs for students and professionals to build Alaska’s future workforce.'
+description = "Building Alaska's future energy workforce, in partnership with educators, researchers, communities, and industry."
 partners = ['Alaska-Center-for-Energy-and-Power', "Renewable-Energy-Alaska-Project"]
 +++
 - [ACEP Undergraduate Summer Internship (AUSI) Program](https://www.uaf.edu/acep/education-workforce-development/summer-internship-program/index.php)
