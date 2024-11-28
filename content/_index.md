@@ -1,13 +1,13 @@
 +++
 title = "Home Page"
-heroTitle = "Alaska Regional Collaboration for Technology Innovation and Commercialization"
+heroTitle = "Innovative Public-Private Partnerships for Energy and Resiliency Research"
 heroCTAPrimaryText = "Learn More"
 heroCTAPrimaryUrl = "about/"
 heroCTASecondaryText = "See Activities"
 heroCTASecondaryUrl = "foundationalactivities/"
 heroBackgroundImage = "images/backgroundImages/20230118_solar_test_site-8.jpg"
 heroLogo = "images/logos/arctic-program.png"
-heroParagraph = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program is an Office of Naval Research (ONR) program established in 2017 in support of Navy’s needs for public-private partnerships promoting commerce and collaboration between Alaska and the Arctic and Pacific regions. Centered on energy and resiliency research, the program helps Alaskan organizations and communities build a thriving innovation ecosystem through its five foundational activities. Learn more about these key activities and their impact below."
+heroParagraph = "The Alaska Regional Collaboration for Technology Innovation and Commercialization (ARCTIC) program is an Office of Naval Research (ONR) program established in 2017 in support of Navy’s needs for public-private partnerships promoting commerce and collaboration between Alaska and the Arctic and Pacific regions. Centered on energy and resiliency research, the program helps Alaskan organizations and communities build a thriving innovation ecosystem through its five foundational activities."
 
 mainSectionImg = "images/2022_ARENA_GROUP_KOtz-100.jpg"
 mainSectionImgAlt = "Group Truck in Kotzebue Windfarm"
@@ -23,7 +23,7 @@ paragraph = "The Alaska Regional Collaboration for Technology Innovation and Com
 # Cards Section with Parent Title
 [cards_section]
 title = "Capacity Building for Alaska and Beyond"
-body = "ARCTIC leverages and augments existing capacity and accelerates the energy transition in Alaska and the North, while also building key partnerships between Alaska and the Arctic and Pacific regions. Our vision for capacity building under the ARCTIC program centers on sustainable, cost-effective energy solutions implemented with the following principles: Research and technology development is community-led and addresses local, self-identified economic needs; Alaskans are leaders and key partners in U.S. research and innovation Alaskan communities and small businesses thrive through economic diversification and development."
+body = "ARCTIC drives energy innovation in Alaska and the North, forging global partnerships to support self-determination of local communities. Our approach: community-led research, economic growth, and cost-effective energy solutions that put Alaskan communities at the forefront of their energy transitions."
 
   [[cards_section.cards]]
   title = "Community-Centered Solutions"
