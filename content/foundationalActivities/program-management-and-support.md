@@ -2,7 +2,7 @@
 title = 'Program Management and Support'
 weight = '60'
 icon = 'users'
-description = 'ARCTIC III integrates energy resilience research with climate and energy security themes, supported by a robust management framework to navigate complex, evolving topics.'
+description = 'ARCTIC integrates energy resilience research with climate and energy security themes, supported by a robust management framework to navigate complex, evolving topics.'
 partners = ["Alaska-Center-for-Energy-and-Power"]
 +++
 - Community Technical Assistance Grants
