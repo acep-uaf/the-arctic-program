@@ -127,7 +127,6 @@ h1 {
       font-weight: 700;
       color: var(--hgroup-text-color);
     }
-    
   }
 
   .partner-content,
@@ -139,12 +138,15 @@ h1 {
     color: var(--body-link-color);
   }
 
-  ul {
+  .partner-content li {
+    list-style: none;
     text-align: start;
-    li {
-      list-style: disc;
-    }
   }
+
+  .fa-content li {
+    list-style: disc;
+  }
+
 
   .fa-content {
     display: flex;
