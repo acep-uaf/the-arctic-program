@@ -1,17 +1,29 @@
 +++
 title = "ARCTIC - An Office of Naval Research Initiative"
-description = ""
+description = "Funded by ONR and augmented by other federal and state funding sources, the ARCTIC program is constantly evolving to meet Alaska’s energy research needs and advance sustainable & community-approved solutions."
 type = "about"
 heroUpperTitle = "ARCTIC"
-heroBackgroundImage = "images/backgroundImages/CRREL_site_tour-1.jpg"
+heroBackgroundImage = "images/backgroundImages/DJI_0005.JPG"
 
-[[sections]]
+[cards_section]
 title = "Research Objectives"
-paragraph = "Funded by ONR and augmented by other federal and state funding sources, the ARCTIC program is constantly evolving to meet Alaska’s energy research needs and advance sustainable & community-approved solutions. Currently, ARCTIC objectives focus on:"
-list = [ "Proving the feasibility of innovative, Arctic-ready energy solutions",
-                "Building local expertise to address energy transition challenges", 
-                "Expanding Alaska’s innovation ecosystem with inclusive, community-based engagement.",
-                "Demonstrating the viability and replicability of high levels of renewable energy in microgrids"]
+body = "The current objectives of the ARCTIC program are focused on:"
+
+  [[cards_section.cards]]
+  title = "Proving the feasibility of innovative, Arctic-ready energy solutions"
+  icon = "trending-up"
+
+  [[cards_section.cards]]
+  title = "Building local expertise to address energy transition challenges"
+  icon = "users"
+
+  [[cards_section.cards]]
+  title = "Expanding Alaska’s innovation ecosystem with inclusive, community-based engagement"
+  icon = "layers"
+
+  [[cards_section.cards]]
+  title = "Demonstrating the viability and replicability of high levels of renewable energy in microgrids"
+  icon = "zap"
 
 [[sections]]
 title = "Capacity Building Success and Challenges"
