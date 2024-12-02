@@ -6,8 +6,3 @@ description = "University of Alaska Fairbanks’ Alaska Center for Energy and Po
 tagline = "Developing practical, cost-effective energy solutions for Alaska and beyond"
 websiteUrl = "https://acep.uaf.edu"
 +++
-* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
-
-* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
-
-* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.

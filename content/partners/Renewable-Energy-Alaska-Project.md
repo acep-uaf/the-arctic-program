@@ -12,5 +12,3 @@ websiteUrl = "https://alaskarenewableenergy.org"
 * **ANNEE:** This is placeholder text for a short description of the relevant work/project/link.
 
 * **K-12 STEM Education:** This is placeholder text for a short description of the relevant work/project/link.
-
-* **Relevant Work/Projects/Links:** This is placeholder text for a short description of the relevant work/project/link.
