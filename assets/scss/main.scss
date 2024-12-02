@@ -33,11 +33,12 @@ h1 {
   justify-items: center;
 }
 
-.grid.home, .grid.about {
+.grid.home,
+.grid.about {
   gap: 2rem;
 }
 
-.grid-wrapper.about{
+.grid-wrapper.about {
   margin-bottom: 5rem;
 }
 
@@ -52,14 +53,18 @@ h1 {
   align-items: start;
   gap: 1rem;
   width: 100%;
+  background-color: var(--small-card-background-color);
+  color: var(--small-card-text-color) !important;
 
-  .title{
+  .title {
     margin-bottom: 0;
+    color: var(--small-card-text-color) !important;
   }
 
   p {
     text-align: start;
     margin-bottom: 0;
+    color: var(--small-card-text-color) !important;
   }
 }
 
@@ -67,13 +72,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
+  background-color: var(--small-card-background-color);
+  color: var(--small-card-text-color) !important;
 
   .title {
     margin-bottom: 0;
     text-align: start;
     font-weight: 500;
+    color: var(--small-card-text-color) !important;
   }
 }
 
@@ -95,13 +103,13 @@ h1 {
     min-height: 35%;
     padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
     color: var(--hgroup-text-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 
     img {
       width: 250px; /* Define a fixed width */
       height: 150px; /* Define a fixed height */
       object-fit: contain; /* Ensures the entire image fits within the box */
-      max-width: 100%; 
+      max-width: 100%;
       max-height: 100%;
     }
 
@@ -109,7 +117,6 @@ h1 {
       font-weight: 700;
       color: var(--hgroup-text-color);
     }
-    
   }
 
   .fa-hgroup {
@@ -137,19 +144,17 @@ h1 {
     padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
   }
 
-  p {
-    color: var(--body-link-color);
+  .partner-content {
+    p {
+      color: var(--card-body-text-color) !important;
+      text-decoration: none;
+    }
+    li {
+      color: var(--card-body-text-color) !important;
+      list-style: none;
+      text-align: start;
+    }
   }
-
-  .partner-content li {
-    list-style: none;
-    text-align: start;
-  }
-
-  .fa-content li {
-    list-style: disc;
-  }
-
 
   .fa-content {
     display: flex;
@@ -159,8 +164,16 @@ h1 {
     text-align: start;
     justify-content: space-between;
     height: 100%;
-  }
 
+    p,
+    li {
+      color: var(--card-body-text-color) !important;
+    }
+
+    li {
+      list-style: disc;
+    }
+  }
 }
 
 #gallery__activities {
@@ -205,7 +218,7 @@ h1 {
   transform: none !important;
 }
 
-.footer-logo{
+.footer-logo {
   max-width: 300px;
 }
 
@@ -241,9 +254,8 @@ h1 {
   color: var(--hgroup-text-color);
   min-height: 100px;
 
-  .fa-partner-logo{
+  .fa-partner-logo {
     max-width: 125px;
-
   }
 }
 
@@ -261,9 +273,9 @@ h1 {
 }
 
 .underlay {
-  background-color: rgba(0, 0, 0, 0.45); 
-  padding: 1rem; 
-  border-radius: 8px; 
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 1rem;
+  border-radius: 8px;
   margin-top: 1rem;
   color: white;
 }

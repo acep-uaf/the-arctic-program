@@ -4,11 +4,12 @@
   --spacing-hero: 5rem !important;
   --border-radius: 0.3rem !important;
   --grid-spacing-vertical: 1rem !important;
-  --card-header-color: #fff !important;
-  --hgroup-text-color: #4d657b !important;
+  --hgroup-text-color: #2c3d49 !important;
   --partner-card-header-color: #ffffff !important;
   --grid-spacing-horizontal: 2rem !important;
   --grid-spacing-vertical: 4rem !important;
+  --card-background-color: #98aaba5f !important;
+  --card-header-color: #98aaba !important;
 }
 
 /* Light theme variables */
@@ -17,10 +18,9 @@
   --muted-color: #a5a5a5 !important;
   --link-color: #1694c2 !important;
   --light-text: #fff !important;
-  --card-background-color: #fefefe !important;
-  --body-link-color: #2e3b47 !important;
-  --card-cta-color: #fff !important;
-  --card-header-color: #e6e9ef !important;
+  --small-card-background-color: #c2d3e4 !important;
+  --small-card-text-color: #2e3b47 !important;
+  --card-body-text-color: #2e3b47 !important;
 }
 
 /* Dark theme variables - automatic based on system preference */
@@ -29,10 +29,9 @@
     --muted-color: #8fa3b1 !important;
     --link-color: #71b6e7 !important;
     --light-text: #ccc !important;
-    --card-background-color: #2e3b47 !important;
-    --body-link-color: #ccc !important;
-    --card-cta-color: #fff !important;
-    --card-header-color: #ffffff !important;
+    --small-card-background-color: #455b6e !important;
+    --small-card-text-color: #ffffff !important;
+    --card-body-text-color: #ffffff !important;
   }
 }
 
@@ -41,8 +40,7 @@
   --muted-color: #8fa3b1 !important;
   --link-color: #71b6e7 !important;
   --light-text: #ccc !important;
-  --card-background-color: #2e3b47 !important;
-  --body-link-color: #ccc !important;
-  --card-cta-color: #fff !important;
-  --card-header-color: #ffffff !important;
+  --small-card-background-color: #455b6e !important;
+  --small-card-text-color: #ffffff !important;
+  --card-body-text-color: #ffffff !important;
 }

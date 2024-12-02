@@ -1,6 +1,6 @@
 +++
 title = "Foundational Activities"
-description = "Driving Alaska's resilience and innovation economy through collaboration"
+description = "Driving Alaska's resilience and innovation economy through collaboration."
 heroBackgroundImage = "images/backgroundImages/2022_ARENA_GROUP_KOtz-108.jpg"
 type = "foundationalActivities"
 [build]
