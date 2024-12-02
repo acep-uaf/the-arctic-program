@@ -2,7 +2,7 @@
   {{ range .Site.Params.footer.logos }}
     <div class="partner-item-sm">
       <a href="{{ .websiteUrl }}" target="_blank" title="{{ .Title }}">
-        <img src="{{ .logo | relURL }}" alt="{{ .alt }}">
+        <img src="{{ .logo | absURL }}" alt="{{ .alt }}">
       </a>
     </div>
   {{ end }}
