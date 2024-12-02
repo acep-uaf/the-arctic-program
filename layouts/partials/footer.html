@@ -30,11 +30,12 @@
       <h6>About this site</h6>
       <p>
         {{ .Site.Params.Footer.AboutThisSite | markdownify }}
-        <a href={{ "about" | relURL }}>More &rsaquo;</a>
       </p>
     </div>
   </div>
-  {{- partial "footer_logos.html" . }}
+  <section>
+     {{- partial "footer_logos.html" . }}
+  </section>
   <div class="text-center">
     <small class="">{{ .Site.Params.Footer.OnrAcknowledgement }}</small>
     <br>
