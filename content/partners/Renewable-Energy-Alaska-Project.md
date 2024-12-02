@@ -8,7 +8,3 @@ websiteUrl = "https://alaskarenewableenergy.org"
 +++
 
 * **Training & Workforce Development:** Networking between students, training programs, and industry
-
-* **ANNEE:** This is placeholder text for a short description of the relevant work/project/link.
-
-* **K-12 STEM Education:** This is placeholder text for a short description of the relevant work/project/link.

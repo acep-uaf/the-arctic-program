@@ -13,7 +13,7 @@ mainSectionImg = "images/2022_ARENA_GROUP_KOtz-100.jpg"
 mainSectionImgAlt = "Group Truck in Kotzebue Windfarm"
 
 [[sections]]
-title = "ARCTIC on a mission"
+title = "ARCTIC on a Mission"
 paragraph = "Our mission is to empower community-led energy research, technology development, and education, fostering an innovation ecosystem that supports local needs. We are dedicated to sustainable solutions, local leadership, and partnerships that ensure community resilience."
 
 [[sections]]

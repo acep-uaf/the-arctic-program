@@ -10,9 +10,7 @@ websiteUrl = "https://www.launchalaska.com"
 
 * Support and expand Alaska's entrepreneurial ecosystem.
 
-* Recruitment of scalable startups in the energy resiliency market.
-
 * Incubator program for pre and post-launch stage businesses looking to scale up with two tracks:
 
-  * **Customer Development Track** for mentorship & networking support
-  * **Deployment Track** for technology field pilots
+  * - **Customer Development Track** for mentorship & networking support
+  * - **Tech Deployment Track** for technology field pilots
