@@ -22,10 +22,10 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     {{ range $paginator.Pages }}
       <article class="grid-card partner no-hover-effect">
         <hgroup class="partner-hgroup">
-          <img
-            class="partner-logos"
-            src="{{.Params.Logo | absURL}}"
-          />
+           <!-- Display the logo from leaf bundle -->
+          {{ with .Resources.GetMatch "*logo.*" }}
+              <img class="partner-logos" src="{{ .RelPermalink }}" alt="Logo for {{ $.Params.name }}">
+          {{ end }}
           <h5 hidden>{{ .Title }}</h5>
           <i class="tagline">{{- .Params.Tagline -}}</i>
         </hgroup>

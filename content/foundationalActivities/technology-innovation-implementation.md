@@ -3,7 +3,7 @@ title = 'Technology Innovation & Implementation'
 weight = '40'
 icon = 'cpu'
 description = "Enhancing regional resiliency through technology research and demonstration."
-partners = ["Alaska-Center-for-Energy-and-Power", "Launch-Alaska"]
+partners = ["alaska-center-for-energy-and-power", "launch-alaska"]
 +++
 - Community Innovation Hub Development and Support
 - Energy Testbed Network

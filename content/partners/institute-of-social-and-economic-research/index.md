@@ -1,5 +1,5 @@
 +++
-title = 'UAA Institute of Social and Economic Research'
+title = 'Institute of Social and Economic Research'
 logo = "images/logos/ISER.png"
 alt = "UAA Institute of Social and Economic Research"
 description = ""
