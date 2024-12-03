@@ -1,6 +1,6 @@
 +++
 title = 'Alaska Center for Energy and Power'
-logo = "images/logos/ACEP.png"
+id = 'ACEP'
 alt = "ACEP Alaska Center for Energy and Power Logo"
 description = "University of Alaska Fairbanks’ Alaska Center for Energy and Power"
 tagline = "Developing practical, cost-effective energy solutions for Alaska and beyond"

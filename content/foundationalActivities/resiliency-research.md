@@ -3,7 +3,7 @@ title = 'Resiliency Research'
 weight = '10'
 icon = 'shield'
 description = 'The ARCTIC program focuses on sustainable energy systems for isolated grids and collaborates with stakeholders to design research and projects, fostering partnerships beyond Alaska.'
-partners = ["alaska-center-for-energy-and-power", "Institute-of-Social-and-Economic-Research"]
+partners = ["ACEP", "ISER"]
 +++
 - [Power Systems Integration](https://www.uaf.edu/acep/research/power-systems-integration.php)
 - Energy Transition Initiative (ETI)

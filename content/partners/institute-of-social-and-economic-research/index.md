@@ -1,6 +1,6 @@
 +++
 title = 'Institute of Social and Economic Research'
-logo = "images/logos/ISER.png"
+id = 'ISER'
 alt = "UAA Institute of Social and Economic Research"
 description = ""
 tagline = ""
