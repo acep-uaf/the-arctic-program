@@ -32,7 +32,7 @@ url('{{ .Params.HeroBackgroundImage | relURL }}'); "
   <div class="about" id="gallery__about">
       {{ range $index, $section := .Params.sections }}
       <section>
-        <h3>{{ .title }}</h3>
+        <h2>{{ .title }}</h2>
         <div class="section-flexbox {{ if modBool $index 2 }}reverse{{ end }}">
           {{ if .image }}
           <div class="section-image">

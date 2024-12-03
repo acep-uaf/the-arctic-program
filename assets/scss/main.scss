@@ -156,6 +156,11 @@ h1 {
     }
   }
 
+  .partner-footer {
+    margin-bottom: 1.5rem;
+    margin-top: auto; /* Distance from the right edge of the card */
+  }
+
   .fa-content {
     display: flex;
     flex-direction: column;
@@ -256,6 +261,8 @@ h1 {
 
   .fa-partner-logo {
     max-width: 125px;
+    max-height: 50px;
+    object-fit: contain;
   }
 }
 
