@@ -20,12 +20,7 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
     {{- $pages := union .RegularPages .Sections}} 
     {{- $paginator := .Paginate $pages }}
     {{ range $paginator.Pages }}
-    <a
-      href="{{ .Params.websiteUrl }}"
-      target="_blank"
-      title="{{ .Title }}"
-    >
-      <article class="grid-card partner">
+      <article class="grid-card partner no-hover-effect">
         <hgroup class="partner-hgroup">
           <img
             class="partner-logos"
@@ -37,6 +32,15 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
         <div class="partner-content">
           {{- .Content }}
         </div>
+        <div class="partner-footer">
+        <a
+          href="{{ .Params.websiteUrl }}"
+          target="_blank"
+          role="button"
+          class="btn btn-primary"
+          title="Visit {{ .Title }}"
+          >Visit Website</a>
+      </div>
       </article>
     </a>
     {{ end }}
