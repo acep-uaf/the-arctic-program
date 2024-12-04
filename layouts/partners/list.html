@@ -3,7 +3,7 @@
 <section
   class="hero"
   style="background-image:linear-gradient(rgba(20,30,38, 0.8), rgba(24,44,54, 0.7)),
-url('{{.Params.HeroBackgroundImage | relURL }}');"
+  url('{{ with .Resources.GetMatch "*-bg.*" }}{{ .RelPermalink }}{{ end }}');"
 >
   <header class="container">
     <hgroup class="light-text">
@@ -17,15 +17,20 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
 {{- $currentPage := . }}
 <div class="container">
   <div class="grid grid-post">
-    {{- $pages := union .RegularPages .Sections}} 
+    {{- $pages := union .RegularPages .Sections }}
     {{- $paginator := .Paginate $pages }}
     {{ range $paginator.Pages }}
+      <!-- Skip pages where showInList is explicitly false -->
+      {{ if eq .Params.showInList false }}
+        {{ continue }}
+      {{ end }}
+
       <article class="grid-card partner no-hover-effect">
         <hgroup class="partner-hgroup">
-          <img
-            class="partner-logos"
-            src="{{.Params.Logo | absURL}}"
-          />
+          <!-- Display the logo from leaf bundle -->
+          {{ with .Resources.GetMatch "*logo.*" }}
+            <img class="partner-logos" src="{{ .RelPermalink }}" alt="Logo for {{ $.Params.name }}">
+          {{ end }}
           <h5 hidden>{{ .Title }}</h5>
           <i class="tagline">{{- .Params.Tagline -}}</i>
         </hgroup>
@@ -33,16 +38,15 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
           {{- .Content }}
         </div>
         <div class="partner-footer">
-        <a
-          href="{{ .Params.websiteUrl }}"
-          target="_blank"
-          role="button"
-          class="btn btn-primary"
-          title="Visit {{ .Title }}"
+          <a
+            href="{{ .Params.websiteUrl }}"
+            target="_blank"
+            role="button"
+            class="btn btn-primary"
+            title="Visit {{ .Title }}"
           >Visit Website</a>
-      </div>
+        </div>
       </article>
-    </a>
     {{ end }}
   </div>
 </div>

@@ -2,7 +2,7 @@
 <section
   class="hero"
   style="background-image:linear-gradient(rgba(20,30,38, 0.8), rgba(24,44,54, 0.7)),
-url('{{.Params.HeroBackgroundImage | relURL }}');"
+  url('{{ with .Resources.GetMatch "*-bg.*" }}{{ .RelPermalink }}{{ end }}');"
 >
   <header class="container">
     <hgroup class="light-text">
@@ -31,22 +31,26 @@ url('{{.Params.HeroBackgroundImage | relURL }}');"
           </span>
         </div>
         {{ $partners := .Params.partners }}
-          <div class="flexbox-container">
-            <div class="partner-flexbox">
-              <i>Led by:</i>
-              {{ with .Site.GetPage "section" "partners" }}
-              {{ range .Pages }}
-                {{ if in $partners .File.BaseFileName }}
-                  <span class="partner-item-sm">
-                    <a href="{{ .Params.websiteURL }}" target="_blank" rel="noopener noreferrer">
-                      <img src="{{ .Params.logo | relURL }}" alt="{{ .Title }}" class="fa-partner-logo" />
-                    </a>
-                  </span>
-                {{ end }}
+        <div class="flexbox-container">
+          <div class="partner-flexbox">
+            <i>Led by:</i>
+            {{ with .Site.GetPage "section" "partners" }}
+            {{ range .Pages }}
+              {{ if in $partners .Params.id }}
+                <span class="partner-item-sm">
+                  <a href="{{ .Params.websiteURL }}" target="_blank" rel="noopener noreferrer">
+                    {{ with .Resources.GetMatch "*logo.*" }}
+                      <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="fa-partner-logo" />
+                    {{ else }}
+                      <p>No logo found for {{ .Title }}</p>
+                    {{ end }}
+                  </a>
+                </span>
               {{ end }}
             {{ end }}
-            </div>
+            {{ end }}
           </div>
+        </div>
       </article>
     {{ end }}
   </div>

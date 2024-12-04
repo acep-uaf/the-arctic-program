@@ -1,9 +1,17 @@
 <div class="flexbox-container">
-  {{ range .Site.Params.footer.logos }}
-    <div class="partner-item-sm">
-      <a href="{{ .websiteUrl }}" target="_blank" title="{{ .Title }}">
-        <img src="{{ .logo | absURL }}" alt="{{ .alt }}">
-      </a>
-    </div>
+  {{ with .Site.GetPage "section" "partners" }}
+    {{ range .Pages }}
+      {{ if eq .Params.showInFooter true }}
+        <div class="partner-item-sm">
+          <a href="{{ .Params.websiteUrl }}" target="_blank" title="{{ .Title }}">
+            {{ with .Resources.GetMatch "*logo.*" }}
+              <img src="{{ .RelPermalink }}" alt="{{ .Params.alt }}">
+            {{ else }}
+              <p>No logo available for {{ .Title }}</p>
+            {{ end }}
+          </a>
+        </div>
+      {{ end }}
+    {{ end }}
   {{ end }}
 </div>
