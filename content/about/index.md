@@ -3,6 +3,7 @@ title = "ARCTIC - An Office of Naval Research Initiative"
 description = "Funded by ONR and augmented by other federal and state funding sources, the ARCTIC program is constantly evolving to meet Alaska’s energy research needs and advance sustainable & community-approved solutions."
 type = "about"
 heroUpperTitle = "ARCTIC"
+heroBackgroundImageCredit = "Amanda Byrd"
 
 [cards_section]
 title = "Research Objectives"
@@ -26,13 +27,13 @@ body = "The current objectives of the ARCTIC program are focused on:"
 
 [[sections]]
 title = "Capacity Building Success and Challenges"
-image = "./images/renew-energy-capacity.png"
+image = "renew-energy-capacity.png"
 imageAlt = "Renewable Energy Capacity Graph"
 paragraph = "The ARCTIC program has been invaluable for building capacity and stimulating dynamic growth within the state of Alaska. During the past five years, we have seen the number of communities that can achieve high penetration, diesel off-operation expanded from three to over a dozen. The total installed capacity across all renewable energy technologies has also steadily increased despite reductions in state funding. Much of this results from increased know-how and capacity at the state and local levels, meaning these projects are being developed, operated, and maintained successfully."
 
 [[sections]]
 title = "Partnering for Energy Innovation"
-image = "./images/murkowski-partner-ak-map.png"
+image = "murkowski-partner-ak-map.png"
 imageAlt = "Murkowski Quote Alaska Partners Map"
 linkTo = "partners"
 buttonText = "See Partners"
