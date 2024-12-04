@@ -35,17 +35,14 @@
         <h2>{{ .title }}</h2>
         <div class="section-flexbox {{ if modBool $index 2 }}reverse{{ end }}">
           {{ if .image }}
-          <div class="section-image">
-            <a
-              class="pswp-gallery__item"
-              href="{{ .image | relURL }}"
-            >
-              <img
-                src="{{ .image | relURL }}"
-                alt="{{ .imageAlt }}"
-              />
-            </a>
-          </div>
+            <div class="section-image">
+              <a class="pswp-gallery__item" href="{{ with $.Page.Resources.GetMatch .image }}{{ .RelPermalink }}{{ end }}">
+                <img src="{{ with $.Page.Resources.GetMatch .image }}{{ .RelPermalink }}{{ end }}" alt="{{ .imageAlt }}">
+              </a>
+              {{ if .imageCredit }}
+                <p class="image-credit">Photo by: {{ .imageCredit }}</p>
+              {{ end }}
+            </div>
           {{ end }}
 
           <div class="section-content">
