@@ -46,6 +46,9 @@ url('{{.Params.heroBackgroundImage}}'); ">
       <a class="pswp-gallery__item"
           href="{{ .Params.mainSectionImg | relURL }}">
         <img src="{{ .Params.mainSectionImg | relURL }}" alt="{{ .Params.mainSectionImgAlt }}">
+        {{ if .Params.mainSectionImgCredit }}
+          <p class="image-credit">Photo by: {{ .Params.mainSectionImgCredit }}</p>
+        {{ end }}
       </a>
     </div>
   </div>
