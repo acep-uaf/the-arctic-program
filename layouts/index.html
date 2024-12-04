@@ -24,6 +24,9 @@ url('{{.Params.heroBackgroundImage}}'); ">
       >
     </div>
   </header>
+  {{ if .Params.heroBackgroundImageCredit }}
+    <p class="image-credit">Photo by: {{ .Params.heroBackgroundImageCredit }}</p>
+  {{ end }}
 </section>
 
 <div class="container">
