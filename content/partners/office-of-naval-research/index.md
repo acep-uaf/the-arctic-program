@@ -5,4 +5,5 @@ alt = ""
 description = ""
 websiteUrl = ""
 showInList = false
+showInFooter = true
 +++
