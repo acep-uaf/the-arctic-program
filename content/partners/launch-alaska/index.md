@@ -2,7 +2,6 @@
 title = "Launch Alaska"
 id = "launch-alaska"
 logo = "LA-logo.png"
-desription = "A business accelerator investing in scalable startups in food, water, transportation, and energy"
 tagline = "Accelerating the Energy Transition"
 websiteUrl = "https://www.launchalaska.com"
 +++

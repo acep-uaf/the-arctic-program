@@ -1,9 +1,8 @@
 +++
-title = 'Office of Naval Research'
+title = "Office of Naval Research"
 id = "ONR"
 logo = "onr-logo.png"
-description = ""
-websiteUrl = ""
+websiteUrl = "https://www.onr.navy.mil/"
 showInList = false
 showInFooter = true
 +++

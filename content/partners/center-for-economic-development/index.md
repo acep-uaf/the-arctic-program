@@ -1,9 +1,7 @@
 +++
-title = 'UAA Center for Economic Development'
-id = 'CED'
+title = "UAA Center for Economic Development"
+id = "CED"
 logo = "ced-logo.png"
-alt = ""
-description = "University of Alaska Anchorage’s Business Enterprise Institute"
 tagline = "Supporting business and entrepreneurial capacities across Alaska by linking economic development programs"
 websiteUrl = "https://ua-ced.org/"
 +++
