@@ -31,7 +31,7 @@
       <article class="grid-card partner no-hover-effect">
         <hgroup class="partner-hgroup">
           <!-- Display the logo from leaf bundle -->
-          {{ with .Resources.GetMatch "*logo.*" }}
+          {{ with .Resources.GetMatch "*logo*" }}
             <img src="{{ .RelPermalink }}" alt="Logo for {{ $.Params.name }}">
           {{ end }}
           <h5 hidden>{{ .Title }}</h5>
