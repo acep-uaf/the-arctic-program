@@ -2,6 +2,7 @@
 @import 'nav';
 @import 'variables';
 @import 'about';
+@import 'footer';
 
 h1 {
   font-size: 1.9rem !important; /* Force ARCTIC title on one line */
@@ -19,32 +20,51 @@ h1 {
   font-size: 0.8rem !important;
 }
 
-.h2-link {
-  text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease;
+.no-hover-effect {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
 
-  &:hover {
-    color: var(--link-color);
-  }
+.underlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: white;
+}
+
+.image-credit {
+  font-size: 0.8rem;
+  color: var(--muted-color);
+  text-align: end;
+  padding: 1rem;
 }
 
 .grid {
   margin-bottom: 3rem !important;
   justify-items: center;
-}
 
-.grid.home,
-.grid.about {
-  gap: 2rem;
+  &.home {
+    gap: 2rem;
+  }
+
+  &.about {
+    gap: 2rem;
+  }
+
 }
 
 .grid-wrapper.about {
   margin-bottom: 5rem;
 }
 
-.grid-card.partner,
-.grid-card.fa {
-  padding: 0 !important;
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;  
 }
 
 .grid-card.home {
@@ -85,13 +105,8 @@ h1 {
   }
 }
 
-.grid-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-
+.grid-card.partner {
+  padding: 0 !important;
   .partner-hgroup {
     width: 100%;
     background-color: var(--partner-card-header-color);
@@ -106,8 +121,8 @@ h1 {
     margin-bottom: 0;
 
     img {
-      width: 250px; /* Define a fixed width */
-      height: 150px; /* Define a fixed height */
+      width: 250px;
+      height: 150px; 
       object-fit: contain; /* Ensures the entire image fits within the box */
       max-width: 100%;
       max-height: 100%;
@@ -119,6 +134,27 @@ h1 {
     }
   }
 
+  .partner-content {
+    padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
+    p {
+      color: var(--card-body-text-color) !important;
+      text-decoration: none;
+    }
+    li {
+      color: var(--card-body-text-color) !important;
+      list-style: none;
+      text-align: start;
+    }
+  }
+
+  .partner-footer {
+    margin-bottom: 1.5rem;
+    margin-top: auto;
+  }
+}
+
+.grid-card.fa {
+  padding: 0 !important;
   .fa-hgroup {
     width: 100%;
     background-color: var(--card-header-color);
@@ -139,28 +175,6 @@ h1 {
     }
   }
 
-  .partner-content,
-  .fa-content {
-    padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
-  }
-
-  .partner-content {
-    p {
-      color: var(--card-body-text-color) !important;
-      text-decoration: none;
-    }
-    li {
-      color: var(--card-body-text-color) !important;
-      list-style: none;
-      text-align: start;
-    }
-  }
-
-  .partner-footer {
-    margin-bottom: 1.5rem;
-    margin-top: auto; /* Distance from the right edge of the card */
-  }
-
   .fa-content {
     display: flex;
     flex-direction: column;
@@ -169,6 +183,7 @@ h1 {
     text-align: start;
     justify-content: space-between;
     height: 100%;
+    padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
 
     p,
     li {
@@ -181,25 +196,18 @@ h1 {
   }
 }
 
-#gallery__activities {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 #gallery__home {
   display: flex; /* Use flexbox for alignment */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   height: 100%; /* Ensure the container takes up the full height */
   text-align: center; /* Ensure inline elements like text are also centered */
-}
 
-#gallery__home img {
-  max-width: 100%; /* Ensure the image doesn't overflow */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the image fits nicely within the container */
+  img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits nicely within the container */
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -216,36 +224,6 @@ h1 {
   }
 }
 
-// Override to remove hover effect
-.no-hover-effect {
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
-.footer-logo {
-  max-width: 300px;
-}
-
-.footer-list {
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-
-  li {
-    list-style: none;
-  }
-}
-
-.flexbox-container {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  flex-wrap: wrap;
-  width: 100%;
-}
-/* Additional customization for partner-specific flexbox */
 .partner-flexbox {
   display: flex;
   flex-direction: row;
@@ -259,37 +237,14 @@ h1 {
   color: var(--hgroup-text-color);
   min-height: 100px;
 
-  .fa-partner-logo {
-    max-width: 125px;
+  img.partner-logo-sm {
+    max-width: 150px;
     max-height: 50px;
     object-fit: contain;
+
+    &:hover {
+      animation: hover 0.3s ease;
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
   }
-}
-
-.partner-item-sm {
-  max-width: 200px;
-  max-height: 100px;
-  text-align: center;
-  transition: 0.3s ease;
-  align-self: center;
-
-  &:hover {
-    animation: hover 0.3s ease;
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-}
-
-.underlay {
-  background-color: rgba(0, 0, 0, 0.45);
-  padding: 1rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-  color: white;
-}
-
-.image-credit {
-  font-size: 0.8rem;
-  color: var(--muted-color);
-  text-align: end;
-  padding: 1rem;
 }

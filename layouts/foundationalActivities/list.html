@@ -34,26 +34,20 @@
           </span>
         </div>
         {{ $partners := .Params.partners }}
-        <div class="flexbox-container">
           <div class="partner-flexbox">
             <i>Led by:</i>
             {{ with .Site.GetPage "section" "partners" }}
-            {{ range .Pages }}
-              {{ if in $partners .Params.id }}
-                <span class="partner-item-sm">
+              {{ range .Pages }}
+                {{ if in $partners .Params.id }}
                   <a href="{{ .Params.websiteURL }}" target="_blank" rel="noopener noreferrer">
                     {{ with .Resources.GetMatch "*logo.*" }}
-                      <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="fa-partner-logo" />
-                    {{ else }}
-                      <p>No logo found for {{ .Title }}</p>
+                      <img class="partner-logo-sm" src="{{ .RelPermalink }}" alt="{{ .Title }}" />
                     {{ end }}
                   </a>
-                </span>
+                {{ end }}
               {{ end }}
             {{ end }}
-            {{ end }}
           </div>
-        </div>
       </article>
     {{ end }}
   </div>
