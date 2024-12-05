@@ -1,8 +1,7 @@
 +++
-title = 'Institute of Social and Economic Research'
-id = 'ISER'
-alt = "UAA Institute of Social and Economic Research"
-description = ""
+title = "Institute of Social and Economic Research"
+id = "ISER"
+logo = "iser-logo.png"
 tagline = ""
 websiteUrl = "https://iseralaska.org/"
 +++

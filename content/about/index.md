@@ -3,6 +3,7 @@ title = "ARCTIC - An Office of Naval Research Initiative"
 description = "Funded by ONR and augmented by other federal and state funding sources, the ARCTIC program is constantly evolving to meet Alaska’s energy research needs and advance sustainable & community-approved solutions."
 type = "about"
 heroUpperTitle = "ARCTIC"
+heroBackgroundImage = "bgImage-DJI_0005.JPG"
 heroBackgroundImageCredit = "Amanda Byrd"
 
 [cards_section]

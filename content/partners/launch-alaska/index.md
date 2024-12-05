@@ -1,8 +1,7 @@
 +++
-title = 'Launch Alaska'
-id = 'launch-alaska'
-alt = "Launch Alaska"
-desription = "A business accelerator investing in scalable startups in food, water, transportation, and energy"
+title = "Launch Alaska"
+id = "launch-alaska"
+logo = "LA-logo.png"
 tagline = "Accelerating the Energy Transition"
 websiteUrl = "https://www.launchalaska.com"
 +++
