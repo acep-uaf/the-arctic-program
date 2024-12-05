@@ -92,12 +92,15 @@ h1 {
 
 .grid-card.about {
   align-items: start;
-  gap: 2rem;
   background-color: var(--small-card-background-color);
   color: var(--small-card-text-color) !important;
+  
+  .feather-icon {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+  }
 
   .title {
-    margin-bottom: 0;
     text-align: start;
     font-weight: 500;
     color: var(--small-card-text-color) !important;
