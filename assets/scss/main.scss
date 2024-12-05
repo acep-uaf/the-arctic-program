@@ -41,18 +41,22 @@ h1 {
   padding: 1rem;
 }
 
+@media (min-width: 992px) {
+  .grid-post {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 .grid {
   margin-bottom: 3rem !important;
-  justify-items: center;
 
   &.home {
     gap: 2rem;
   }
 
   &.about {
-    gap: 2rem;
+    gap: 2em;
   }
-
 }
 
 .grid-wrapper.about {
@@ -64,12 +68,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100%;  
+  height: 100%;
 }
 
 .grid-card.home {
-  display: flex;
-  flex-direction: column;
   align-items: start;
   gap: 1rem;
   width: 100%;
@@ -89,11 +91,8 @@ h1 {
 }
 
 .grid-card.about {
-  display: flex;
-  flex-direction: column;
   align-items: start;
   gap: 2rem;
-  width: 100%;
   background-color: var(--small-card-background-color);
   color: var(--small-card-text-color) !important;
 
@@ -122,7 +121,7 @@ h1 {
 
     img {
       width: 250px;
-      height: 150px; 
+      height: 150px;
       object-fit: contain; /* Ensures the entire image fits within the box */
       max-width: 100%;
       max-height: 100%;
@@ -194,6 +193,31 @@ h1 {
       list-style: disc;
     }
   }
+
+  .fa-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--partner-card-header-color);
+    padding: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--hgroup-text-color);
+    min-height: 100px;
+
+    img.partner-logo-sm {
+      max-width: 150px;
+      max-height: 50px;
+      object-fit: contain;
+
+      &:hover {
+        animation: hover 0.3s ease;
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+    }
+  }
 }
 
 #gallery__home {
@@ -207,44 +231,5 @@ h1 {
     max-width: 100%; /* Ensure the image doesn't overflow */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the image fits nicely within the container */
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 992px) {
-  .grid-post {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-/* Large devices (desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  :root {
-    --font-size: 1.125rem;
-  }
-}
-
-.partner-flexbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-  width: 100%;
-  background-color: var(--partner-card-header-color);
-  padding: 1rem;
-  justify-content: flex-end;
-  align-items: center;
-  color: var(--hgroup-text-color);
-  min-height: 100px;
-
-  img.partner-logo-sm {
-    max-width: 150px;
-    max-height: 50px;
-    object-fit: contain;
-
-    &:hover {
-      animation: hover 0.3s ease;
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
   }
 }
