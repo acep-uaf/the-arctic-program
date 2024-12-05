@@ -3,14 +3,7 @@ title = 'Launch Alaska'
 id = 'launch-alaska'
 alt = "Launch Alaska"
 desription = "A business accelerator investing in scalable startups in food, water, transportation, and energy"
-tagline = "Accelerating the Resource Revolution"
+tagline = "Accelerating the Energy Transition"
 websiteUrl = "https://www.launchalaska.com"
 +++
-* Recruitment of scalable startups in the energy resiliency market.
-
-* Support and expand Alaska's entrepreneurial ecosystem.
-
-* Incubator program for pre and post-launch stage businesses looking to scale up with two tracks:
-
-  * - **Customer Development Track** for mentorship & networking support
-  * - **Tech Deployment Track** for technology field pilots
+- Launch Alaska connects climate tech startups with Alaska businesses and communities to accelerate deployment, catalyze our clean energy economy, and decarbonize energy, transportation, and industry.
