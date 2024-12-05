@@ -1,7 +1,7 @@
 +++
 title = 'Office of Naval Research'
 id = "ONR"
-alt = ""
+logo = "onr-logo.png"
 description = ""
 websiteUrl = ""
 showInList = false

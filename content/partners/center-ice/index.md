@@ -1,6 +1,7 @@
 +++
 title = 'Alaska Center ICE'
 id = 'center-ICE'
+logo = "center-ice-logo.png"
 alt = "Alaska Center ICE"
 description = "University of Alaska Fairbanks’ Center for Innovation, Commercialization, and Entrepreneurship"
 tagline = "Supporting the commercialization & deployment of new technology"

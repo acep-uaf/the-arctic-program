@@ -15,9 +15,8 @@
 
       <article class="grid-card partner no-hover-effect">
         <hgroup class="partner-hgroup">
-          <!-- Display the logo from leaf bundle -->
-          {{ with .Resources.GetMatch "*logo*" }}
-            <img src="{{ .RelPermalink }}" alt="Logo for {{ $.Params.name }}">
+          {{ with .Resources.Get .Params.logo }}
+            <img src="{{ .RelPermalink }}" alt="Logo for {{ .Title }}">
           {{ end }}
           <h5 hidden>{{ .Title }}</h5>
           <i class="tagline">{{- .Params.Tagline -}}</i>

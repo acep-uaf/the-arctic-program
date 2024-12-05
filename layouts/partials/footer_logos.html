@@ -7,10 +7,10 @@
       target="_blank"
       title="{{ .Title }}"
     >
-      {{ with .Resources.GetMatch "*logo.*" }}
+      {{ with .Resources.Get .Params.logo }}
       <img
         src="{{ .RelPermalink }}"
-        alt="{{ .Params.alt }}"
+        alt="Logo for {{ .Title }}"
       />
       {{ else }}
       <p>No logo available for {{ .Title }}</p>

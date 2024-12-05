@@ -26,7 +26,7 @@
               {{ range .Pages }}
                 {{ if in $partners .Params.id }}
                   <a href="{{ .Params.websiteURL }}" target="_blank" rel="noopener noreferrer">
-                    {{ with .Resources.GetMatch "*logo.*" }}
+                    {{ with .Resources.Get .Params.logo }}
                       <img class="partner-logo-sm" src="{{ .RelPermalink }}" alt="{{ .Title }}" />
                     {{ end }}
                   </a>

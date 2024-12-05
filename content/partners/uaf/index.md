@@ -1,6 +1,7 @@
 +++
 title = 'University of Alaska Fairbanks'
 id = "UAF"
+logo = "uaf-logo.png"
 alt = "University of Alaska Fairbanks Logo"
 description = ""
 tagline = ""
