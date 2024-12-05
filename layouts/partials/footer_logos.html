@@ -1,17 +1,21 @@
-<div class="flexbox-container">
-  {{ with .Site.GetPage "section" "partners" }}
-    {{ range .Pages }}
-      {{ if eq .Params.showInFooter true }}
-        <div class="partner-item-sm">
-          <a href="{{ .Params.websiteUrl }}" target="_blank" title="{{ .Title }}">
-            {{ with .Resources.GetMatch "*logo.*" }}
-              <img src="{{ .RelPermalink }}" alt="{{ .Params.alt }}">
-            {{ else }}
-              <p>No logo available for {{ .Title }}</p>
-            {{ end }}
-          </a>
-        </div>
+<div class="footer-flexbox">
+  {{ with .Site.GetPage "section" "partners" }} {{ range .Pages }} {{ if eq
+  .Params.showInFooter true }}
+  <div class="partner-item-sm">
+    <a
+      href="{{ .Params.websiteUrl }}"
+      target="_blank"
+      title="{{ .Title }}"
+    >
+      {{ with .Resources.GetMatch "*logo.*" }}
+      <img
+        src="{{ .RelPermalink }}"
+        alt="{{ .Params.alt }}"
+      />
+      {{ else }}
+      <p>No logo available for {{ .Title }}</p>
       {{ end }}
-    {{ end }}
-  {{ end }}
+    </a>
+  </div>
+  {{ end }} {{ end }} {{ end }}
 </div>
