@@ -1,4 +1,4 @@
-baseURL = "https://acep-uaf.github.io/the-arctic-program/"
+baseURL = "https://thearcticprogram.net/"
 languageCode = 'en-us'
 title = 'The ARCTIC Program'
 theme = 'piko'
