@@ -24,6 +24,7 @@ minifyOutput = true
 keepWhitespace = false
 
 [params]
+dataTheme = "light"
 env = "development"
 author = ""
 description = "Website for the ARCTIC Program"
@@ -50,8 +51,7 @@ onrAcknowledgement = "The Alaska Regional Collaboration for Technology Innovatio
 [params.label]
 title = "ARCTIC Program"
 text = "Welcome to the ARCTIC Program"
-lightNavIcon = "images/logos/arctic-favicon.png"
-darkNavIcon = "images/logos/arctic-favicon.png"
+navIcon = "images/logos/arctic-favicon.png"
 iconHeight = "35"
 iconWIdth = "35"
 
